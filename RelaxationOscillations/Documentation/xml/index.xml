@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.9.1">
+  <compound refid="class_arithmetics" kind="class"><name>Arithmetics</name>
+    <member refid="class_arithmetics_1afdaeab6d774c7f71d0abbf3723c2c76d" kind="function"><name>Arithmetics</name></member>
+    <member refid="class_arithmetics_1a93e2f5a9112c403aaceef9e1913dbd96" kind="function"><name>~Arithmetics</name></member>
+    <member refid="class_arithmetics_1a2496e1ae47ea96f3abd3dffc3b43d841" kind="function"><name>RandomBetween</name></member>
+    <member refid="class_arithmetics_1a06388394a8a4162176567d6735fb4a39" kind="function"><name>GetNextGridIndex</name></member>
+  </compound>
+  <compound refid="class_controller" kind="class"><name>Controller</name>
+    <member refid="class_controller_1a1bfe3cf37d26ee967eced3a223c46961" kind="variable"><name>file_trajectories</name></member>
+    <member refid="class_controller_1abdd2944c13a29dd2b1e6b2051db9739a" kind="variable"><name>file_united_trajectories</name></member>
+    <member refid="class_controller_1a5e1ba2804a12521e6e9a43fabb5ed025" kind="variable"><name>file_parameters</name></member>
+    <member refid="class_controller_1a40ab0f7554244a811e021ab60ff52474" kind="variable"><name>file_start_points</name></member>
+    <member refid="class_controller_1a72ec042c90e54a5766531b0dcdba58be" kind="variable"><name>file_all_stationary_points</name></member>
+    <member refid="class_controller_1a1b9a0e8b63500dbe4f4ee0dba6cfb0ae" kind="variable"><name>config</name></member>
+    <member refid="class_controller_1a95c56822d667e94b031451729ce069a9" kind="function"><name>Controller</name></member>
+    <member refid="class_controller_1a17abb2cec6c0109e9b2df3cdc082eaad" kind="function"><name>Run</name></member>
+    <member refid="class_controller_1a0ab87934c4f7a266cfdb86e0f36bc1b5" kind="function"><name>~Controller</name></member>
+    <member refid="class_controller_1a30446bbf0e09fbf6aedf1a12d17cf0cc" kind="function"><name>OpenAuxFiles</name></member>
+    <member refid="class_controller_1ad8c2392ae29f489fb4534728eed0f6c1" kind="function"><name>CloseAuxFiles</name></member>
+    <member refid="class_controller_1ad3a3cb322def1d00e09bd491d3461e6f" kind="function"><name>RunCalculations</name></member>
+    <member refid="class_controller_1a17394afcc180a82c9aca829a7fd4b761" kind="function"><name>SearchStationaryPoint</name></member>
+    <member refid="class_controller_1a5609b2411a28f95839466deba1c7595b" kind="function"><name>DrawPhasePortrait</name></member>
+    <member refid="class_controller_1abae5e646ad8d71ebf379617677fb027c" kind="function"><name>UniteFiles</name></member>
+  </compound>
+  <compound refid="class_data_parser" kind="class"><name>DataParser</name>
+    <member refid="class_data_parser_1a547276ab20bf8aed961828dfb0912665" kind="variable"><name>dim</name></member>
+    <member refid="class_data_parser_1a34295aca691e47ce65f6abe7d20e780e" kind="variable"><name>points_source</name></member>
+    <member refid="class_data_parser_1a09f1b0cd3534432320b9c48a74e82fec" kind="variable"><name>start_point</name></member>
+    <member refid="class_data_parser_1acfa3dfcaa76f75110c19a89a41a3506e" kind="variable"><name>discr</name></member>
+    <member refid="class_data_parser_1a6c8afcaa6d8fa22da4121f34545d9c64" kind="variable"><name>steps</name></member>
+    <member refid="class_data_parser_1aac905a8cb1d4eaf092abf8657df280ae" kind="variable"><name>sample</name></member>
+    <member refid="class_data_parser_1aa50ff15d6733685b8d1714f32b9e8d8e" kind="variable"><name>d</name></member>
+    <member refid="class_data_parser_1a91d7257618b9668fb20f01e5c91ec5e1" kind="variable"><name>alpha</name></member>
+    <member refid="class_data_parser_1abb1a4002f21c0eaf1b69d9350141a46a" kind="variable"><name>beta</name></member>
+    <member refid="class_data_parser_1a9084d4787b83f5f332b87fa3a4471e64" kind="variable"><name>max_iter</name></member>
+    <member refid="class_data_parser_1a0d73d7859ec21bf46372adbc0ff055c9" kind="variable"><name>eps</name></member>
+    <member refid="class_data_parser_1ac5ee4404c027b9fa002cba1d9f36afa2" kind="variable"><name>h</name></member>
+    <member refid="class_data_parser_1a264ad69a17cf9b9f39c0e37d7d9c149e" kind="variable"><name>reading_state</name></member>
+    <member refid="class_data_parser_1adde3fdb08b6d298dac0bdf59b94d77c9" kind="function"><name>DataParser</name></member>
+    <member refid="class_data_parser_1a3814c58e35d81db3d7a1d5b96041efd5" kind="function"><name>~DataParser</name></member>
+    <member refid="class_data_parser_1ae80dfe8258521c73d2dab00b1f1f74aa" kind="function"><name>PullData</name></member>
+    <member refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kind="function"><name>Dim</name></member>
+    <member refid="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" kind="function"><name>Points_Source</name></member>
+    <member refid="class_data_parser_1a9d821449a8250d30ad65c976885a0f48" kind="function"><name>Start_Point</name></member>
+    <member refid="class_data_parser_1a1f0cbc39bbf7e976c53fad6a4a389417" kind="function"><name>Discr</name></member>
+    <member refid="class_data_parser_1a404e5625180ca25b07a84971d8ff1bd5" kind="function"><name>Steps</name></member>
+    <member refid="class_data_parser_1ae4a86a8c02c03d52881be3e5411bc572" kind="function"><name>Sample</name></member>
+    <member refid="class_data_parser_1af0cc37893ec5aa4aa05130cea1988d53" kind="function"><name>D</name></member>
+    <member refid="class_data_parser_1a12892b6cc8bb7b24159e7709852649cd" kind="function"><name>Alpha</name></member>
+    <member refid="class_data_parser_1a31d430da03dca13e7cec8f84401c12a6" kind="function"><name>Beta</name></member>
+    <member refid="class_data_parser_1a439f05ed92743973cc8dc6da38e50868" kind="function"><name>Max_Iter</name></member>
+    <member refid="class_data_parser_1ab82aae2922755c17eafa460578ff587b" kind="function"><name>Eps</name></member>
+    <member refid="class_data_parser_1a124b97cf683480bcb705256af645e446" kind="function"><name>H</name></member>
+    <member refid="class_data_parser_1a0ba5763774146b6ea7c7c6504ae47053" kind="function"><name>ReadingState</name></member>
+    <member refid="class_data_parser_1af26ba834bbc3e66e3d18908ed2c7a644" kind="function"><name>IsParseData</name></member>
+    <member refid="class_data_parser_1a172e20e3abb75903e5831d0317cd36f9" kind="function"><name>ReadData</name></member>
+  </compound>
+  <compound refid="class_filter_points" kind="class"><name>FilterPoints</name>
+    <member refid="class_filter_points_1ab2c951c04546e88a3eae23593255f464" kind="variable"><name>points</name></member>
+    <member refid="class_filter_points_1a922144add0f65f9df222f2d5b7b82e9c" kind="variable"><name>output_file</name></member>
+    <member refid="class_filter_points_1a4ef06e2764e9a60cfdf53832baa388ad" kind="variable"><name>dim</name></member>
+    <member refid="class_filter_points_1a3132c8e736ecb5221a8baac2f6cb096f" kind="variable"><name>eps</name></member>
+    <member refid="class_filter_points_1ae961bbdc20e31f6c2c5e11f88a250dd4" kind="function"><name>FilterPoints</name></member>
+    <member refid="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" kind="function"><name>AddPoint</name></member>
+    <member refid="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" kind="function"><name>ExcludeEqualPoints</name></member>
+    <member refid="class_filter_points_1a05208c4421d0e0fc377c42f27f00abfc" kind="function"><name>~FilterPoints</name></member>
+    <member refid="class_filter_points_1a49a687bf25136ef6990a4be79eaf7f0d" kind="function"><name>DeleteEqualPoints</name></member>
+    <member refid="class_filter_points_1aa4ee0488331ce79af05676c47beb783a" kind="function"><name>OutputPoints</name></member>
+  </compound>
+  <compound refid="class_point_operations" kind="class"><name>PointOperations</name>
+    <member refid="class_point_operations_1a547905af69bcb06620ec91c2905b7650" kind="function"><name>PointOperations</name></member>
+    <member refid="class_point_operations_1ab2579f86d6be95165f93e343fcce078a" kind="function"><name>~PointOperations</name></member>
+    <member refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kind="function"><name>ZeroizePoint</name></member>
+    <member refid="class_point_operations_1a60f7b165f2a705d199f2e2932e1e3972" kind="function"><name>ZeroizePoint</name></member>
+    <member refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" kind="function"><name>SetPoint</name></member>
+    <member refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kind="function"><name>InitPoint</name></member>
+    <member refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" kind="function"><name>IsEqualPoints</name></member>
+    <member refid="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" kind="function"><name>GetGridPoint</name></member>
+    <member refid="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" kind="function"><name>GetOppositeGridPoint</name></member>
+    <member refid="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" kind="function"><name>GetRandomPointBetween</name></member>
+    <member refid="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" kind="function"><name>GluePoint</name></member>
+  </compound>
+  <compound refid="class_program_operations" kind="class"><name>ProgramOperations</name>
+    <member refid="class_program_operations_1a8c235d376a548ad980c192634a2eaf22" kind="function"><name>RunExeFile</name></member>
+    <member refid="class_program_operations_1a7d9d871067d78908033c6d538d1cd1e4" kind="function"><name>RunPythonScript</name></member>
+  </compound>
+  <compound refid="class_relaxarion_oscillations" kind="class"><name>RelaxarionOscillations</name>
+    <member refid="class_relaxarion_oscillations_1ac653f6900ac40bf5920b5931820855a8" kind="variable"><name>dim</name></member>
+    <member refid="class_relaxarion_oscillations_1a7c17915bcb792a952e167f4f67a32db5" kind="variable"><name>alpha</name></member>
+    <member refid="class_relaxarion_oscillations_1a9da94d07ea8985b34d90f1826d201c70" kind="variable"><name>beta</name></member>
+    <member refid="class_relaxarion_oscillations_1a873bd0e5f0b71b16a36019f9a3a8cea4" kind="variable"><name>d</name></member>
+    <member refid="class_relaxarion_oscillations_1a14eb814cc8b73f9e03923e5715793a10" kind="variable"><name>h</name></member>
+    <member refid="class_relaxarion_oscillations_1a7b35da292a8f3ab2624185a803f8f86f" kind="variable"><name>eps</name></member>
+    <member refid="class_relaxarion_oscillations_1a102622c147caace4e1cda1fb8fe66d6e" kind="variable"><name>sln</name></member>
+    <member refid="class_relaxarion_oscillations_1a896093f7a0fecf437e426c2d10dc222b" kind="variable"><name>bound_cond_plus_zero</name></member>
+    <member refid="class_relaxarion_oscillations_1ae1494095868416931c0008ff1192cb77" kind="variable"><name>bound_cond_alpha_plus_zero</name></member>
+    <member refid="class_relaxarion_oscillations_1ade0e59e1059cde99b18be8878736638c" kind="function"><name>RelaxarionOscillations</name></member>
+    <member refid="class_relaxarion_oscillations_1afb7f1fd0b0d02ca54ae0f9b63e43fb9a" kind="function"><name>SetSolution</name></member>
+    <member refid="class_relaxarion_oscillations_1ab5e64b9ca53763b51f541ae620134748" kind="function"><name>GetSolution</name></member>
+    <member refid="class_relaxarion_oscillations_1ad5c4c127a5c314536a095ab983471422" kind="function"><name>CalculateSolution</name></member>
+    <member refid="class_relaxarion_oscillations_1ae7de123edaf002b2741bc2739eb167f3" kind="function"><name>~RelaxarionOscillations</name></member>
+    <member refid="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" kind="function"><name>DisplayTheoreticalSolutions</name></member>
+    <member refid="class_relaxarion_oscillations_1a86e35833679118d8e253546a311e1370" kind="function"><name>Period</name></member>
+    <member refid="class_relaxarion_oscillations_1ad42c8164d079f0d84a4b35593cbc1b53" kind="function"><name>ZeroizeBoundaryConditions</name></member>
+    <member refid="class_relaxarion_oscillations_1a301f6e98512812202be975a2e96eb8ae" kind="function"><name>IsPassedSwitchPoint</name></member>
+    <member refid="class_relaxarion_oscillations_1a65460aa32f0233ef60d8e9bb65231a80" kind="function"><name>RungeKuttaMethod</name></member>
+    <member refid="class_relaxarion_oscillations_1aedebc4dedca3dc63fb84f0b9bb767343" kind="function"><name>MakeImpetusToSolution</name></member>
+  </compound>
+  <compound refid="class_types_change" kind="class"><name>TypesChange</name>
+    <member refid="class_types_change_1a2cec8ef75648e46702ea7babfe01d80f" kind="function"><name>TypesChange</name></member>
+    <member refid="class_types_change_1af2231f556161643b79ea81a8cf76d141" kind="function"><name>~TypesChange</name></member>
+    <member refid="class_types_change_1a8c84a2aa20d11c31bf9416a64e8aee10" kind="function"><name>FloatToCharArray</name></member>
+    <member refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kind="function"><name>IntToString</name></member>
+    <member refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kind="function"><name>FloatToString</name></member>
+    <member refid="class_types_change_1a3b3b728634baf3e6192824b5f1221cc5" kind="function"><name>CharArrayToString</name></member>
+    <member refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kind="function"><name>PointToString</name></member>
+    <member refid="class_types_change_1a3e09f3c31597ee4e584eeedf16beaf4d" kind="function"><name>IntPointToString</name></member>
+    <member refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" kind="function"><name>PointCoordinatesToString</name></member>
+    <member refid="class_types_change_1af8ecb0a087f1140a2aefccbf661b25e5" kind="function"><name>PointToFloatVector</name></member>
+    <member refid="class_types_change_1a44905ab5b36cc55302532575ee45024e" kind="function"><name>FloatVectorToPoint</name></member>
+  </compound>
+  <compound refid="namespaceparser" kind="namespace"><name>parser</name>
+    <member refid="namespaceparser_1a1275ab0616c96f8c8e086ef9026a7172" kind="variable"><name>configfile</name></member>
+    <member refid="namespaceparser_1aca3dd530cb507eff86255735065312bd" kind="variable"><name>reading_section</name></member>
+    <member refid="namespaceparser_1a96637ecdb2a6e4b1760d2068aa15151f" kind="function"><name>has_ParamOption</name></member>
+    <member refid="namespaceparser_1a09f407eb0fb7be0914b202f4af08ed94" kind="function"><name>has_Params</name></member>
+    <member refid="namespaceparser_1a05835075e7fcbd4794a63d7558436cbe" kind="function"><name>get_ListNecessaryOptions</name></member>
+    <member refid="namespaceparser_1af5c2057df7274d2e661af2978c2a8c14" kind="function"><name>get_ListAuxOptions</name></member>
+    <member refid="namespaceparser_1a014809020e9ba4c474961dc16c778ba7" kind="function"><name>parse_Params</name></member>
+    <member refid="namespaceparser_1a411809eefe1940be59a6ab7c9be4e087" kind="function"><name>parser_ConfigData</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="arithmetic_8h" kind="file"><name>arithmetic.h</name>
+    <member refid="arithmetic_8h_1a913239c557dc40d7353fd682bb2e795e" kind="define"><name>ARITHMETIC_H</name></member>
+    <member refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kind="variable"><name>MAX_DIM</name></member>
+    <member refid="arithmetic_8h_1a21afaf2dcbf3be6bc362d358ab3378d9" kind="variable"><name>MAX_ARRAY_SIZE</name></member>
+  </compound>
+  <compound refid="calculation_8cpp" kind="file"><name>calculation.cpp</name>
+  </compound>
+  <compound refid="calculation_8h" kind="file"><name>calculation.h</name>
+  </compound>
+  <compound refid="controller_8cpp" kind="file"><name>controller.cpp</name>
+  </compound>
+  <compound refid="controller_8h" kind="file"><name>controller.h</name>
+    <member refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kind="variable"><name>THREADS</name></member>
+    <member refid="controller_8h_1ab24169201ffe6432657476645cc9da11" kind="variable"><name>dir_to_temp_file_trajectories</name></member>
+    <member refid="controller_8h_1a2115a81e0cc00c0b03bc292b1f984d74" kind="variable"><name>path_to_file_trajectories</name></member>
+    <member refid="controller_8h_1aab76d360ef58ea4d44418cc2b8f8ed4e" kind="variable"><name>path_to_file_parameters</name></member>
+    <member refid="controller_8h_1add983d60c6c962922daa0ecf63727828" kind="variable"><name>path_to_file_all_stationary_points</name></member>
+    <member refid="controller_8h_1ad5751a4b058ec1642d0cc3ab05eb3a48" kind="variable"><name>path_to_file_start_points</name></member>
+    <member refid="controller_8h_1aa4972fa76cb62933c0d1b174c8f34648" kind="variable"><name>path_to_app_risovalka</name></member>
+    <member refid="controller_8h_1a96b67cdbda9b74034a0af0606dc8be95" kind="variable"><name>path_to_app_risovalka3d</name></member>
+  </compound>
+  <compound refid="filter_8cpp" kind="file"><name>filter.cpp</name>
+  </compound>
+  <compound refid="filter_8h" kind="file"><name>filter.h</name>
+    <member refid="filter_8h_1aa94b00949cd9c8805e52bdfb2819edc1" kind="variable"><name>path_to_output_file</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="operations_8h" kind="file"><name>operations.h</name>
+  </compound>
+  <compound refid="parser_8cpp" kind="file"><name>parser.cpp</name>
+  </compound>
+  <compound refid="parser_8h" kind="file"><name>parser.h</name>
+    <member refid="parser_8h_1aa825cd902da0aaeee91190596ab324b7" kind="variable"><name>pyscriptname</name></member>
+    <member refid="parser_8h_1ae091d6c1ad52268e9cde107b657e1dcd" kind="variable"><name>configfile</name></member>
+    <member refid="parser_8h_1ad51ffbe3227a9a74e19ff2c710679216" kind="variable"><name>readsection</name></member>
+  </compound>
+  <compound refid="parser_8py" kind="file"><name>parser.py</name>
+  </compound>
+  <compound refid="program_8h" kind="file"><name>program.h</name>
+  </compound>
+  <compound refid="types_8h" kind="file"><name>types.h</name>
+  </compound>
+</doxygenindex>

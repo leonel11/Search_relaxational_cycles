@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>RelaxationOscillations: Исходный файл filter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RelaxationOscillations
+   </div>
+   <div id="projectbrief">RelaxationOscillations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">filter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="filter_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma region Вспомогательные заголовочные файлы</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parser_8h.html">parser.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef FILTER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define FILTER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma region Путь до файла вывода точек</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="filter_8h.html#aa94b00949cd9c8805e52bdfb2819edc1">   12</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="filter_8h.html#aa94b00949cd9c8805e52bdfb2819edc1">path_to_output_file</a> = <span class="stringliteral">&quot;different_stationary_points.txt&quot;</span>; <span class="comment">// файл для вывода различных стационарных точек</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma region Описание структуры класса</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_filter_points.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_filter_points.html">FilterPoints</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="class_filter_points.html#ae961bbdc20e31f6c2c5e11f88a250dd4">FilterPoints</a>(<a class="code" href="class_data_parser.html">DataParser</a> config);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_filter_points.html#a30df113a7e80d1e5b203d2716a4744b4">AddPoint</a>(<span class="keywordtype">float</span> *point); <span class="comment">// добавление точки</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">void</span> <a class="code" href="class_filter_points.html#a0195ed6cca50a69c1fea12a7b154a4c7">ExcludeEqualPoints</a>(); <span class="comment">// исключение эквивалентных точек</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_filter_points.html#a05208c4421d0e0fc377c42f27f00abfc">~FilterPoints</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">void</span> DeleteEqualPoints(); <span class="comment">// удаление эквивалентных точек</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">void</span> OutputPoints(); <span class="comment">// вывод точек</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            vector&lt;vector&lt;float&gt;&gt; points; <span class="comment">// список всех точек фильтра</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            FILE *output_file; <span class="comment">// файл для вывода информации</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">float</span> dim; <span class="comment">// размерность задачи (переменная необходима для вывода только необходимых координат точек)</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">float</span> eps; <span class="comment">// точность сравнения двух точек</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_filter_points_html_ae961bbdc20e31f6c2c5e11f88a250dd4"><div class="ttname"><a href="class_filter_points.html#ae961bbdc20e31f6c2c5e11f88a250dd4">FilterPoints::FilterPoints</a></div><div class="ttdeci">FilterPoints(DataParser config)</div><div class="ttdef"><b>Definition:</b> filter.cpp:3</div></div>
+<div class="ttc" id="filter_8h_html_aa94b00949cd9c8805e52bdfb2819edc1"><div class="ttname"><a href="filter_8h.html#aa94b00949cd9c8805e52bdfb2819edc1">path_to_output_file</a></div><div class="ttdeci">static const char * path_to_output_file</div><div class="ttdef"><b>Definition:</b> filter.h:12</div></div>
+<div class="ttc" id="parser_8h_html"><div class="ttname"><a href="parser_8h.html">parser.h</a></div></div>
+<div class="ttc" id="class_filter_points_html"><div class="ttname"><a href="class_filter_points.html">FilterPoints</a></div><div class="ttdef"><b>Definition:</b> filter.h:21</div></div>
+<div class="ttc" id="class_filter_points_html_a05208c4421d0e0fc377c42f27f00abfc"><div class="ttname"><a href="class_filter_points.html#a05208c4421d0e0fc377c42f27f00abfc">FilterPoints::~FilterPoints</a></div><div class="ttdeci">~FilterPoints()</div><div class="ttdef"><b>Definition:</b> filter.cpp:64</div></div>
+<div class="ttc" id="class_data_parser_html"><div class="ttname"><a href="class_data_parser.html">DataParser</a></div><div class="ttdef"><b>Definition:</b> parser.h:24</div></div>
+<div class="ttc" id="class_filter_points_html_a30df113a7e80d1e5b203d2716a4744b4"><div class="ttname"><a href="class_filter_points.html#a30df113a7e80d1e5b203d2716a4744b4">FilterPoints::AddPoint</a></div><div class="ttdeci">void AddPoint(float *point)</div><div class="ttdoc">Добавление точки в список всех точек, подлежащих фильтрации </div><div class="ttdef"><b>Definition:</b> filter.cpp:13</div></div>
+<div class="ttc" id="class_filter_points_html_a0195ed6cca50a69c1fea12a7b154a4c7"><div class="ttname"><a href="class_filter_points.html#a0195ed6cca50a69c1fea12a7b154a4c7">FilterPoints::ExcludeEqualPoints</a></div><div class="ttdeci">void ExcludeEqualPoints()</div><div class="ttdoc">Исключение эквивалентных точек. Функция включает в себя этапы удаления одинаковых точек и вывода уже ...</div><div class="ttdef"><b>Definition:</b> filter.cpp:59</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по RelaxationOscillations. Последние изменения: Сб 20 Июн 2015 13:35:59. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

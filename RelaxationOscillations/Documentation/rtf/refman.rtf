@@ -1,0 +1,2635 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\comment begin body}
+{\info 
+{\title {\comment RelaxationOscillations }RelaxationOscillations}
+{\comment \'D1\'EE\'E7\'E4\'E0\'ED\'EE \'F1\'E8\'F1\'F2\'E5\'EC\'EE\'E9Doxgyen. }
+{\creatim \yr2015\mo6\dy20\hr13\min35\sec59}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt TITLE}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt CREATEDATE}}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CE\'E3\'EB\'E0\'E2\'EB\'E5\'ED\'E8\'E5\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED.}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b parser} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CA\'EB\'E0\'F1\'F1\'FB \'F1 \'E8\'F5 \'EA\'F0\'E0\'F2\'EA\'E8\'EC \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC.}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Arithmetics} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Controller} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b DataParser} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABN \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b FilterPoints} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b PointOperations} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ProgramOperations} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b RelaxarionOscillations} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b TypesChange} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2\par \pard\plain 
+{\tc \v \'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2.}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b arithmetic.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b calculation.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b calculation.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b controller.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b controller.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b filter.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b filter.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b operations.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b parser.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAW \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b parser.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b parser.py} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b program.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b types.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'EE \'E8\'EC\'E5\'ED parser\par \pard\plain 
+{\tc\tcl2 \v parser}
+{\xe \v parser}
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b has_ParamOption} (config, section, option)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b has_Params} (config, section, options)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b get_ListNecessaryOptions} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b get_ListAuxOptions} (points_source)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parse_Params} (config, section, options)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser_ConfigData} ({\b configfile}, section)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+tuple {\b configfile} = str(sys.argv[1])\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+tuple {\b reading_section} = str(sys.argv[2])\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v get_ListAuxOptions\:parser}
+{\xe \v parser\:get_ListAuxOptions}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.get_ListAuxOptions (  {\i points_source})}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v get_ListNecessaryOptions\:parser}
+{\xe \v parser\:get_ListNecessaryOptions}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.get_ListNecessaryOptions ()}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v has_ParamOption\:parser}
+{\xe \v parser\:has_ParamOption}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.has_ParamOption (  {\i config},   {\i section},   {\i option})}}
+\par
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v has_Params\:parser}
+{\xe \v parser\:has_Params}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.has_Params (  {\i config},   {\i section},   {\i options})}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v parse_Params\:parser}
+{\xe \v parser\:parse_Params}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.parse_Params (  {\i config},   {\i section},   {\i options})}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v parser_ConfigData\:parser}
+{\xe \v parser\:parser_ConfigData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+def parser.parser_ConfigData (  {\i configfile},   {\i section})}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v configfile\:parser}
+{\xe \v parser\:configfile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+tuple parser.configfile = str(sys.argv[1])}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v reading_section\:parser}
+{\xe \v parser\:reading_section}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+tuple parser.reading_section = str(sys.argv[2])}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB{\tc \v \'CA\'EB\'E0\'F1\'F1\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 Arithmetics\par \pard\plain 
+{\tc\tcl2 \v Arithmetics}
+{\xe \v Arithmetics}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\par
+{
+{\f2 #include <arithmetic.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Arithmetics} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Arithmetics} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float {\b RandomBetween} (float first_val, float last_val)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 \'E8\'E7 \'E8\'ED\'F2\'E5\'F0\'E2\'E0\'EB\'E0 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static int * {\b GetNextGridIndex} (int *grid_idx, int steps)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'E5\'E4\'F3\'FE\'F9\'E5\'E3\'EE \'EF\'EE \'F1\'F7\'E5\'F2\'F3 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'EE\'E3\'EE \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'EE\'E3\'EE \'E8\'ED\'E4\'E5\'EA\'F1\'E0, \'F3\'F7\'E0\'F1\'F2\'E2\'F3\'FE\'F9\'E5\'E3\'EE \'E2 \'F4\'EE\'F0\'EC\'E8\'F0\'EE\'E2\'E0\'ED\'E8\'E8 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'ED\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'E5\'EA \'F1\'E5\'F2\'EA\'E8 }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v Arithmetics\:Arithmetics}
+{\xe \v Arithmetics\:Arithmetics}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Arithmetics::Arithmetics (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~Arithmetics\:Arithmetics}
+{\xe \v Arithmetics\:~Arithmetics}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Arithmetics::~Arithmetics (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v GetNextGridIndex\:Arithmetics}
+{\xe \v Arithmetics\:GetNextGridIndex}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static int* Arithmetics::GetNextGridIndex (int *  {\i grid_idx}, int  {\i steps}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'E5\'E4\'F3\'FE\'F9\'E5\'E3\'EE \'EF\'EE \'F1\'F7\'E5\'F2\'F3 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'EE\'E3\'EE \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'EE\'E3\'EE \'E8\'ED\'E4\'E5\'EA\'F1\'E0, \'F3\'F7\'E0\'F1\'F2\'E2\'F3\'FE\'F9\'E5\'E3\'EE \'E2 \'F4\'EE\'F0\'EC\'E8\'F0\'EE\'E2\'E0\'ED\'E8\'E8 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'ED\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'E5\'EA \'F1\'E5\'F2\'EA\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i grid_idx} \cell }{- \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'FB\'E9 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'E9 \'E8\'ED\'E4\'E5\'EA\'F1, \'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE \'EA\'EE\'F2\'EE\'F0\'EE\'E3\'EE \'F2\'F0\'E5\'E1\'F3\'E5\'F2\'F1\'FF \'EF\'EE\'EB\'F3\'F7\'E8\'F2\'FC \'F1\'EB\'E5\'E4\'F3\'FE\'F9\'E8\'E9 \'EF\'EE \'F1\'F7\'E5\'F2\'F3 \'E8\'ED\'E4\'E5\'EA\'F1 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i steps} \cell }{- \'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'E4\'E5\'EB\'E5\'ED\'E8\'E9 \'EF\'EE \'EA\'E0\'E6\'E4\'EE\'E9 \'EF\'F0\'EE\'E5\'EA\'F6\'E8\'E8 \'EE\'E1\'EB\'E0\'F1\'F2\'E8 \'F1\'E5\'F2\'EA\'E8. \'CE\'ED\'EE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'E5\'F2 \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'F3 \'F3\'E2\'E5\'EB\'E8\'F7\'E5\'ED\'E8\'FF \'E8\'ED\'E4\'E5\'EA\'F1\'E0 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'EB\'E5\'E4\'F3\'FE\'F9\'E8\'E9 \'EF\'EE \'F1\'F7\'E5\'F2\'F3 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'FB\'E9 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'E9 \'E8\'ED\'E4\'E5\'EA\'F1 \par
+}}}
+{\xe \v RandomBetween\:Arithmetics}
+{\xe \v Arithmetics\:RandomBetween}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float Arithmetics::RandomBetween (float  {\i first_val}, float  {\i last_val}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 \'E8\'E7 \'E8\'ED\'F2\'E5\'F0\'E2\'E0\'EB\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i first_val} \cell }{- \'EB\'E5\'E2\'E0\'FF \'E3\'F0\'E0\'ED\'E8\'F6\'E0 \'E8\'ED\'F2\'E5\'F0\'E2\'E0\'EB\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i last_val} \cell }{- \'EF\'F0\'E0\'E2\'E0\'FF \'E3\'F0\'E0\'ED\'E8\'F6\'E0 \'E8\'ED\'F2\'E5\'F0\'E2\'E0\'EB\'E0 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \'E8\'E7 \'E8\'ED\'F2\'E5\'F0\'E2\'E0\'EB\'E0 \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b arithmetic.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 Controller\par \pard\plain 
+{\tc\tcl2 \v Controller}
+{\xe \v Controller}
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+\par
+{
+{\f2 #include <controller.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Controller} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b Run} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F0\'E0\'E1\'EE\'F2\'FB \'EA\'EE\'ED\'F2\'F0\'EE\'EB\'EB\'E5\'F0\'E0. \'CA\'EE\'ED\'F2\'F0\'EE\'EB\'EB\'E5\'F0 \'EF\'EE\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'F2\'E5\'EB\'FC\'ED\'EE, \'E2 \'ED\'F3\'E6\'ED\'EE\'EC \'EF\'EE\'F0\'FF\'E4\'EA\'E5 \'E7\'E0\'EF\'F3\'F1\'EA\'E0\'E5\'F2 \'F4\'F3\'ED\'EA\'F6\'E8\'E8, \'F1\'EE\'F1\'F2\'E0\'E2\'EB\'FF\'F9\'E8\'E5 \'EE\'F1\'ED\'EE\'E2\'ED\'EE\'E9 \'F4\'F3\'ED\'EA\'F6\'E8\'EE\'ED\'E0\'EB \'E4\'E0\'ED\'ED\'EE\'E9 \'EF\'F0\'EE\'E3\'F0\'E0\'EC\'EC\'FB }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Controller} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v Controller\:Controller}
+{\xe \v Controller\:Controller}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Controller::Controller ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~Controller\:Controller}
+{\xe \v Controller\:~Controller}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Controller::~Controller ()}}
+\par
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v Run\:Controller}
+{\xe \v Controller\:Run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Controller::Run ()}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F0\'E0\'E1\'EE\'F2\'FB \'EA\'EE\'ED\'F2\'F0\'EE\'EB\'EB\'E5\'F0\'E0. \'CA\'EE\'ED\'F2\'F0\'EE\'EB\'EB\'E5\'F0 \'EF\'EE\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'F2\'E5\'EB\'FC\'ED\'EE, \'E2 \'ED\'F3\'E6\'ED\'EE\'EC \'EF\'EE\'F0\'FF\'E4\'EA\'E5 \'E7\'E0\'EF\'F3\'F1\'EA\'E0\'E5\'F2 \'F4\'F3\'ED\'EA\'F6\'E8\'E8, \'F1\'EE\'F1\'F2\'E0\'E2\'EB\'FF\'F9\'E8\'E5 \'EE\'F1\'ED\'EE\'E2\'ED\'EE\'E9 \'F4\'F3\'ED\'EA\'F6\'E8\'EE\'ED\'E0\'EB \'E4\'E0\'ED\'ED\'EE\'E9 \'EF\'F0\'EE\'E3\'F0\'E0\'EC\'EC\'FB }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b controller.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b controller.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 DataParser\par \pard\plain 
+{\tc\tcl2 \v DataParser}
+{\xe \v DataParser}
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+\par
+{
+{\f2 #include <parser.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DataParser} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~DataParser} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b PullData} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'FB\'F2\'FF\'E3\'E8\'E2\'E0\'ED\'E8\'E5 \'E2\'F5\'EE\'E4\'ED\'FB\'F5 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'EE\'E2 \'EF\'F0\'EE\'E3\'F0\'E0\'EC\'EC\'FB \'E4\'EB\'FF \'E1\'F3\'E4\'F3\'F9\'E8\'F5 \'F0\'E0\'F1\'F7\'E5\'F2\'EE\'E2 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Dim} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+string {\b Points_Source} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float * {\b Start_Point} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Discr} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Steps} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Sample} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b D} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Alpha} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Beta} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Max_Iter} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b Eps} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float {\b H} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b ReadingState} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v DataParser\:DataParser}
+{\xe \v DataParser\:DataParser}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DataParser::DataParser ()}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~DataParser\:DataParser}
+{\xe \v DataParser\:~DataParser}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+DataParser::~DataParser ()}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v Alpha\:DataParser}
+{\xe \v DataParser\:Alpha}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::Alpha (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Beta\:DataParser}
+{\xe \v DataParser\:Beta}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::Beta (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v D\:DataParser}
+{\xe \v DataParser\:D}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::D (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Dim\:DataParser}
+{\xe \v DataParser\:Dim}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int DataParser::Dim (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Discr\:DataParser}
+{\xe \v DataParser\:Discr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::Discr (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Eps\:DataParser}
+{\xe \v DataParser\:Eps}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::Eps (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v H\:DataParser}
+{\xe \v DataParser\:H}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float DataParser::H (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Max_Iter\:DataParser}
+{\xe \v DataParser\:Max_Iter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int DataParser::Max_Iter (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Points_Source\:DataParser}
+{\xe \v DataParser\:Points_Source}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string DataParser::Points_Source (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v PullData\:DataParser}
+{\xe \v DataParser\:PullData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void DataParser::PullData ()}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'FB\'F2\'FF\'E3\'E8\'E2\'E0\'ED\'E8\'E5 \'E2\'F5\'EE\'E4\'ED\'FB\'F5 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'EE\'E2 \'EF\'F0\'EE\'E3\'F0\'E0\'EC\'EC\'FB \'E4\'EB\'FF \'E1\'F3\'E4\'F3\'F9\'E8\'F5 \'F0\'E0\'F1\'F7\'E5\'F2\'EE\'E2 }}\par
+}
+{\xe \v ReadingState\:DataParser}
+{\xe \v DataParser\:ReadingState}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool DataParser::ReadingState (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Sample\:DataParser}
+{\xe \v DataParser\:Sample}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int DataParser::Sample (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Start_Point\:DataParser}
+{\xe \v DataParser\:Start_Point}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float* DataParser::Start_Point (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v Steps\:DataParser}
+{\xe \v DataParser\:Steps}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int DataParser::Steps (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b parser.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b parser.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 FilterPoints\par \pard\plain 
+{\tc\tcl2 \v FilterPoints}
+{\xe \v FilterPoints}
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+\par
+{
+{\f2 #include <filter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b FilterPoints} ({\b DataParser} config)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b AddPoint} (float *point)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C4\'EE\'E1\'E0\'E2\'EB\'E5\'ED\'E8\'E5 \'F2\'EE\'F7\'EA\'E8 \'E2 \'F1\'EF\'E8\'F1\'EE\'EA \'E2\'F1\'E5\'F5 \'F2\'EE\'F7\'E5\'EA, \'EF\'EE\'E4\'EB\'E5\'E6\'E0\'F9\'E8\'F5 \'F4\'E8\'EB\'FC\'F2\'F0\'E0\'F6\'E8\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ExcludeEqualPoints} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C8\'F1\'EA\'EB\'FE\'F7\'E5\'ED\'E8\'E5 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'FB\'F5 \'F2\'EE\'F7\'E5\'EA. \'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2 \'E2 \'F1\'E5\'E1\'FF \'FD\'F2\'E0\'EF\'FB \'F3\'E4\'E0\'EB\'E5\'ED\'E8\'FF \'EE\'E4\'E8\'ED\'E0\'EA\'EE\'E2\'FB\'F5 \'F2\'EE\'F7\'E5\'EA \'E8 \'E2\'FB\'E2\'EE\'E4\'E0 \'F3\'E6\'E5 "\'EE\'F2\'F4\'E8\'EB\'FC\'F2\'F0\'EE\'E2\'E0\'ED\'ED\'EE\'E3\'EE" \'F1\'EF\'E8\'F1\'EA\'E0 \'F2\'EE\'F7\'E5\'EA }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~FilterPoints} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v FilterPoints\:FilterPoints}
+{\xe \v FilterPoints\:FilterPoints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FilterPoints::FilterPoints ({\b DataParser}  {\i config})}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~FilterPoints\:FilterPoints}
+{\xe \v FilterPoints\:~FilterPoints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+FilterPoints::~FilterPoints ()}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v AddPoint\:FilterPoints}
+{\xe \v FilterPoints\:AddPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void FilterPoints::AddPoint (float *  {\i point})}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C4\'EE\'E1\'E0\'E2\'EB\'E5\'ED\'E8\'E5 \'F2\'EE\'F7\'EA\'E8 \'E2 \'F1\'EF\'E8\'F1\'EE\'EA \'E2\'F1\'E5\'F5 \'F2\'EE\'F7\'E5\'EA, \'EF\'EE\'E4\'EB\'E5\'E6\'E0\'F9\'E8\'F5 \'F4\'E8\'EB\'FC\'F2\'F0\'E0\'F6\'E8\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'E4\'EE\'E1\'E0\'E2\'EB\'FF\'E5\'EC\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+}
+}}
+{\xe \v ExcludeEqualPoints\:FilterPoints}
+{\xe \v FilterPoints\:ExcludeEqualPoints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void FilterPoints::ExcludeEqualPoints ()}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C8\'F1\'EA\'EB\'FE\'F7\'E5\'ED\'E8\'E5 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'FB\'F5 \'F2\'EE\'F7\'E5\'EA. \'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E2\'EA\'EB\'FE\'F7\'E0\'E5\'F2 \'E2 \'F1\'E5\'E1\'FF \'FD\'F2\'E0\'EF\'FB \'F3\'E4\'E0\'EB\'E5\'ED\'E8\'FF \'EE\'E4\'E8\'ED\'E0\'EA\'EE\'E2\'FB\'F5 \'F2\'EE\'F7\'E5\'EA \'E8 \'E2\'FB\'E2\'EE\'E4\'E0 \'F3\'E6\'E5 "\'EE\'F2\'F4\'E8\'EB\'FC\'F2\'F0\'EE\'E2\'E0\'ED\'ED\'EE\'E3\'EE" \'F1\'EF\'E8\'F1\'EA\'E0 \'F2\'EE\'F7\'E5\'EA }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b filter.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b filter.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 PointOperations\par \pard\plain 
+{\tc\tcl2 \v PointOperations}
+{\xe \v PointOperations}
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+\par
+{
+{\f2 #include <operations.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b PointOperations} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~PointOperations} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b ZeroizePoint} (float *point=NULL)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'E1\'ED\'F3\'EB\'E5\'ED\'E8\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0-\'F2\'EE\'F7\'EA\'E8 \'F1 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0\'EC\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b ZeroizePoint} (int *point=NULL)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'E1\'ED\'F3\'EB\'E5\'ED\'E8\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0-\'F2\'EE\'F7\'EA\'E8 \'F1 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0\'EC\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b SetPoint} (float *point=NULL, float *other_point=NULL)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D3\'F1\'F2\'E0\'ED\'EE\'E2\'EA\'E0 \'E2 \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'F3\'FE \'F2\'EE\'F7\'EA\'F3 \'ED\'EE\'E2\'FB\'F5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b InitPoint} (float *point=NULL, float *other_point=NULL)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'FF \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E9 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'EE\'E9 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b IsEqualPoints} (float *point1, float *point2, float eps)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CF\'F0\'EE\'E2\'E5\'F0\'EA\'E0 \'EF\'E0\'F0\'FB \'F2\'EE\'F7\'E5\'EA \'ED\'E0 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'EE\'F1\'F2\'FC (\'E1\'EB\'E8\'E7\'EE\'F1\'F2\'FC). 2 \'F2\'EE\'F7\'EA\'E8 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'FB, \'E5\'F1\'EB\'E8 \'EA\'E0\'E6\'E4\'E0\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0 \'EE\'E4\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'EE\'F2\'EB\'E8\'F7\'E0\'E5\'F2\'F1\'FF \'EE\'F2 \'F1\'EE\'EE\'F2\'E2\'E5\'F2\'F1\'F2\'E2\'F3\'FE\'F9\'E5\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'ED\'E5 \'E1\'EE\'EB\'E5\'E5 \'F7\'E5\'EC \'ED\'E0 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'F3\'FE, \'EE\'F7\'E5\'ED\'FC \'EC\'E0\'EB\'F3\'FE \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float * {\b GetGridPoint} (float *start_grid_point, int *grid_idx, float discr)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'E3\'E5\'ED\'E5\'F0\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float * {\b GetOppositeGridPoint} (float *start_grid_point, float discr, float steps, float dim)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8, \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'EE\'E9 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 (\'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE "\'F6\'E5\'ED\'F2\'F0\'E0\'EB\'FC\'ED\'EE\'E9" \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float * {\b GetRandomPointBetween} (float *start_point, float *opposite_point)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'E8\'E7 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'EE\'E3\'EE \'EA\'F3\'E1\'E8\'EA\'E0 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float * {\b GluePoint} (float *point1, int dim1, float *point2, int dim2)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 "\'F1\'EA\'EB\'E5\'E5\'ED\'ED\'EE\'E9" \'F2\'EE\'F7\'EA\'E8 }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v PointOperations\:PointOperations}
+{\xe \v PointOperations\:PointOperations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PointOperations::PointOperations (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~PointOperations\:PointOperations}
+{\xe \v PointOperations\:~PointOperations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+PointOperations::~PointOperations (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v GetGridPoint\:PointOperations}
+{\xe \v PointOperations\:GetGridPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float* PointOperations::GetGridPoint (float *  {\i start_grid_point}, int *  {\i grid_idx}, float  {\i discr}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'E3\'E5\'ED\'E5\'F0\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start_grid_point} \cell }{- \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0, \'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE \'EA\'EE\'F2\'EE\'F0\'EE\'E9 \'E3\'E5\'ED\'E5\'F0\'E8\'F0\'F3\'E5\'F2\'F1\'FF \'F1\'E5\'F2\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i grid_idx} \cell }{- \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'FB\'E9 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'E9 \'E8\'ED\'E4\'E5\'EA\'F1, \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'FE\'F9\'E8\'E9 \'ED\'E0 \'EA\'E0\'EA\'EE\'E5 \'F0\'E0\'F1\'F1\'F2\'EE\'FF\'ED\'E8\'E5 \'EF\'EE \'EA\'E0\'E6\'E4\'EE\'E9 \'EF\'F0\'EE\'E5\'EA\'F6\'E8\'E8 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'F3\'E9\'F2\'E8 \'EE\'F2 \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i discr} \cell }{- \'F0\'E0\'F1\'F2\'EE\'FF\'ED\'E8\'E5 \'EC\'E5\'E6\'E4\'F3 \'E1\'EB\'E8\'E6\'E0\'E9\'F8\'E8\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0\'EC\'E8 \'F1\'EE\'F1\'E5\'E4\'ED\'E8\'F5 \'F2\'EE\'F7\'E5\'EA. \'DD\'F2\'EE\'E9 \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'E5 \'EA\'F0\'E0\'F2\'ED\'EE \'F0\'E0\'F1\'F1\'F2\'EE\'FF\'ED\'E8\'E5 \'EF\'EE \'EA\'E0\'E6\'E4\'EE\'E9 \'EF\'F0\'EE\'E5\'EA\'F6\'E8\'E8, \'ED\'E0 \'EA\'EE\'F2\'EE\'F0\'EE\'E5 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'F3\'E9\'F2\'E8 \'EE\'F2 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'E3\'E5\'ED\'E5\'F0\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \'F1\'E5\'F2\'EA\'E8 \par
+}}}
+{\xe \v GetOppositeGridPoint\:PointOperations}
+{\xe \v PointOperations\:GetOppositeGridPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float* PointOperations::GetOppositeGridPoint (float *  {\i start_grid_point}, float  {\i discr}, float  {\i steps}, float  {\i dim}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8, \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'EE\'E9 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 (\'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE "\'F6\'E5\'ED\'F2\'F0\'E0\'EB\'FC\'ED\'EE\'E9" \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start_grid_point} \cell }{- \'F1\'F2\'E0\'F0\'F2\'EE\'E2\'E0\'FF \'F2\'EE\'F7\'EA\'E0, \'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE \'EA\'EE\'F2\'EE\'F0\'EE\'E9 \'EF\'EE\'E4\'F1\'F7\'E8\'F2\'FB\'E2\'E0\'FE\'F2\'F1\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i discr,steps} \cell }{- \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'FB, \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'FE\'F9\'E8\'E5 \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'F3 \'EE\'F2\'F1\'F2\'F3\'EF\'E0 (discr*steps) \'EF\'EE \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF\'EC \'EA\'E0\'E6\'E4\'EE\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i dim} \cell }{- \'F0\'E0\'E7\'EC\'E5\'F0\'ED\'EE\'F1\'F2\'FC \'E7\'E0\'E4\'E0\'F7\'E8, \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'FE\'F9\'E0\'FF \'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8, \'EF\'EE \'EA\'EE\'F2\'EE\'F0\'FB\'EC \'ED\'F3\'E6\'ED\'EE \'F1\'E4\'E5\'EB\'E0\'F2\'FC \'F1\'EC\'E5\'F9\'E5\'ED\'E8\'E5 \'E2 \'F1\'F2\'EE\'F0\'EE\'ED\'F3 \'EE\'F2\'ED\'EE\'F1\'E8\'F2\'E5\'EB\'FC\'ED\'EE \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'F1\'E5\'F2\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F2\'EE\'F7\'EA\'E0 \'F1\'E5\'F2\'EA\'E8, \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'E0\'FF \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \par
+}}}
+{\xe \v GetRandomPointBetween\:PointOperations}
+{\xe \v PointOperations\:GetRandomPointBetween}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float* PointOperations::GetRandomPointBetween (float *  {\i start_point}, float *  {\i opposite_point}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'E8\'E7 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'EE\'E3\'EE \'EA\'F3\'E1\'E8\'EA\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i start_point,opposite_point} \cell }{- \'EF\'F0\'EE\'F2\'E8\'E2\'EE\'EF\'EE\'EB\'EE\'E6\'ED\'FB\'E5 \'F2\'EE\'F7\'EA\'E8 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'EE\'E3\'EE \'EA\'F3\'E1\'E8\'EA\'E0. \'CE\'ED\'E8 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'FE\'F2 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'F0\'ED\'FB\'E9 \'EA\'F3\'E1\'E8\'EA, \'E8\'E7 \'EA\'EE\'F2\'EE\'F0\'EE\'E3\'EE \'E1\'F3\'E4\'E5\'F2 \'E1\'F0\'E0\'F2\'FC\'F1\'FF \'ED\'E5\'EA\'EE\'F2\'EE\'F0\'E0\'FF \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'EB\'F3\'F7\'E0\'E9\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \'E8\'E7 \'EC\'ED\'EE\'E3\'EE\'EC\'E5\'ED\'EE\'E3\'EE \'EA\'F3\'E1\'E8\'EA\'E0 \par
+}}}
+{\xe \v GluePoint\:PointOperations}
+{\xe \v PointOperations\:GluePoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float* PointOperations::GluePoint (float *  {\i point1}, int  {\i dim1}, float *  {\i point2}, int  {\i dim2}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 "\'F1\'EA\'EB\'E5\'E5\'ED\'ED\'EE\'E9" \'F2\'EE\'F7\'EA\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point1} \cell }{- \'EF\'E5\'F0\'E2\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i dim1} \cell }{- \'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'EF\'E5\'F0\'E2\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point2} \cell }{- \'E2\'F2\'EE\'F0\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i dim2} \cell }{- \'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E2\'F2\'EE\'F0\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid "\'F1\'EA\'EB\'E5\'E5\'ED\'ED\'E0\'FF" \'F2\'EE\'F7\'EA\'E0, \'E2 \'EA\'EE\'F2\'EE\'F0\'EE\'E9 \'EF\'EE\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'F2\'E5\'EB\'FC\'ED\'EE \'E7\'E0\'EF\'E8\'F1\'E0\'ED\'FB \'F1\'ED\'E0\'F7\'E0\'EB\'E0 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'EF\'E5\'F0\'E2\'EE\'E9 \'F2\'EE\'F7\'EA\'E8, \'E0 \'EF\'EE\'F2\'EE\'EC \'E2\'F2\'EE\'F0\'EE\'E9. \'C2 \'F2\'EE\'EC \'F1\'EB\'F3\'F7\'E0\'E5, \'E5\'F1\'EB\'E8 \'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'EE\'E1\'E5\'E8\'F5 \'F2\'EE\'F7\'E5\'EA \'EF\'F0\'E5\'E2\'FB\'F8\'E0\'E5\'F2 \'EC\'E0\'EA\'F1\'E8\'EC\'E0\'EB\'FC\'ED\'EE \'E2\'EE\'E7\'EC\'EE\'E6\'ED\'F3\'FE \'F0\'E0\'E7\'EC\'E5\'F0\'ED\'EE\'F1\'F2\'FC, \'E2 "\'F1\'EA\'EB\'E5\'E5\'ED\'F3\'FE" \'F2\'EE\'F7\'EA\'F3 \'E7\'E0\'EF\'E8\'F1\'FB\'E2\'E0\'E5\'F2\'F1\'FF \'EC\'E0\'EA\'F1\'E8\'EC\'E0\'EB\'FC\'ED\'EE \'E2\'EE\'E7\'EC\'EE\'E6\'ED\'EE\'E5 (\'EF\'EE\'F1\'EA\'EE\'EB\'FC\'EA\'F3 \'F0\'E0\'E7\'EC\'E5\'F0\'ED\'EE\'F1\'F2\'FC \'EF\'E5\'F0\'E2\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'ED\'E5 \'EC\'EE\'E6\'E5\'F2 \'EF\'F0\'E5\'E2\'FB\'F8\'E0\'F2\'FC \'EC\'E0\'EA\'F1\'E8\'EC\'E0\'EB\'FC\'ED\'EE \'E4\'EE\'EF\'F3\'F1\'F2\'E8\'EC\'EE\'E5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E5, \'E3\'E0\'F0\'E0\'ED\'F2\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'EE \'E2\'F1\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'EF\'E5\'F0\'E2\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'EC\'EE\'E6\'ED\'EE \'E7\'E0\'EF\'E8\'F1\'E0\'F2\'FC \'E2 "\'F1\'EA\'EB\'E5\'E5\'ED\'ED\'F3\'FE"). \par
+}}}
+{\xe \v InitPoint\:PointOperations}
+{\xe \v PointOperations\:InitPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void PointOperations::InitPoint (float *  {\i point} = {\f2 NULL}, float *  {\i other_point} = {\f2 NULL}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'FF \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E9 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'EE\'E9 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0, \'EA\'EE\'F2\'EE\'F0\'F3\'FE \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'E8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E8\'F0\'EE\'E2\'E0\'F2\'FC \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i other_point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \'F1 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'FB\'EC\'E8 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \cell }
+{\row }
+}
+}}
+{\xe \v IsEqualPoints\:PointOperations}
+{\xe \v PointOperations\:IsEqualPoints}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool PointOperations::IsEqualPoints (float *  {\i point1}, float *  {\i point2}, float  {\i eps}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CF\'F0\'EE\'E2\'E5\'F0\'EA\'E0 \'EF\'E0\'F0\'FB \'F2\'EE\'F7\'E5\'EA \'ED\'E0 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'EE\'F1\'F2\'FC (\'E1\'EB\'E8\'E7\'EE\'F1\'F2\'FC). 2 \'F2\'EE\'F7\'EA\'E8 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'FB, \'E5\'F1\'EB\'E8 \'EA\'E0\'E6\'E4\'E0\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0 \'EE\'E4\'ED\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'EE\'F2\'EB\'E8\'F7\'E0\'E5\'F2\'F1\'FF \'EE\'F2 \'F1\'EE\'EE\'F2\'E2\'E5\'F2\'F1\'F2\'E2\'F3\'FE\'F9\'E5\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 \'ED\'E5 \'E1\'EE\'EB\'E5\'E5 \'F7\'E5\'EC \'ED\'E0 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'F3\'FE, \'EE\'F7\'E5\'ED\'FC \'EC\'E0\'EB\'F3\'FE \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'F3 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point1} \cell }{- \'EF\'E5\'F0\'E2\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point2} \cell }{- \'E2\'F2\'EE\'F0\'E0\'FF \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i eps} \cell }{- \'EC\'E0\'EB\'E0\'FF \'E2\'E5\'EB\'E8\'F7\'E8\'ED\'E0 \'F1\'F0\'E0\'E2\'ED\'E5\'ED\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E4\'E2\'F3\'F5 \'F2\'EE\'F7\'E5\'EA \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid true, \'E5\'F1\'EB\'E8 \'F2\'EE\'F7\'EA\'E8 \'FD\'EA\'E2\'E8\'E2\'E0\'EB\'E5\'ED\'F2\'ED\'FB, false - \'E8\'ED\'E0\'F7\'E5 \par
+}}}
+{\xe \v SetPoint\:PointOperations}
+{\xe \v PointOperations\:SetPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void PointOperations::SetPoint (float *  {\i point} = {\f2 NULL}, float *  {\i other_point} = {\f2 NULL}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D3\'F1\'F2\'E0\'ED\'EE\'E2\'EA\'E0 \'E2 \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'F3\'FE \'F2\'EE\'F7\'EA\'F3 \'ED\'EE\'E2\'FB\'F5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E4\'F0\'F3\'E3\'EE\'E9 \'F2\'EE\'F7\'EA\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'E8\'E7\'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'F2\'EE\'F7\'EA\'E0, \'E2 \'EA\'EE\'F2\'EE\'F0\'F3\'FE \'F2\'F0\'E5\'E1\'F3\'E5\'F2\'F1\'FF \'F3\'F1\'F2\'E0\'ED\'EE\'E2\'E8\'F2\'FC \'ED\'EE\'E2\'FB\'E5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i other_point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \'F1 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'FB\'EC\'E8 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \cell }
+{\row }
+}
+}}
+{\xe \v ZeroizePoint\:PointOperations}
+{\xe \v PointOperations\:ZeroizePoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void PointOperations::ZeroizePoint (float *  {\i point} = {\f2 NULL}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'E1\'ED\'F3\'EB\'E5\'ED\'E8\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0-\'F2\'EE\'F7\'EA\'E8 \'F1 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0\'EC\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'E2\'E5\'EA\'F2\'EE\'F0-\'F2\'EE\'F7\'EA\'E0, \'F7\'FC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'F0\'E5\'E1\'F3\'E5\'F2\'F1\'FF \'EE\'E1\'ED\'F3\'EB\'E8\'F2\'FC \cell }
+{\row }
+}
+}}
+{\xe \v ZeroizePoint\:PointOperations}
+{\xe \v PointOperations\:ZeroizePoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void PointOperations::ZeroizePoint (int *  {\i point} = {\f2 NULL}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'E1\'ED\'F3\'EB\'E5\'ED\'E8\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0-\'F2\'EE\'F7\'EA\'E8 \'F1 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'EC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'E0\'EC\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'E2\'E5\'EA\'F2\'EE\'F0-\'F2\'EE\'F7\'EA\'E0, \'F7\'FC\'E8 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'F0\'E5\'E1\'F3\'E5\'F2\'F1\'FF \'EE\'E1\'ED\'F3\'EB\'E8\'F2\'FC \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b operations.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 ProgramOperations\par \pard\plain 
+{\tc\tcl2 \v ProgramOperations}
+{\xe \v ProgramOperations}
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+{
+{\f2 #include <program.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b RunExeFile} (string app)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F1\'F2\'EE\'F0\'EE\'ED\'ED\'E5\'E3\'EE exe-\'F4\'E0\'E9\'EB\'E0 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool {\b RunPythonScript} (string script, string launch_params)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F1\'F2\'EE\'F0\'EE\'ED\'ED\'E5\'E3\'EE \'F1\'EA\'F0\'E8\'EF\'F2\'E0, \'ED\'E0\'EF\'E8\'F1\'E0\'ED\'ED\'EE\'E3\'EE \'ED\'E0 \'FF\'E7\'FB\'EA\'E5 Python. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v RunExeFile\:ProgramOperations}
+{\xe \v ProgramOperations\:RunExeFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void ProgramOperations::RunExeFile (string  {\i app}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F1\'F2\'EE\'F0\'EE\'ED\'ED\'E5\'E3\'EE exe-\'F4\'E0\'E9\'EB\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i app} \cell }{- \'F1\'F2\'F0\'EE\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'EF\'F3\'F2\'FC \'E4\'EE \'EF\'F0\'E8\'EB\'EE\'E6\'E5\'ED\'E8\'FF-\'FD\'EA\'E7\'E5\'F8\'ED\'E8\'EA\'E0 \cell }
+{\row }
+}
+}}
+{\xe \v RunPythonScript\:ProgramOperations}
+{\xe \v ProgramOperations\:RunPythonScript}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static bool ProgramOperations::RunPythonScript (string  {\i script}, string  {\i launch_params}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'EF\'F3\'F1\'EA \'F1\'F2\'EE\'F0\'EE\'ED\'ED\'E5\'E3\'EE \'F1\'EA\'F0\'E8\'EF\'F2\'E0, \'ED\'E0\'EF\'E8\'F1\'E0\'ED\'ED\'EE\'E3\'EE \'ED\'E0 \'FF\'E7\'FB\'EA\'E5 Python. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i script} \cell }{- \'F1\'F2\'F0\'EE\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'EF\'F3\'F2\'FC \'E4\'EE \'E7\'E0\'EF\'F3\'F1\'EA\'E0\'E5\'EC\'EE\'E3\'EE \'EF\'E8\'F2\'EE\'ED\'EE\'E2\'F1\'EA\'EE\'E3\'EE \'F4\'E0\'E9\'EB\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i launch_params} \cell }{- \'F1\'F2\'F0\'EE\'EA\'E0 \'F1 \'E2\'F5\'EE\'E4\'ED\'FB\'EC\'E8 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'E0\'EC\'E8, \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'FB\'EC\'E8 \'E4\'EB\'FF \'F0\'E0\'E1\'EE\'F2\'FB \'F1\'EA\'F0\'E8\'EF\'F2\'E0 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid true, \'E5\'F1\'EB\'E8 \'F1\'EA\'F0\'E8\'EF\'F2 \'F1\'F0\'E0\'E1\'EE\'F2\'E0\'EB \'F3\'F1\'EF\'E5\'F8\'ED\'EE \'E8 \'EA\'EE\'F0\'F0\'E5\'EA\'F2\'ED\'EE, false - \'E8\'ED\'E0\'F7\'E5 \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b program.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 RelaxarionOscillations\par \pard\plain 
+{\tc\tcl2 \v RelaxarionOscillations}
+{\xe \v RelaxarionOscillations}
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+\par
+{
+{\f2 #include <calculation.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b RelaxarionOscillations} ({\b DataParser} config, float *start_point)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b SetSolution} (float *solution)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D3\'F1\'F2\'E0\'ED\'EE\'E2\'EA\'E0 \'E4\'F0\'F3\'E3\'E8\'F5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'EA\'E8 \'E2 \'F2\'EE\'F7\'EA\'F3-\'F0\'E5\'F8\'E5\'ED\'E8\'E5. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+float * {\b GetSolution} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F2\'EE\'F7\'EA\'E8-\'F0\'E5\'F8\'E5\'ED\'E8\'FF }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b CalculateSolution} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'E0\'F1\'F7\'B8\'F2 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'EA\'E8-\'F0\'E5\'F8\'E5\'ED\'E8\'FF \'E2 \'F0\'E5\'E7\'F3\'EB\'FC\'F2\'E0\'F2\'E5 \'F0\'E5\'EB\'E0\'EA\'F1\'E0\'F6\'E8\'EE\'ED\'ED\'FB\'F5 \'EA\'EE\'EB\'E5\'E1\'E0\'ED\'E8\'E9 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~RelaxarionOscillations} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b DisplayTheoreticalSolutions} ({\b DataParser} config)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CF\'E5\'F7\'E0\'F2\'FC \'ED\'E0 \'FD\'EA\'F0\'E0\'ED \'F1\'F2\'E0\'F6\'E8\'EE\'ED\'E0\'F0\'ED\'FB\'F5 \'F2\'EE\'F7\'E5\'EA, \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E4\'EE\'EB\'E6\'ED\'FB \'EF\'EE\'EB\'F3\'F7\'E0\'F2\'FC\'F1\'FF \'E2 \'F2\'E5\'EE\'F0\'E8\'E8, \'E8\'F1\'F5\'EE\'E4\'FF \'E8\'E7 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'FB\'F5 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'EE\'E2 \'E7\'E0\'E4\'E0\'F7\'E8 }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v RelaxarionOscillations\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:RelaxarionOscillations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+RelaxarionOscillations::RelaxarionOscillations ({\b DataParser}  {\i config}, float *  {\i start_point} = {\f2 NULL})}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~RelaxarionOscillations\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:~RelaxarionOscillations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+RelaxarionOscillations::~RelaxarionOscillations ()}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v CalculateSolution\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:CalculateSolution}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RelaxarionOscillations::CalculateSolution ()}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D0\'E0\'F1\'F7\'B8\'F2 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'EA\'E8-\'F0\'E5\'F8\'E5\'ED\'E8\'FF \'E2 \'F0\'E5\'E7\'F3\'EB\'FC\'F2\'E0\'F2\'E5 \'F0\'E5\'EB\'E0\'EA\'F1\'E0\'F6\'E8\'EE\'ED\'ED\'FB\'F5 \'EA\'EE\'EB\'E5\'E1\'E0\'ED\'E8\'E9 }}\par
+}
+{\xe \v DisplayTheoreticalSolutions\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:DisplayTheoreticalSolutions}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void RelaxarionOscillations::DisplayTheoreticalSolutions ({\b DataParser}  {\i config}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CF\'E5\'F7\'E0\'F2\'FC \'ED\'E0 \'FD\'EA\'F0\'E0\'ED \'F1\'F2\'E0\'F6\'E8\'EE\'ED\'E0\'F0\'ED\'FB\'F5 \'F2\'EE\'F7\'E5\'EA, \'EA\'EE\'F2\'EE\'F0\'FB\'E5 \'E4\'EE\'EB\'E6\'ED\'FB \'EF\'EE\'EB\'F3\'F7\'E0\'F2\'FC\'F1\'FF \'E2 \'F2\'E5\'EE\'F0\'E8\'E8, \'E8\'F1\'F5\'EE\'E4\'FF \'E8\'E7 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'FB\'F5 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'EE\'E2 \'E7\'E0\'E4\'E0\'F7\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i config} \cell }{- \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0, \'F5\'F0\'E0\'ED\'FF\'F9\'E8\'E9 \'E2 \'F1\'E5\'E1\'E5 \'E2\'F1\'E5 \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'FB\'E5 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'FB \'E7\'E0\'E4\'E0\'F7\'E8 \cell }
+{\row }
+}
+}}
+{\xe \v GetSolution\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:GetSolution}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+float * RelaxarionOscillations::GetSolution ()}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F2\'EE\'F7\'EA\'E8-\'F0\'E5\'F8\'E5\'ED\'E8\'FF }}\par
+}
+{\xe \v SetSolution\:RelaxarionOscillations}
+{\xe \v RelaxarionOscillations\:SetSolution}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void RelaxarionOscillations::SetSolution (float *  {\i solution} = {\f2 NULL})}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D3\'F1\'F2\'E0\'ED\'EE\'E2\'EA\'E0 \'E4\'F0\'F3\'E3\'E8\'F5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2 \'F2\'EE\'F7\'EA\'E8 \'E2 \'F2\'EE\'F7\'EA\'F3-\'F0\'E5\'F8\'E5\'ED\'E8\'E5. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i solution} \cell }{- \'F2\'EE\'F7\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'E4\'EB\'FF \'EF\'F0\'E8\'F1\'E2\'E0\'E8\'E2\'E0\'ED\'E8\'FF \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b calculation.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b calculation.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 TypesChange\par \pard\plain 
+{\tc\tcl2 \v TypesChange}
+{\xe \v TypesChange}
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+\par
+{
+{\f2 #include <types.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b TypesChange} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~TypesChange} ()\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F1\'F2\'E0\'F2\'E8\'F7\'E5\'F1\'EA\'E8\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static char * {\b FloatToCharArray} (float numb, int precision=6)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'E8\'EC\'E2\'EE\'EB\'FC\'ED\'EE\'E3\'EE \'EC\'E0\'F1\'F1\'E8\'E2\'E0, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E3\'EE \'E8\'E7 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 \'F1 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'EE\'E9 \'F2\'EE\'F7\'ED\'EE\'F1\'F2\'FC\'FE \'E7\'ED\'E0\'EA\'EE\'E2 \'EF\'EE\'F1\'EB\'E5 \'E7\'E0\'EF\'FF\'F2\'EE\'E9 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b IntToString} (int numb)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'F6\'E5\'EB\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b FloatToString} (float numb)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b CharArrayToString} (char symbols[{\b MAX_ARRAY_SIZE}])\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 \'F1\'E8\'EC\'E2\'EE\'EB\'EE\'E2 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b PointToString} (float *point, int first_pos, int last_pos)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 ( p1, p2, ..., pn ) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b IntPointToString} (int *point, int first_pos, int last_pos)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 ( p1, p2, ..., pn ) }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b PointCoordinatesToString} (float *point, int first_pos, int last_pos)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 p1 p2 ... pn. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static vector< float > {\b PointToFloatVector} (float *point)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB, \'F5\'F0\'E0\'ED\'FF\'F9\'E5\'E3\'EE \'E2 \'F1\'E5\'E1\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static float * {\b FloatVectorToPoint} (vector< float > vect_point)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F2\'EE\'F7\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'E2\'E5\'EA\'F2\'EE\'F0\'E0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v TypesChange\:TypesChange}
+{\xe \v TypesChange\:TypesChange}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TypesChange::TypesChange (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~TypesChange\:TypesChange}
+{\xe \v TypesChange\:~TypesChange}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+TypesChange::~TypesChange (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v CharArrayToString\:TypesChange}
+{\xe \v TypesChange\:CharArrayToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::CharArrayToString (char  {\i symbols}[MAX_ARRAY_SIZE]){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 \'F1\'E8\'EC\'E2\'EE\'EB\'EE\'E2 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i symbols} \cell }{- \'F1\'E8\'EC\'E2\'EE\'EB\'FC\'ED\'FB\'E9 \'EC\'E0\'F1\'F1\'E8\'E2 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'E2\'F1\'E5 \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'FB\'E5 \'ED\'E5\'EF\'F3\'F1\'F2\'FB\'E5 \'F1\'E8\'EC\'E2\'EE\'EB\'FB \'E8\'E7 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 \par
+}}}
+{\xe \v FloatToCharArray\:TypesChange}
+{\xe \v TypesChange\:FloatToCharArray}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static char* TypesChange::FloatToCharArray (float  {\i numb}, int  {\i precision} = {\f2 6}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'E8\'EC\'E2\'EE\'EB\'FC\'ED\'EE\'E3\'EE \'EC\'E0\'F1\'F1\'E8\'E2\'E0, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E3\'EE \'E8\'E7 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 \'F1 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'EE\'E9 \'F2\'EE\'F7\'ED\'EE\'F1\'F2\'FC\'FE \'E7\'ED\'E0\'EA\'EE\'E2 \'EF\'EE\'F1\'EB\'E5 \'E7\'E0\'EF\'FF\'F2\'EE\'E9 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i numb} \cell }{- \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i precision} \cell }{- \'F2\'EE\'F7\'ED\'EE\'F1\'F2\'FC \'E7\'ED\'E0\'EA\'EE\'E2 \'EF\'EE\'F1\'EB\'E5 \'E7\'E0\'EF\'FF\'F2\'EE\'E9. \'CF\'EE \'F3\'EC\'EE\'EB\'F7\'E0\'ED\'E8\'FE \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E5 \'FD\'F2\'EE\'E3\'EE \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'E0 \'F0\'E0\'E2\'ED\'EE 6 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'E8\'EC\'E2\'EE\'EB\'FC\'ED\'FB\'E9 \'EC\'E0\'F1\'F1\'E8\'E2, \'F5\'F0\'E0\'ED\'FF\'F9\'E8\'E9 \'E2 \'F1\'E5\'E1\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \par
+}}}
+{\xe \v FloatToString\:TypesChange}
+{\xe \v TypesChange\:FloatToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::FloatToString (float  {\i numb}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i numb} \cell }{- \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \par
+}}}
+{\xe \v FloatVectorToPoint\:TypesChange}
+{\xe \v TypesChange\:FloatVectorToPoint}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static float* TypesChange::FloatVectorToPoint (vector< float >  {\i vect_point}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F2\'EE\'F7\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'E2\'E5\'EA\'F2\'EE\'F0\'E0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i vect_point} \cell }{- \'E2\'E5\'EA\'F2\'EE\'F0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F2\'EE\'F7\'EA\'E0 \par
+}}}
+{\xe \v IntPointToString\:TypesChange}
+{\xe \v TypesChange\:IntPointToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::IntPointToString (int *  {\i point}, int  {\i first_pos}, int  {\i last_pos}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'F6\'E5\'EB\'EE\'F7\'E8\'F1\'EB\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 ( p1, p2, ..., pn ) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i first_pos} \cell }{- \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8, \'EA\'EE\'F2\'EE\'F0\'F3\'FE \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'EF\'E5\'F0\'E5\'E2\'E5\'F1\'F2\'E8 \'E2 \'F1\'F2\'F0\'EE\'EA\'EE\'E2\'FB\'E9 \'E2\'E8\'E4 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i last_pos} \cell }{- \'EA\'EE\'ED\'E5\'F7\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0 \'E2\'E8\'E4\'E0 ( p1, p2, ..., pn ) \par
+}}}
+{\xe \v IntToString\:TypesChange}
+{\xe \v TypesChange\:IntToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::IntToString (int  {\i numb}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'EF\'F0\'E5\'EE\'E1\'F0\'E0\'E7\'EE\'E2\'E0\'ED\'ED\'EE\'E9 \'E8\'E7 \'F6\'E5\'EB\'EE\'E3\'EE \'F7\'E8\'F1\'EB\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i numb} \cell }{- \'F6\'E5\'EB\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0, \'F5\'F0\'E0\'ED\'FF\'F9\'E0\'FF \'E2 \'F1\'E5\'E1\'E5 \'F6\'E5\'EB\'EE\'E5 \'F7\'E8\'F1\'EB\'EE \par
+}}}
+{\xe \v PointCoordinatesToString\:TypesChange}
+{\xe \v TypesChange\:PointCoordinatesToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::PointCoordinatesToString (float *  {\i point}, int  {\i first_pos}, int  {\i last_pos}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 p1 p2 ... pn. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i first_pos} \cell }{- \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8, \'EA\'EE\'F2\'EE\'F0\'F3\'FE \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'EF\'E5\'F0\'E5\'E2\'E5\'F1\'F2\'E8 \'E2 \'F1\'F2\'F0\'EE\'EA\'EE\'E2\'FB\'E9 \'E2\'E8\'E4 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i last_pos} \cell }{- \'EA\'EE\'ED\'E5\'F7\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0 \'E2\'E8\'E4\'E0 p1 p2 ... pn \par
+}}}
+{\xe \v PointToFloatVector\:TypesChange}
+{\xe \v TypesChange\:PointToFloatVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static vector<float> TypesChange::PointToFloatVector (float *  {\i point}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'E2\'E5\'EA\'F2\'EE\'F0\'E0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB, \'F5\'F0\'E0\'ED\'FF\'F9\'E5\'E3\'EE \'E2 \'F1\'E5\'E1\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'E2\'E5\'EA\'F2\'EE\'F0 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'F5 \'F7\'E8\'F1\'E5\'EB \par
+}}}
+{\xe \v PointToString\:TypesChange}
+{\xe \v TypesChange\:PointToString}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static string TypesChange::PointToString (float *  {\i point}, int  {\i first_pos}, int  {\i last_pos}){\f2 [inline]}, {\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F2 \'F1\'F2\'F0\'EE\'EA\'E8, \'F5\'F0\'E0\'ED\'FF\'F9\'F3\'FE \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'E5\'ED\'ED\'FB\'E5 \'E2\'E5\'F9\'E5\'F1\'F2\'E2\'E5\'ED\'ED\'FB\'E5 \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \'E2 \'E2\'E8\'E4\'E5 ( p1, p2, ..., pn ) }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i point} \cell }{- \'F2\'EE\'F7\'EA\'E0 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i first_pos} \cell }{- \'ED\'E0\'F7\'E0\'EB\'FC\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8, \'EA\'EE\'F2\'EE\'F0\'F3\'FE \'ED\'E5\'EE\'E1\'F5\'EE\'E4\'E8\'EC\'EE \'EF\'E5\'F0\'E5\'E2\'E5\'F1\'F2\'E8 \'E2 \'F1\'F2\'F0\'EE\'EA\'EE\'E2\'FB\'E9 \'E2\'E8\'E4 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i last_pos} \cell }{- \'EA\'EE\'ED\'E5\'F7\'ED\'E0\'FF \'EF\'EE\'E7\'E8\'F6\'E8\'FF \'EA\'EE\'EE\'F0\'E4\'E8\'ED\'E0\'F2\'FB \'F2\'EE\'F7\'EA\'E8 \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid \'F1\'F2\'F0\'EE\'EA\'E0 \'E2\'E8\'E4\'E0 ( p1, p2, ..., pn ) \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b types.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D4\'E0\'E9\'EB\'FB{\tc \v \'D4\'E0\'E9\'EB\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB arithmetic.h\par \pard\plain 
+{\tc\tcl2 \v arithmetic.h}
+{\xe \v arithmetic.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <math.h>}\par
+{\f2 #include <windows.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <omp.h>}\par
+{\f2 #include <iostream>}\par
+{\f2 #include <iomanip>}\par
+{\f2 #include <sstream>}\par
+{\f2 #include <string>}\par
+{\f2 #include <vector>}\par
+{\f2 #include <algorithm>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Arithmetics}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ARITHMETIC_H}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b MAX_DIM} = 20\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b MAX_ARRAY_SIZE} = 10000\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E0\'EA\'F0\'EE\'F1\'FB\par
+\pard\plain 
+{\xe \v ARITHMETIC_H\:arithmetic.h}
+{\xe \v arithmetic.h\:ARITHMETIC_H}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ARITHMETIC_H}}
+\par
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v MAX_ARRAY_SIZE\:arithmetic.h}
+{\xe \v arithmetic.h\:MAX_ARRAY_SIZE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int MAX_ARRAY_SIZE = 10000}}
+\par
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MAX_DIM\:arithmetic.h}
+{\xe \v arithmetic.h\:MAX_DIM}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int MAX_DIM = 20}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB calculation.cpp\par \pard\plain 
+{\tc\tcl2 \v calculation.cpp}
+{\xe \v calculation.cpp}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "calculation.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB calculation.h\par \pard\plain 
+{\tc\tcl2 \v calculation.h}
+{\xe \v calculation.h}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "parser.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b RelaxarionOscillations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB controller.cpp\par \pard\plain 
+{\tc\tcl2 \v controller.cpp}
+{\xe \v controller.cpp}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "controller.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB controller.h\par \pard\plain 
+{\tc\tcl2 \v controller.h}
+{\xe \v controller.h}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "calculation.h"}\par
+{\f2 #include "filter.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Controller}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const int {\b THREADS} = 4\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b dir_to_temp_file_trajectories} = "../risovalka/risovalka/trajectories"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static const char * {\b path_to_file_trajectories} = "../risovalka/risovalka/trajectories.txt"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static const char * {\b path_to_file_parameters} = "../risovalka/risovalka/parameters.txt"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static const char * {\b path_to_file_all_stationary_points} = "all_stationary_points.txt"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static const char * {\b path_to_file_start_points} = "start_points.txt"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b path_to_app_risovalka} = "../risovalka/risovalka/debug/risovalka.exe"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static string {\b path_to_app_risovalka3d} = "../risovalka/risovalka/risovalka3d.py"\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v dir_to_temp_file_trajectories\:controller.h}
+{\xe \v controller.h\:dir_to_temp_file_trajectories}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string dir_to_temp_file_trajectories = "../risovalka/risovalka/trajectories"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_app_risovalka\:controller.h}
+{\xe \v controller.h\:path_to_app_risovalka}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string path_to_app_risovalka = "../risovalka/risovalka/debug/risovalka.exe"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_app_risovalka3d\:controller.h}
+{\xe \v controller.h\:path_to_app_risovalka3d}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+string path_to_app_risovalka3d = "../risovalka/risovalka/risovalka3d.py"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_file_all_stationary_points\:controller.h}
+{\xe \v controller.h\:path_to_file_all_stationary_points}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* path_to_file_all_stationary_points = "all_stationary_points.txt"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_file_parameters\:controller.h}
+{\xe \v controller.h\:path_to_file_parameters}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* path_to_file_parameters = "../risovalka/risovalka/parameters.txt"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_file_start_points\:controller.h}
+{\xe \v controller.h\:path_to_file_start_points}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* path_to_file_start_points = "start_points.txt"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v path_to_file_trajectories\:controller.h}
+{\xe \v controller.h\:path_to_file_trajectories}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* path_to_file_trajectories = "../risovalka/risovalka/trajectories.txt"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v THREADS\:controller.h}
+{\xe \v controller.h\:THREADS}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const int THREADS = 4}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB filter.cpp\par \pard\plain 
+{\tc\tcl2 \v filter.cpp}
+{\xe \v filter.cpp}
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "filter.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB filter.h\par \pard\plain 
+{\tc\tcl2 \v filter.h}
+{\xe \v filter.h}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "parser.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b FilterPoints}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static const char * {\b path_to_output_file} = "different_stationary_points.txt"\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v path_to_output_file\:filter.h}
+{\xe \v filter.h\:path_to_output_file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const char* path_to_output_file = "different_stationary_points.txt"{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB main.cpp\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "controller.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E7\'E0\'EF\'F3\'F1\'EA\'E0 \'EF\'F0\'EE\'E5\'EA\'F2\'E0 }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CE\'F1\'ED\'EE\'E2\'ED\'EE\'E9, \'E7\'E0\'EF\'F3\'F1\'EA\'E0\'E5\'EC\'FB\'E9 \'F4\'E0\'E9\'EB \'EF\'F0\'EE\'E5\'EA\'F2\'E0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E7\'E0\'EF\'F3\'F1\'EA\'E0 \'EF\'F0\'EE\'E5\'EA\'F2\'E0 }}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB operations.h\par \pard\plain 
+{\tc\tcl2 \v operations.h}
+{\xe \v operations.h}
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "arithmetic.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b PointOperations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB parser.cpp\par \pard\plain 
+{\tc\tcl2 \v parser.cpp}
+{\xe \v parser.cpp}
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "parser.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB parser.h\par \pard\plain 
+{\tc\tcl2 \v parser.h}
+{\xe \v parser.h}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "types.h"}\par
+{\f2 #include "program.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b DataParser}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const string {\b pyscriptname} = "parser.py"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const string {\b configfile} = "data.config"\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const string {\b readsection} = "data_program"\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+{\xe \v configfile\:parser.h}
+{\xe \v parser.h\:configfile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const string configfile = "data.config"}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v pyscriptname\:parser.h}
+{\xe \v parser.h\:pyscriptname}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const string pyscriptname = "parser.py"}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v readsection\:parser.h}
+{\xe \v parser.h\:readsection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const string readsection = "data_program"}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB parser.py\par \pard\plain 
+{\tc\tcl2 \v parser.py}
+{\xe \v parser.py}
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b parser}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.has_ParamOption} (config, section, option)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.has_Params} (config, section, options)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.get_ListNecessaryOptions} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.get_ListAuxOptions} (points_source)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.parse_Params} (config, section, options)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+def {\b parser.parser_ConfigData} ({\b configfile}, section)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'E5\'F0\'E5\'EC\'E5\'ED\'ED\'FB\'E5\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+tuple {\b parser.configfile} = str(sys.argv[1])\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+tuple {\b parser.reading_section} = str(sys.argv[2])\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB program.h\par \pard\plain 
+{\tc\tcl2 \v program.h}
+{\xe \v program.h}
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "types.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b ProgramOperations}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB types.h\par \pard\plain 
+{\tc\tcl2 \v types.h}
+{\xe \v types.h}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "operations.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b TypesChange}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC\par 
+\pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

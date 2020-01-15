@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_controller" kind="class" language="C++" prot="public">
+    <compoundname>Controller</compoundname>
+    <includes refid="controller_8h" local="no">controller.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controller_1a1bfe3cf37d26ee967eced3a223c46961" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Controller::file_trajectories[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>file_trajectories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="57" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1abdd2944c13a29dd2b1e6b2051db9739a" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Controller::file_united_trajectories</definition>
+        <argsstring></argsstring>
+        <name>file_united_trajectories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="58" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a5e1ba2804a12521e6e9a43fabb5ed025" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Controller::file_parameters</definition>
+        <argsstring></argsstring>
+        <name>file_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="59" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a40ab0f7554244a811e021ab60ff52474" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Controller::file_start_points</definition>
+        <argsstring></argsstring>
+        <name>file_start_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="60" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a72ec042c90e54a5766531b0dcdba58be" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* Controller::file_all_stationary_points</definition>
+        <argsstring></argsstring>
+        <name>file_all_stationary_points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="61" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a1b9a0e8b63500dbe4f4ee0dba6cfb0ae" prot="private" static="no" mutable="no">
+        <type><ref refid="class_data_parser" kindref="compound">DataParser</ref></type>
+        <definition>DataParser Controller::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="62" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controller_1a95c56822d667e94b031451729ce069a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>()</argsstring>
+        <name>Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="44" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a17abb2cec6c0109e9b2df3cdc082eaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+<para>Запуск работы контроллера. Контроллер последовательно, в нужном порядке запускает функции, составлящие основной функционал данной программы </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="45" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="11" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="46" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="193" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_controller_1a30446bbf0e09fbf6aedf1a12d17cf0cc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::OpenAuxFiles</definition>
+        <argsstring>()</argsstring>
+        <name>OpenAuxFiles</name>
+        <briefdescription>
+<para>Открытие всех вспомогательных файлов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="49" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ad8c2392ae29f489fb4534728eed0f6c1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::CloseAuxFiles</definition>
+        <argsstring>()</argsstring>
+        <name>CloseAuxFiles</name>
+        <briefdescription>
+<para>Закрытие всех вспомогательных файлов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="50" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="184" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ad3a3cb322def1d00e09bd491d3461e6f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::RunCalculations</definition>
+        <argsstring>()</argsstring>
+        <name>RunCalculations</name>
+        <briefdescription>
+<para>Запуск вычислений для поиска всех устойчивых состояний </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="51" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="90" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a17394afcc180a82c9aca829a7fd4b761" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::SearchStationaryPoint</definition>
+        <argsstring>(float *solution, FilterPoints *filter)</argsstring>
+        <name>SearchStationaryPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>solution</declname>
+        </param>
+        <param>
+          <type><ref refid="class_filter_points" kindref="compound">FilterPoints</ref> *</type>
+          <declname>filter</declname>
+        </param>
+        <briefdescription>
+<para>Поиск стационарного состояния для данной точки (solution) и ее добавление в фильтр различных точек (filter) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка, для которой будет осуществляться поиск </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- фильтр различных точек </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="52" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="42" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a5609b2411a28f95839466deba1c7595b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::DrawPhasePortrait</definition>
+        <argsstring>()</argsstring>
+        <name>DrawPhasePortrait</name>
+        <briefdescription>
+<para>Отрисовка фазового портрета с помощью запуска сторонних программ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="53" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="148" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1abae5e646ad8d71ebf379617677fb027c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::UniteFiles</definition>
+        <argsstring>()</argsstring>
+        <name>UniteFiles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="54" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp" bodystart="159" bodyend="179"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" line="41" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.h" bodystart="41" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_controller_1ad8c2392ae29f489fb4534728eed0f6c1" prot="private" virt="non-virtual"><scope>Controller</scope><name>CloseAuxFiles</name></member>
+      <member refid="class_controller_1a1b9a0e8b63500dbe4f4ee0dba6cfb0ae" prot="private" virt="non-virtual"><scope>Controller</scope><name>config</name></member>
+      <member refid="class_controller_1a95c56822d667e94b031451729ce069a9" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="class_controller_1a5609b2411a28f95839466deba1c7595b" prot="private" virt="non-virtual"><scope>Controller</scope><name>DrawPhasePortrait</name></member>
+      <member refid="class_controller_1a72ec042c90e54a5766531b0dcdba58be" prot="private" virt="non-virtual"><scope>Controller</scope><name>file_all_stationary_points</name></member>
+      <member refid="class_controller_1a5e1ba2804a12521e6e9a43fabb5ed025" prot="private" virt="non-virtual"><scope>Controller</scope><name>file_parameters</name></member>
+      <member refid="class_controller_1a40ab0f7554244a811e021ab60ff52474" prot="private" virt="non-virtual"><scope>Controller</scope><name>file_start_points</name></member>
+      <member refid="class_controller_1a1bfe3cf37d26ee967eced3a223c46961" prot="private" virt="non-virtual"><scope>Controller</scope><name>file_trajectories</name></member>
+      <member refid="class_controller_1abdd2944c13a29dd2b1e6b2051db9739a" prot="private" virt="non-virtual"><scope>Controller</scope><name>file_united_trajectories</name></member>
+      <member refid="class_controller_1a30446bbf0e09fbf6aedf1a12d17cf0cc" prot="private" virt="non-virtual"><scope>Controller</scope><name>OpenAuxFiles</name></member>
+      <member refid="class_controller_1a17abb2cec6c0109e9b2df3cdc082eaad" prot="public" virt="non-virtual"><scope>Controller</scope><name>Run</name></member>
+      <member refid="class_controller_1ad3a3cb322def1d00e09bd491d3461e6f" prot="private" virt="non-virtual"><scope>Controller</scope><name>RunCalculations</name></member>
+      <member refid="class_controller_1a17394afcc180a82c9aca829a7fd4b761" prot="private" virt="non-virtual"><scope>Controller</scope><name>SearchStationaryPoint</name></member>
+      <member refid="class_controller_1abae5e646ad8d71ebf379617677fb027c" prot="private" virt="non-virtual"><scope>Controller</scope><name>UniteFiles</name></member>
+      <member refid="class_controller_1a0ab87934c4f7a266cfdb86e0f36bc1b5" prot="public" virt="non-virtual"><scope>Controller</scope><name>~Controller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

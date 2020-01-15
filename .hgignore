@@ -1,0 +1,85 @@
+﻿#glob - означает, что далее будут описания файлов и папок с масками, используемые в ОС ("*", "?")
+syntax: glob
+
+# игнорируем папку
+cuda_SearchCycles/Debug
+cuda_SearchCycles/Release
+cuda_SearchCycles/ipch
+cuda_SearchCycles/.idea
+cuda_SearchCycles/_UpgradeReport_Files
+RelaxationOscillations/Debug
+RelaxationOscillations/Release
+RelaxationOscillations/ipch
+RelaxationOscillations/.idea
+RelaxationOscillations/_UpgradeReport_Files
+risovalka/Screenshots
+Screenshots
+risovalka/risovalka
+RelaxationOscillations/.idea/
+
+#игнорируем файл
+cuda_SearchCycles/input.txt
+cuda_SearchCycles/output.txt
+*.sdf
+*.suo
+*.pdb
+*.orig
+*.aux
+*.bbl
+*.blg
+*.pro.user
+*.user
+*.log
+*.gz
+*.toc
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.dvi
+*.zip.txt
+risovalka/risovalka/risovalka.pro
+risovalka/risovalka/trajectories.txt
+risovalka/risovalka/parameters.txt
+
+#далее используем регулярные выражения
+#syntax: regexp
+#игнорирование файлов с определенным расширением, кроме других определенных
+#путь.+?\.(?!(тип1|тип2)).*
+cuda_SearchCycles/different_cycles.txt
+cuda_SearchCycles/cuda_SearchCycles.vcxproj.filters
+cuda_SearchCycles/all_cycles.txt
+cuda_SearchCycles/data.config
+cuda_SearchCycles/cuda_SearchCycles.opensdf
+cuda_SearchCycles/all_pointsequences.txt
+RelaxationOscillations/all_relaxostillations.txt
+RelaxationOscillations/in.txt
+RelaxationOscillations/RelaxationOscillations.vcxproj.filters
+RelaxationOscillations/ipch/relaxationoscillations-5983de75/relaxationoscillations-1df5abb7.ipch
+RelaxationOscillations/RelaxationOscillations.opensdf
+RelaxationOscillations/data.config
+RelaxationOscillations/.idea/workspace.xml
+RelaxationOscillations/.idea/vcs.xml
+RelaxationOscillations/.idea/scopes/scope_settings.xml
+RelaxationOscillations/.idea/modules.xml
+RelaxationOscillations/.idea/misc.xml
+RelaxationOscillations/.idea/encodings.xml
+RelaxationOscillations/.idea/dictionaries/User.xml
+RelaxationOscillations/.idea/RelaxationOscillations.iml
+RelaxationOscillations/.idea/.name
+cuda_SearchCycles/bred.txt
+cuda_SearchCycles/all_pointsequences1.txt
+RelaxationOscillations/ipch/relaxationoscillations-2888fd4e/relaxationoscillations-1df5abb7.ipch
+RelaxationOscillations/stationary_points.txt
+RelaxationOscillations/RelaxationOscillations.vcxproj
+cuda_SearchCycles/UpgradeLog.XML
+RelaxationOscillations/UpgradeLog.XML
+Theory/Relaxation oscillations/Phase portraits/alpha=5, beta=3/For common picture.log
+RelaxationOscillations/start_points.txt
+
+*_stationary_points.txt
+RelaxationOscillations/commands_for_gnuplot.txt
+risovalka/risovalka/trajectories2.txt
+risovalka/risovalka/trajectories3.txt
+risovalka/risovalka/trajectories1.txt
+risovalka/risovalka/trajectories0.txt

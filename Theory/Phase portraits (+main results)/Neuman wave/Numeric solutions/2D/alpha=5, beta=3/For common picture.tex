@@ -1,0 +1,67 @@
+\documentclass[12pt]{article} 
+\usepackage[T2A]{fontenc} 
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{mathtext}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\parindent=1cm
+\pagestyle{plain}
+\onehalfspacing
+
+\begin{document}
+
+\begin{figure*}[t!]
+\begin{minipage}{0.5\linewidth}
+\center{\includegraphics{0,04.pdf} \\ а) $ d < 0{,}047 $ }
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+\center{\includegraphics{0,047.pdf} \\ б) $ 0{,}047 \le d < 0{,}056 $ }
+\end{minipage}
+
+\vspace{1cm}
+
+\begin{minipage}{0.5\linewidth}
+\center{\includegraphics{0,056.pdf} \\ в) $ 0{,}056 \le d < 0{,}058 $ }
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\linewidth}
+\center{\includegraphics{0,058.pdf} \\ г) $ d \ge 0{,}058 $ }
+\end{minipage}
+
+\vspace{0.5cm}
+
+\caption{Фазовые портреты отображения $ (\alpha = 5, \beta = 3) $}
+\end{figure}
+
+\mbox{} % обманка для перехода на новую страницу
+
+\newpage
+
+\hspace{-0.5cm}Случай $ \alpha = 5, \beta = 3 $:
+
+\begin{enumerate}
+
+\item $ d<d_1,\, d_1\approx0{,}047$ отображение имеет 5 устойчивых неподвижных точек и 8 неустойчивых (см. рис 1а).
+
+\item При $ d=d_1 $ пары точек $S_1$ и $S_2$, $S_5$ и $S_6$ образуются в следствие раздвоения соответствующих самосимметричных устойчивых точек $S_{12}$ и $S_{56}$. В результате бифуркации также возникают неустойчивые седла $U_9$ и $U_{10}$. 
+
+\item При $ d_1<d<d_2, d_2\approx0{,}056 $ отображение имеет 7 устойчивых неподвижных точек и 10 неустойчивых (см. рис 1б).
+	
+\item При $ d=d_2, $ неустойчивые узлы  $U_7$ и $U_8$ пропадают в результате слияния с седлами $U_9$ и $U_{10}$. 
+
+\item При $ d_2<d<d_3, d_3\approx0{,}058 $ отображение имеет 7 устойчивых неподвижных точек и 6 неустойчивых (см. рис 1в).  
+
+\item При $ d=d_3, $ устойчивые узлы $S_1$, $S_2$, $S_5$ и $S_6$ сливаются с седлами $U_1$, $U_2$, $U_5$ и $U_6$ соответственно и пропадают вместе с ними. 
+
+\item При $ d>d_3,\ $ отображение имеет 3 устойчивые неподвижные точки и 2 неустойчивые (см. рис 1г).
+
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,282 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{mathtext}
+\usepackage{graphics}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\parindent=1cm
+\pagestyle{plain}
+\onehalfspacing
+ 
+\begin{document}
+
+\begin{equation}
+	\dot{u_j} = d(u_{j+1}-2u_j+u_{j-1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \quad j = \overline{1,m},
+\end{equation}
+$$ \underline{u_0=u_1, \; u_m=u_{m+1}}, $$
+
+$$ u_j=u_j(t)>0, \;  m \ge 2, \; \lambda >> 1, \; \beta > 0, \; \alpha > 1 + \beta, $$
+$$ f(u), g(u) \in C^2(\mathbb{R}_+): \quad \mathbb{R}_+  = \{ u \in \mathbb{R}: u \geqslant 0\}, $$
+$$ 0 < \beta g(u) < \alpha, \; f(0) = g(0) = 1, \quad \forall u \in \mathbb{R}_+; $$
+$$ f(u), g(u), uf'(u), ug'(u), u^2f''(u), u^2g''(u) = O(1/u), \quad u \to +\infty. $$
+
+$$ u_1 = \mbox{exp} \left( \frac{x}{\varepsilon} \right), \; u_j = \mbox{exp} \left( \frac{x}{\varepsilon} + \sum\limits_{k=1}^{j-1} y_k \right), \quad j = \overline{2,m} , \quad \varepsilon = \frac{1}{\lambda} << 1. $$
+
+\begin{equation}
+	\dot{y_j} = d[\mbox{exp} \, y_{j+1} + \mbox{exp}(-y_j) - \mbox{exp} \, y_j - \mbox{exp}(-y_{j-1})],
+\end{equation}
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), \quad y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), \quad y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0),  $$
+$$ y_0 = y_m = 0, \quad j = \overline{1,m-1}.  $$
+
+\hfill
+
+$$ \dot{x} = -1 + \alpha f \left( \mbox{exp} \, \left( \frac{x(t-1)}{\varepsilon} \right) \right) - \beta g \left( \mbox{exp} \, \left( \frac{x}{\varepsilon} \right) \right) $$
+
+\hfill
+
+\begin{equation}
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+\end{equation}
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1} $$
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1) $$
+
+\hfill
+
+\newtheorem{theorem}{Theorem}
+\begin{theorem}
+For any stable point $z_*$ of mapping (3)  there exists a stable relaxational cycle with period $T_0$ in system (1).
+\end{theorem}
+
+\newpage
+
+$$
+	\begin{pmatrix}
+	 y_1(-0) \\
+	 \vdots \\
+	 y_{m-1}(-0)
+	\end{pmatrix}
+	\to
+	\begin{pmatrix}
+	 y_1(-0+h) \\
+	 \vdots \\
+	 y_{m-1}(-0+h)
+	\end{pmatrix}
+	\to
+	\dots
+	\to
+	\begin{pmatrix}
+	 y_1(T_0) \\
+	 \vdots \\
+	 y_{m-1}(T_0)
+	\end{pmatrix}.
+$$
+
+\bigskip
+
+$$
+y_j(t+h) = y_j(t) + \frac{h}{6}\:(k_1 +2k_2 + 2k_3 + k_4), \quad j = \overline{1, m-1}\;,
+$$
+$$
+\begin{array}{l}
+k_1 = d ( \exp(y_{j+1}) + \exp(-y_j) - \exp(y_j) - \exp(-y_{j-1}) ) ,\\
+k_2 = d ( \exp(y_{j+1} + \frac{h}{2}k_1) + \exp(-y_j + \frac{h}{2}k_1) - \exp(y_j + \frac{h}{2}k_1) - \exp(-y_{j-1} + \frac{h}{2}k_1) ) ,\\
+k_3 = d ( \exp(y_{j+1} + \frac{h}{2}k_2) + \exp(-y_j + \frac{h}{2}k_2) - \exp(y_j + \frac{h}{2}k_2) - \exp(-y_{j-1} + \frac{h}{2}k_2) ) ,\\
+k_4 = d ( \exp(y_{j+1} + hk_3) + \exp(-y_j + hk_3) - \exp(y_j + hk_3) - \exp(-y_{j-1} + hk_3) ).\\
+\end{array}
+$$
+
+\bigskip
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), \quad y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), \quad y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0),  $$
+$$ y_0 = y_m = 0, \quad j = \overline{1,m-1}.  $$
+
+\hfill
+
+$$ U_1 = \{(\alpha, \beta): \alpha > (\beta+1)(\beta+2), \; \beta > 0\} $$
+$$ U_2 = \{(\alpha, \beta): 1 < \alpha < 2, \; 0 < \beta<(\alpha-1)(2-\alpha)\}  $$
+$$ U_3 = \{(\alpha, \beta): 2\beta+2 < \alpha < (\beta+1)(\beta+2), \; \beta > 0\}  $$
+$$ U_4 = \{(\alpha, \beta): \mbox{max}(2, 1+\beta) < \alpha < 2\beta+2, \; \beta > 0\}  $$
+$$ U_5 = \{(\alpha, \beta): 1 < \alpha < 2, \; (\alpha-1)(2-\alpha) < \beta < \alpha-1\}  $$
+
+\hfill
+
+\begin{theorem}
+ѕри любых фиксированных значени€х $\alpha$ и $\beta$, удовлетвор€ющих включению $ (\alpha, \beta) \in U_1 \bigcup \ldots \bigcup U_5 $, и при всех достаточно малых $ d > 0 $ отображение $\Phi$ имеет не менее $m$ экспоненциально устойчивых неподвижных точек
+$$ O_{k_0}(d) = (z_{1,k_0}(d), z_{2,k_0}(d), \dots, z_{m-1,k_0}(d)), \quad k_0 = \overline{0,m-1}, $$
+компоненты которых при $ d \to 0 $ в случае $ (\alpha, \beta) \in U_1 \bigcup U_3 \bigcup U_4 $ допускают асимптотику
+$$ z_{j,k_0} = \ln \frac1d - \ln \frac{\beta+1}{\alpha-\beta-1} + \ln (k_0+1-j)+o(1), \quad j = \overline{1,k_0}, $$
+$$z_{j,k_0} = -\ln \frac1d - \ln \frac{\beta+1}{\alpha-\beta-1} + \ln (j-k_0)+o(1), \quad j = \overline{k_0+1,m-1}, $$
+а в случае $ (\alpha, \beta) \in U_2 \bigcup U_5 $ --- асимптотику
+$$ z_{j,k_0} = -(\alpha - 1) \ln \frac1d - (\alpha - 1)\ln (k_0+1-j) + \alpha \ln (\alpha - 1)+o(1), \quad j = \overline{1,k_0}, $$
+$$z_{j,k_0} = (\alpha - 1) \ln \frac1d + (\alpha - 1)\ln (j-k_0) - \alpha \ln (\alpha - 1)+o(1), \quad j = \overline{k_0+1,m-1}, $$
+
+\end{theorem}
+
+\hfill
+
+\newtheorem{lemma}{Ћемма}
+\begin{lemma}
+Ќулева€ неподвижна€ точка отображени€ (3) экпоненциально устойчива при любых значени€х параметров $ (\alpha, \beta) \in U_1 \bigcup \ldots \bigcup U_5 $ и при любом $ d>0 $.
+\end{lemma}
+
+\hfill
+
+$$ m = 2 $$
+$$ \dot{y} = d(e^{-y} - e^y) $$
+$$ \Phi(z): z \to y(T_0) $$
+
+\hfill
+
+$$ m = 3 $$
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(1 + e^{-y_2} - e^{y_2} - e^{-y_1})
+\end{cases}
+\end{array}
+$$
+
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0)
+         \end{pmatrix}
+$$
+
+\hfill
+
+$$ m = 4 $$
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(e^{y_3} + e^{-y_2} - e^{y_2} - e^{-y_1}) \\
+\dot{y_3} = d(1 + e^{-y_3} - e^{y_3} - e^{-y_2})
+\end{cases}
+\end{array}
+$$
+
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2 \\
+          z_3
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0) \\
+          y_3(T_0)
+         \end{pmatrix}
+$$
+
+\hfill
+
+$$ m = 2 $$
+$$ \Phi(z): z \to y(T_0) $$
+
+\hfill
+
+$$ m = 3 $$
+
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0)
+         \end{pmatrix}
+$$
+
+\hfill
+
+\noindent\textit{Ivanovsky L., Samsonov S. } Dynamics of two-dimensional mapping and stable regimes of singularly perturbed neuron system. // Computer Technologies in Sciences. Methods of Simulations and Supercomputers. Proceedings, 2015
+
+\hfill
+
+\noindent\textit{Ivanovsky L., Samsonov S. } Phase reconstructions of two-dimensional dynamic system with impulsive influences // Modelling and Analysis of Information Systems , 2014. V. 21, є6. P. 179 Ц 181.
+
+\hfill
+
+\noindent\textit{Glyzin S.D., Kolesov A.Yu, Rozov N.Kh.} Relaxation self-oscillations in neuron systems. III // Differential Equations. 2012. V. 48, є 2. P. 159 Ц 175.
+
+\hfill
+
+\noindent\textit{Kaschenko S.A., Mayorov V.V.} Models of wave memory. M.: Librokom, 2009.
+
+\hfill
+
+$$ \alpha = 1.1, \quad \beta = 0.05 $$
+
+\hfill
+
+$$ \alpha = 5.0, \quad \beta = 0.4, \quad d = 0.005 $$
+
+\hfill
+
+$$ \alpha = 1.9, \quad \beta = 0.1 $$
+
+\hfill
+
+$$ \alpha = 5.0, \quad \beta = 0.4 $$
+
+\hfill
+
+$$ \alpha = 4.0, \quad \beta = 2.3 $$
+
+\hfill
+
+\hfill
+
+$$ \alpha = 5.0, \quad \beta = 3.0, \quad d = 0.055 $$
+
+$$
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_n
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_n(T_0)
+          \end{pmatrix}
+$$
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_n(-0) = z_n $$
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1) $$
+
+\end{document} 

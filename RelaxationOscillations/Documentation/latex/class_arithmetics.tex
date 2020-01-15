@@ -1,0 +1,89 @@
+\hypertarget{class_arithmetics}{}\section{Класс Arithmetics}
+\label{class_arithmetics}\index{Arithmetics@{Arithmetics}}
+
+
+{\ttfamily \#include $<$arithmetic.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_arithmetics_afdaeab6d774c7f71d0abbf3723c2c76d}{Arithmetics} ()
+\item 
+\hyperlink{class_arithmetics_a93e2f5a9112c403aaceef9e1913dbd96}{$\sim$\+Arithmetics} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{class_arithmetics_a2496e1ae47ea96f3abd3dffc3b43d841}{Random\+Between} (float first\+\_\+val, float last\+\_\+val)
+\begin{DoxyCompactList}\small\item\em Возврат случайного числа из интервала \end{DoxyCompactList}\item 
+static int $\ast$ \hyperlink{class_arithmetics_a06388394a8a4162176567d6735fb4a39}{Get\+Next\+Grid\+Index} (int $\ast$grid\+\_\+idx, int steps)
+\begin{DoxyCompactList}\small\item\em Возврат следующего по счету многомерного целочисленного индекса, участвующего в формировании значений коорднинат точек сетки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_arithmetics_afdaeab6d774c7f71d0abbf3723c2c76d}{}\index{Arithmetics@{Arithmetics}!Arithmetics@{Arithmetics}}
+\index{Arithmetics@{Arithmetics}!Arithmetics@{Arithmetics}}
+\subsubsection[{Arithmetics}]{\setlength{\rightskip}{0pt plus 5cm}Arithmetics\+::\+Arithmetics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_arithmetics_afdaeab6d774c7f71d0abbf3723c2c76d}
+\hypertarget{class_arithmetics_a93e2f5a9112c403aaceef9e1913dbd96}{}\index{Arithmetics@{Arithmetics}!````~Arithmetics@{$\sim$\+Arithmetics}}
+\index{````~Arithmetics@{$\sim$\+Arithmetics}!Arithmetics@{Arithmetics}}
+\subsubsection[{$\sim$\+Arithmetics}]{\setlength{\rightskip}{0pt plus 5cm}Arithmetics\+::$\sim$\+Arithmetics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_arithmetics_a93e2f5a9112c403aaceef9e1913dbd96}
+
+
+\subsection{Методы}
+\hypertarget{class_arithmetics_a06388394a8a4162176567d6735fb4a39}{}\index{Arithmetics@{Arithmetics}!Get\+Next\+Grid\+Index@{Get\+Next\+Grid\+Index}}
+\index{Get\+Next\+Grid\+Index@{Get\+Next\+Grid\+Index}!Arithmetics@{Arithmetics}}
+\subsubsection[{Get\+Next\+Grid\+Index}]{\setlength{\rightskip}{0pt plus 5cm}static int$\ast$ Arithmetics\+::\+Get\+Next\+Grid\+Index (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{grid\+\_\+idx, }
+\item[{int}]{steps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_arithmetics_a06388394a8a4162176567d6735fb4a39}
+
+
+Возврат следующего по счету многомерного целочисленного индекса, участвующего в формировании значений коорднинат точек сетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em grid\+\_\+idx} & -\/ многомерный целочисленный индекс, относительно которого требуется получить следующий по счету индекс \\
+\hline
+{\em steps} & -\/ количество делений по каждой проекции области сетки. Оно определяет величину увеличения индекса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+следующий по счету многомерный целочисленный индекс 
+\end{DoxyReturn}
+\hypertarget{class_arithmetics_a2496e1ae47ea96f3abd3dffc3b43d841}{}\index{Arithmetics@{Arithmetics}!Random\+Between@{Random\+Between}}
+\index{Random\+Between@{Random\+Between}!Arithmetics@{Arithmetics}}
+\subsubsection[{Random\+Between}]{\setlength{\rightskip}{0pt plus 5cm}static float Arithmetics\+::\+Random\+Between (
+\begin{DoxyParamCaption}
+\item[{float}]{first\+\_\+val, }
+\item[{float}]{last\+\_\+val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_arithmetics_a2496e1ae47ea96f3abd3dffc3b43d841}
+
+
+Возврат случайного числа из интервала 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em first\+\_\+val} & -\/ левая граница интервала \\
+\hline
+{\em last\+\_\+val} & -\/ правая граница интервала \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+случайное число из интервала 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{arithmetic_8h}{arithmetic.\+h}\end{DoxyCompactItemize}

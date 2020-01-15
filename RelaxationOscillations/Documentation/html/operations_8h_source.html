@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>RelaxationOscillations: Исходный файл operations.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RelaxationOscillations
+   </div>
+   <div id="projectbrief">RelaxationOscillations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">operations.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="operations_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma region Вспомогательные заголовочные файлы</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="arithmetic_8h.html">arithmetic.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef OPERATIONS_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define OPERATIONS_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma region Описание структуры статического класса</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_point_operations.html">   15</a></span>&#160;<span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_point_operations.html">PointOperations</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_point_operations.html#a547905af69bcb06620ec91c2905b7650">   18</a></span>&#160;        <a class="code" href="class_point_operations.html#a547905af69bcb06620ec91c2905b7650">PointOperations</a>() { };</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_point_operations.html#ab2579f86d6be95165f93e343fcce078a">   19</a></span>&#160;        <a class="code" href="class_point_operations.html#ab2579f86d6be95165f93e343fcce078a">~PointOperations</a>() { };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #pragma region static public functions</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">   27</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(<span class="keywordtype">float</span> *point = NULL) { </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (point != NULL) <span class="comment">// процесс начинается в том случае, если обнуляемая точка существует</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++) </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    point[i] = 0.0; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_point_operations.html#a60f7b165f2a705d199f2e2932e1e3972">   37</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_point_operations.html#a60f7b165f2a705d199f2e2932e1e3972">ZeroizePoint</a>(<span class="keywordtype">int</span> *point = NULL) { </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">if</span> (point != NULL) <span class="comment">// процесс начинается в том случае, если обнуляемая точка существует</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++) </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    point[i] = 0; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_point_operations.html#a4f5463040b9da28ceeaa6a773dbf03da">   48</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_point_operations.html#a4f5463040b9da28ceeaa6a773dbf03da">SetPoint</a>(<span class="keywordtype">float</span> *point = NULL, <span class="keywordtype">float</span> *other_point = NULL) { </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> ((point != NULL) &amp;&amp; (other_point != NULL)) <span class="comment">// процесс начинается, если обе точки существуют</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    point[i] = other_point[i];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// инициализация изначальной точки (point) другой точкой (other_point)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">   60</a></span>&#160;<span class="comment"></span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">InitPoint</a>(<span class="keywordtype">float</span> *point = NULL, <span class="keywordtype">float</span> *other_point = NULL) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(point);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_point_operations.html#a4f5463040b9da28ceeaa6a773dbf03da">SetPoint</a>(point, other_point);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_point_operations.html#a462940940e3ee8a60089a47b67a96cb6">   73</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_point_operations.html#a462940940e3ee8a60089a47b67a96cb6">IsEqualPoints</a>(<span class="keywordtype">float</span> *point1, <span class="keywordtype">float</span> *point2, <span class="keywordtype">float</span> eps) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span> ((point1 != NULL) &amp;&amp; (point2 != NULL)) <span class="comment">// процесс начинается, если обе точки существуют </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; ++i)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordflow">if</span> ((fabs(point1[i] - point2[i]) &gt;= eps))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_point_operations.html#af33f111f2d976cc64b79e4c0febacdbd">   88</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> *<a class="code" href="class_point_operations.html#af33f111f2d976cc64b79e4c0febacdbd">GetGridPoint</a>(<span class="keywordtype">float</span> *start_grid_point, <span class="keywordtype">int</span> *grid_idx, <span class="keywordtype">float</span> discr) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">float</span> *res = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(res);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">// процесс начинается, если начальная точка сетки и многомерный индекс для генерации существуют</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span> ((start_grid_point != NULL) &amp;&amp; (grid_idx != NULL)) </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    res[i] = start_grid_point[i]+grid_idx[i]*discr;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_point_operations.html#ae0ea740a7a33489e5ecc0cab9f76c332">  105</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> *<a class="code" href="class_point_operations.html#ae0ea740a7a33489e5ecc0cab9f76c332">GetOppositeGridPoint</a>(<span class="keywordtype">float</span> *start_grid_point, <span class="keywordtype">float</span> discr, <span class="keywordtype">float</span> steps, <span class="keywordtype">float</span> dim) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">float</span> *res = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(res);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (start_grid_point != NULL) <span class="comment">// процесс начинается, если стартовая точка генерации сетки существует</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt;= dim; i++)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    res[i] = start_grid_point[i]+discr*steps;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_point_operations.html#a5a47fc472dd2640d89b8c2af8a9d0906">  119</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> *<a class="code" href="class_point_operations.html#a5a47fc472dd2640d89b8c2af8a9d0906">GetRandomPointBetween</a>(<span class="keywordtype">float</span> *start_point, <span class="keywordtype">float</span> *opposite_point) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">float</span> *res = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(res);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span> ((start_point != NULL) &amp;&amp; (opposite_point != NULL)) <span class="comment">// процесс начинается, если обе точки существуют </span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <span class="keywordtype">float</span> first_val = min(start_point[i], opposite_point[i]);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordtype">float</span> last_val = max(start_point[i], opposite_point[i]);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    res[i] = <a class="code" href="class_arithmetics.html#a2496e1ae47ea96f3abd3dffc3b43d841">Arithmetics::RandomBetween</a>(first_val, last_val);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_point_operations.html#ae4d32b67ba42d0f9ad372b431b9af81b">  141</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> *<a class="code" href="class_point_operations.html#ae4d32b67ba42d0f9ad372b431b9af81b">GluePoint</a>(<span class="keywordtype">float</span> *point1, <span class="keywordtype">int</span> dim1, <span class="keywordtype">float</span> *point2, <span class="keywordtype">int</span> dim2) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keywordtype">float</span> *res = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">ZeroizePoint</a>(res);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">if</span> ((point1 != NULL) &amp;&amp; (point2 != NULL)) { <span class="comment">// процесс начинается, если обе точки существуют </span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="keywordflow">while</span> (i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                    <span class="keywordflow">if</span> (i &lt;= dim1) <span class="comment">// запись координат первой точки в &quot;склеенную&quot; точку</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        res[i] = point1[i];</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    <span class="keywordflow">if</span> ((i &gt; dim1) &amp;&amp; (i &lt;= dim1+dim2)) <span class="comment">// запись координат второй точки в &quot;склеенную&quot; точку</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        res[i] = point2[i-dim1];</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    i++;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_point_operations_html_af856a7ce25a39cb868725f8e25f65296"><div class="ttname"><a href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">PointOperations::InitPoint</a></div><div class="ttdeci">static void InitPoint(float *point=NULL, float *other_point=NULL)</div><div class="ttdoc">Инициализация изначальной точкй другой точкой </div><div class="ttdef"><b>Definition:</b> operations.h:60</div></div>
+<div class="ttc" id="arithmetic_8h_html_abdb68df7b02fded293d9a021b5d4b98b"><div class="ttname"><a href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a></div><div class="ttdeci">const int MAX_DIM</div><div class="ttdef"><b>Definition:</b> arithmetic.h:35</div></div>
+<div class="ttc" id="class_point_operations_html_ae0ea740a7a33489e5ecc0cab9f76c332"><div class="ttname"><a href="class_point_operations.html#ae0ea740a7a33489e5ecc0cab9f76c332">PointOperations::GetOppositeGridPoint</a></div><div class="ttdeci">static float * GetOppositeGridPoint(float *start_grid_point, float discr, float steps, float dim)</div><div class="ttdoc">Возврат другой точки сетки, противоположной начальной (относительно "центральной" точки сетки) ...</div><div class="ttdef"><b>Definition:</b> operations.h:105</div></div>
+<div class="ttc" id="class_point_operations_html_a462940940e3ee8a60089a47b67a96cb6"><div class="ttname"><a href="class_point_operations.html#a462940940e3ee8a60089a47b67a96cb6">PointOperations::IsEqualPoints</a></div><div class="ttdeci">static bool IsEqualPoints(float *point1, float *point2, float eps)</div><div class="ttdoc">Проверка пары точек на эквивалентность (близость). 2 точки эквивалентны, если каждая координата одной...</div><div class="ttdef"><b>Definition:</b> operations.h:73</div></div>
+<div class="ttc" id="class_point_operations_html_a97def43827da6fe4ad1004015f62f7fb"><div class="ttname"><a href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">PointOperations::ZeroizePoint</a></div><div class="ttdeci">static void ZeroizePoint(float *point=NULL)</div><div class="ttdoc">Обнуление координат вектора-точки с вещественными координатами </div><div class="ttdef"><b>Definition:</b> operations.h:27</div></div>
+<div class="ttc" id="class_point_operations_html"><div class="ttname"><a href="class_point_operations.html">PointOperations</a></div><div class="ttdef"><b>Definition:</b> operations.h:15</div></div>
+<div class="ttc" id="class_point_operations_html_a60f7b165f2a705d199f2e2932e1e3972"><div class="ttname"><a href="class_point_operations.html#a60f7b165f2a705d199f2e2932e1e3972">PointOperations::ZeroizePoint</a></div><div class="ttdeci">static void ZeroizePoint(int *point=NULL)</div><div class="ttdoc">Обнуление координат вектора-точки с целочисленными координатами </div><div class="ttdef"><b>Definition:</b> operations.h:37</div></div>
+<div class="ttc" id="class_point_operations_html_af33f111f2d976cc64b79e4c0febacdbd"><div class="ttname"><a href="class_point_operations.html#af33f111f2d976cc64b79e4c0febacdbd">PointOperations::GetGridPoint</a></div><div class="ttdeci">static float * GetGridPoint(float *start_grid_point, int *grid_idx, float discr)</div><div class="ttdoc">Возврат сгенерированной точки сетки </div><div class="ttdef"><b>Definition:</b> operations.h:88</div></div>
+<div class="ttc" id="arithmetic_8h_html"><div class="ttname"><a href="arithmetic_8h.html">arithmetic.h</a></div></div>
+<div class="ttc" id="class_point_operations_html_a5a47fc472dd2640d89b8c2af8a9d0906"><div class="ttname"><a href="class_point_operations.html#a5a47fc472dd2640d89b8c2af8a9d0906">PointOperations::GetRandomPointBetween</a></div><div class="ttdeci">static float * GetRandomPointBetween(float *start_point, float *opposite_point)</div><div class="ttdoc">Возврат случайной точки из многомерного кубика </div><div class="ttdef"><b>Definition:</b> operations.h:119</div></div>
+<div class="ttc" id="class_point_operations_html_a547905af69bcb06620ec91c2905b7650"><div class="ttname"><a href="class_point_operations.html#a547905af69bcb06620ec91c2905b7650">PointOperations::PointOperations</a></div><div class="ttdeci">PointOperations()</div><div class="ttdef"><b>Definition:</b> operations.h:18</div></div>
+<div class="ttc" id="class_arithmetics_html_a2496e1ae47ea96f3abd3dffc3b43d841"><div class="ttname"><a href="class_arithmetics.html#a2496e1ae47ea96f3abd3dffc3b43d841">Arithmetics::RandomBetween</a></div><div class="ttdeci">static float RandomBetween(float first_val, float last_val)</div><div class="ttdoc">Возврат случайного числа из интервала </div><div class="ttdef"><b>Definition:</b> arithmetic.h:59</div></div>
+<div class="ttc" id="class_point_operations_html_ab2579f86d6be95165f93e343fcce078a"><div class="ttname"><a href="class_point_operations.html#ab2579f86d6be95165f93e343fcce078a">PointOperations::~PointOperations</a></div><div class="ttdeci">~PointOperations()</div><div class="ttdef"><b>Definition:</b> operations.h:19</div></div>
+<div class="ttc" id="class_point_operations_html_a4f5463040b9da28ceeaa6a773dbf03da"><div class="ttname"><a href="class_point_operations.html#a4f5463040b9da28ceeaa6a773dbf03da">PointOperations::SetPoint</a></div><div class="ttdeci">static void SetPoint(float *point=NULL, float *other_point=NULL)</div><div class="ttdoc">Установка в изначальную точку новых значений координат другой точки </div><div class="ttdef"><b>Definition:</b> operations.h:48</div></div>
+<div class="ttc" id="class_point_operations_html_ae4d32b67ba42d0f9ad372b431b9af81b"><div class="ttname"><a href="class_point_operations.html#ae4d32b67ba42d0f9ad372b431b9af81b">PointOperations::GluePoint</a></div><div class="ttdeci">static float * GluePoint(float *point1, int dim1, float *point2, int dim2)</div><div class="ttdoc">Возврат "склеенной" точки </div><div class="ttdef"><b>Definition:</b> operations.h:141</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по RelaxationOscillations. Последние изменения: Сб 20 Июн 2015 13:35:59. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

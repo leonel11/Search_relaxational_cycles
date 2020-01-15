@@ -1,0 +1,59 @@
+\hypertarget{class_program_operations}{}\section{Класс Program\+Operations}
+\label{class_program_operations}\index{Program\+Operations@{Program\+Operations}}
+
+
+{\ttfamily \#include $<$program.\+h$>$}
+
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_program_operations_a8c235d376a548ad980c192634a2eaf22}{Run\+Exe\+File} (string app)
+\begin{DoxyCompactList}\small\item\em Запуск стороннего exe-\/файла \end{DoxyCompactList}\item 
+static bool \hyperlink{class_program_operations_a7d9d871067d78908033c6d538d1cd1e4}{Run\+Python\+Script} (string script, string launch\+\_\+params)
+\begin{DoxyCompactList}\small\item\em Запуск стороннего скрипта, написанного на языке Python. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Методы}
+\hypertarget{class_program_operations_a8c235d376a548ad980c192634a2eaf22}{}\index{Program\+Operations@{Program\+Operations}!Run\+Exe\+File@{Run\+Exe\+File}}
+\index{Run\+Exe\+File@{Run\+Exe\+File}!Program\+Operations@{Program\+Operations}}
+\subsubsection[{Run\+Exe\+File}]{\setlength{\rightskip}{0pt plus 5cm}static void Program\+Operations\+::\+Run\+Exe\+File (
+\begin{DoxyParamCaption}
+\item[{string}]{app}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_program_operations_a8c235d376a548ad980c192634a2eaf22}
+
+
+Запуск стороннего exe-\/файла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em app} & -\/ строка, хранящая в себе путь до приложения-\/экзешника \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_program_operations_a7d9d871067d78908033c6d538d1cd1e4}{}\index{Program\+Operations@{Program\+Operations}!Run\+Python\+Script@{Run\+Python\+Script}}
+\index{Run\+Python\+Script@{Run\+Python\+Script}!Program\+Operations@{Program\+Operations}}
+\subsubsection[{Run\+Python\+Script}]{\setlength{\rightskip}{0pt plus 5cm}static bool Program\+Operations\+::\+Run\+Python\+Script (
+\begin{DoxyParamCaption}
+\item[{string}]{script, }
+\item[{string}]{launch\+\_\+params}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_program_operations_a7d9d871067d78908033c6d538d1cd1e4}
+
+
+Запуск стороннего скрипта, написанного на языке Python. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em script} & -\/ строка, хранящая в себе путь до запускаемого питоновского файла \\
+\hline
+{\em launch\+\_\+params} & -\/ строка с входными параметрами, необходимыми для работы скрипта \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если скрипт сработал успешно и корректно, false -\/ иначе 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{program_8h}{program.\+h}\end{DoxyCompactItemize}

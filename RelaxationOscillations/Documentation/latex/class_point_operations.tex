@@ -1,0 +1,253 @@
+\hypertarget{class_point_operations}{}\section{Класс Point\+Operations}
+\label{class_point_operations}\index{Point\+Operations@{Point\+Operations}}
+
+
+{\ttfamily \#include $<$operations.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_point_operations_a547905af69bcb06620ec91c2905b7650}{Point\+Operations} ()
+\item 
+\hyperlink{class_point_operations_ab2579f86d6be95165f93e343fcce078a}{$\sim$\+Point\+Operations} ()
+\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_point_operations_a97def43827da6fe4ad1004015f62f7fb}{Zeroize\+Point} (float $\ast$point=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Обнуление координат вектора-\/точки с вещественными координатами \end{DoxyCompactList}\item 
+static void \hyperlink{class_point_operations_a60f7b165f2a705d199f2e2932e1e3972}{Zeroize\+Point} (int $\ast$point=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Обнуление координат вектора-\/точки с целочисленными координатами \end{DoxyCompactList}\item 
+static void \hyperlink{class_point_operations_a4f5463040b9da28ceeaa6a773dbf03da}{Set\+Point} (float $\ast$point=N\+U\+L\+L, float $\ast$other\+\_\+point=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Установка в изначальную точку новых значений координат другой точки \end{DoxyCompactList}\item 
+static void \hyperlink{class_point_operations_af856a7ce25a39cb868725f8e25f65296}{Init\+Point} (float $\ast$point=N\+U\+L\+L, float $\ast$other\+\_\+point=N\+U\+L\+L)
+\begin{DoxyCompactList}\small\item\em Инициализация изначальной точкй другой точкой \end{DoxyCompactList}\item 
+static bool \hyperlink{class_point_operations_a462940940e3ee8a60089a47b67a96cb6}{Is\+Equal\+Points} (float $\ast$point1, float $\ast$point2, float eps)
+\begin{DoxyCompactList}\small\item\em Проверка пары точек на эквивалентность (близость). 2 точки эквивалентны, если каждая координата одной точки отличается от соответствующей координаты другой точки не более чем на определеную, очень малую величину \end{DoxyCompactList}\item 
+static float $\ast$ \hyperlink{class_point_operations_af33f111f2d976cc64b79e4c0febacdbd}{Get\+Grid\+Point} (float $\ast$start\+\_\+grid\+\_\+point, int $\ast$grid\+\_\+idx, float discr)
+\begin{DoxyCompactList}\small\item\em Возврат сгенерированной точки сетки \end{DoxyCompactList}\item 
+static float $\ast$ \hyperlink{class_point_operations_ae0ea740a7a33489e5ecc0cab9f76c332}{Get\+Opposite\+Grid\+Point} (float $\ast$start\+\_\+grid\+\_\+point, float discr, float steps, float dim)
+\begin{DoxyCompactList}\small\item\em Возврат другой точки сетки, противоположной начальной (относительно \char`\"{}центральной\char`\"{} точки сетки) \end{DoxyCompactList}\item 
+static float $\ast$ \hyperlink{class_point_operations_a5a47fc472dd2640d89b8c2af8a9d0906}{Get\+Random\+Point\+Between} (float $\ast$start\+\_\+point, float $\ast$opposite\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Возврат случайной точки из многомерного кубика \end{DoxyCompactList}\item 
+static float $\ast$ \hyperlink{class_point_operations_ae4d32b67ba42d0f9ad372b431b9af81b}{Glue\+Point} (float $\ast$point1, int dim1, float $\ast$point2, int dim2)
+\begin{DoxyCompactList}\small\item\em Возврат \char`\"{}склеенной\char`\"{} точки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_point_operations_a547905af69bcb06620ec91c2905b7650}{}\index{Point\+Operations@{Point\+Operations}!Point\+Operations@{Point\+Operations}}
+\index{Point\+Operations@{Point\+Operations}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Point\+Operations}]{\setlength{\rightskip}{0pt plus 5cm}Point\+Operations\+::\+Point\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_point_operations_a547905af69bcb06620ec91c2905b7650}
+\hypertarget{class_point_operations_ab2579f86d6be95165f93e343fcce078a}{}\index{Point\+Operations@{Point\+Operations}!````~Point\+Operations@{$\sim$\+Point\+Operations}}
+\index{````~Point\+Operations@{$\sim$\+Point\+Operations}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{$\sim$\+Point\+Operations}]{\setlength{\rightskip}{0pt plus 5cm}Point\+Operations\+::$\sim$\+Point\+Operations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_point_operations_ab2579f86d6be95165f93e343fcce078a}
+
+
+\subsection{Методы}
+\hypertarget{class_point_operations_af33f111f2d976cc64b79e4c0febacdbd}{}\index{Point\+Operations@{Point\+Operations}!Get\+Grid\+Point@{Get\+Grid\+Point}}
+\index{Get\+Grid\+Point@{Get\+Grid\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Get\+Grid\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static float$\ast$ Point\+Operations\+::\+Get\+Grid\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{start\+\_\+grid\+\_\+point, }
+\item[{int $\ast$}]{grid\+\_\+idx, }
+\item[{float}]{discr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_af33f111f2d976cc64b79e4c0febacdbd}
+
+
+Возврат сгенерированной точки сетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+\_\+grid\+\_\+point} & -\/ изначальная точка, относительно которой генерируется сетка \\
+\hline
+{\em grid\+\_\+idx} & -\/ многомерный целочисленный индекс, определяющий на какое расстояние по каждой проекции необходимо уйти от изначальной точки \\
+\hline
+{\em discr} & -\/ растояние между ближайшими координатами соседних точек. Этой величине кратно расстояние по каждой проекции, на которое необходимо уйти от начальной точки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+сгенерированная точка сетки 
+\end{DoxyReturn}
+\hypertarget{class_point_operations_ae0ea740a7a33489e5ecc0cab9f76c332}{}\index{Point\+Operations@{Point\+Operations}!Get\+Opposite\+Grid\+Point@{Get\+Opposite\+Grid\+Point}}
+\index{Get\+Opposite\+Grid\+Point@{Get\+Opposite\+Grid\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Get\+Opposite\+Grid\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static float$\ast$ Point\+Operations\+::\+Get\+Opposite\+Grid\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{start\+\_\+grid\+\_\+point, }
+\item[{float}]{discr, }
+\item[{float}]{steps, }
+\item[{float}]{dim}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_ae0ea740a7a33489e5ecc0cab9f76c332}
+
+
+Возврат другой точки сетки, противоположной начальной (относительно \char`\"{}центральной\char`\"{} точки сетки) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+\_\+grid\+\_\+point} & -\/ стартовая точка, относительно которой подсчитываются координаты противоположной точки сетки \\
+\hline
+{\em discr,steps} & -\/ параметры, определяющие величину отступа (discr$\ast$steps) по значениям каждой координаты относительно начальной точки \\
+\hline
+{\em dim} & -\/ размерность задачи, определяющая количество координат противоположной точки, по которым нужно сделать смещение в сторону относительно начальной точки сетки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+точка сетки, противоположная начальной 
+\end{DoxyReturn}
+\hypertarget{class_point_operations_a5a47fc472dd2640d89b8c2af8a9d0906}{}\index{Point\+Operations@{Point\+Operations}!Get\+Random\+Point\+Between@{Get\+Random\+Point\+Between}}
+\index{Get\+Random\+Point\+Between@{Get\+Random\+Point\+Between}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Get\+Random\+Point\+Between}]{\setlength{\rightskip}{0pt plus 5cm}static float$\ast$ Point\+Operations\+::\+Get\+Random\+Point\+Between (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{start\+\_\+point, }
+\item[{float $\ast$}]{opposite\+\_\+point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_a5a47fc472dd2640d89b8c2af8a9d0906}
+
+
+Возврат случайной точки из многомерного кубика 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em start\+\_\+point,opposite\+\_\+point} & -\/ противоположные точки многомерного кубика. Они определяют многомерный кубик, из которого будет браться некоторая случайная точка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+случайная точка из многоменого кубика 
+\end{DoxyReturn}
+\hypertarget{class_point_operations_ae4d32b67ba42d0f9ad372b431b9af81b}{}\index{Point\+Operations@{Point\+Operations}!Glue\+Point@{Glue\+Point}}
+\index{Glue\+Point@{Glue\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Glue\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static float$\ast$ Point\+Operations\+::\+Glue\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{point1, }
+\item[{int}]{dim1, }
+\item[{float $\ast$}]{point2, }
+\item[{int}]{dim2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_ae4d32b67ba42d0f9ad372b431b9af81b}
+
+
+Возврат \char`\"{}склеенной\char`\"{} точки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point1} & -\/ первая точка \\
+\hline
+{\em dim1} & -\/ количество координат первой точки \\
+\hline
+{\em point2} & -\/ вторая точка \\
+\hline
+{\em dim2} & -\/ количество координат второй точки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+\char`\"{}склеенная\char`\"{} точка, в которой последовательно записаны сначала координат первой точки, а потом второй. В том случае, если количество координат обеих точек превышает максимально возможную размерность, в \char`\"{}склееную\char`\"{} точку записывается максимально возможное (поскольку размерность первой точки не может превышать максимально допустимое значение, гарантированно все координаты первой точки можно записать в \char`\"{}склеенную\char`\"{}). 
+\end{DoxyReturn}
+\hypertarget{class_point_operations_af856a7ce25a39cb868725f8e25f65296}{}\index{Point\+Operations@{Point\+Operations}!Init\+Point@{Init\+Point}}
+\index{Init\+Point@{Init\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Init\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static void Point\+Operations\+::\+Init\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{point = {\ttfamily NULL}, }
+\item[{float $\ast$}]{other\+\_\+point = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_af856a7ce25a39cb868725f8e25f65296}
+
+
+Инициализация изначальной точкй другой точкой 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & -\/ изначальная точка, которую необходимо инициализировать \\
+\hline
+{\em other\+\_\+point} & -\/ точка с необходимыми значениями координат \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_point_operations_a462940940e3ee8a60089a47b67a96cb6}{}\index{Point\+Operations@{Point\+Operations}!Is\+Equal\+Points@{Is\+Equal\+Points}}
+\index{Is\+Equal\+Points@{Is\+Equal\+Points}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Is\+Equal\+Points}]{\setlength{\rightskip}{0pt plus 5cm}static bool Point\+Operations\+::\+Is\+Equal\+Points (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{point1, }
+\item[{float $\ast$}]{point2, }
+\item[{float}]{eps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_a462940940e3ee8a60089a47b67a96cb6}
+
+
+Проверка пары точек на эквивалентность (близость). 2 точки эквивалентны, если каждая координата одной точки отличается от соответствующей координаты другой точки не более чем на определеную, очень малую величину 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point1} & -\/ первая точка \\
+\hline
+{\em point2} & -\/ вторая точка \\
+\hline
+{\em eps} & -\/ малая величина сравнения координат двух точек \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если точки эквивалентны, false -\/ иначе 
+\end{DoxyReturn}
+\hypertarget{class_point_operations_a4f5463040b9da28ceeaa6a773dbf03da}{}\index{Point\+Operations@{Point\+Operations}!Set\+Point@{Set\+Point}}
+\index{Set\+Point@{Set\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Set\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static void Point\+Operations\+::\+Set\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{point = {\ttfamily NULL}, }
+\item[{float $\ast$}]{other\+\_\+point = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_a4f5463040b9da28ceeaa6a773dbf03da}
+
+
+Установка в изначальную точку новых значений координат другой точки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & -\/ изначальная точка, в которую требуется установить новые значения координат \\
+\hline
+{\em other\+\_\+point} & -\/ точка с необходимыми значениями координат \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_point_operations_a97def43827da6fe4ad1004015f62f7fb}{}\index{Point\+Operations@{Point\+Operations}!Zeroize\+Point@{Zeroize\+Point}}
+\index{Zeroize\+Point@{Zeroize\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Zeroize\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static void Point\+Operations\+::\+Zeroize\+Point (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{point = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_a97def43827da6fe4ad1004015f62f7fb}
+
+
+Обнуление координат вектора-\/точки с вещественными координатами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & -\/ вектор-\/точка, чьи координаты требуется обнулить \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_point_operations_a60f7b165f2a705d199f2e2932e1e3972}{}\index{Point\+Operations@{Point\+Operations}!Zeroize\+Point@{Zeroize\+Point}}
+\index{Zeroize\+Point@{Zeroize\+Point}!Point\+Operations@{Point\+Operations}}
+\subsubsection[{Zeroize\+Point}]{\setlength{\rightskip}{0pt plus 5cm}static void Point\+Operations\+::\+Zeroize\+Point (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{point = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{class_point_operations_a60f7b165f2a705d199f2e2932e1e3972}
+
+
+Обнуление координат вектора-\/точки с целочисленными координатами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em point} & -\/ вектор-\/точка, чьи координаты требуется обнулить \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{operations_8h}{operations.\+h}\end{DoxyCompactItemize}

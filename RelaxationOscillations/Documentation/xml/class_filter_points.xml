@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_filter_points" kind="class" language="C++" prot="public">
+    <compoundname>FilterPoints</compoundname>
+    <includes refid="filter_8h" local="no">filter.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_filter_points_1ab2c951c04546e88a3eae23593255f464" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; float &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;float&gt; &gt; FilterPoints::points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="34" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_points_1a922144add0f65f9df222f2d5b7b82e9c" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* FilterPoints::output_file</definition>
+        <argsstring></argsstring>
+        <name>output_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="35" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_points_1a4ef06e2764e9a60cfdf53832baa388ad" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterPoints::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="36" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_filter_points_1a3132c8e736ecb5221a8baac2f6cb096f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterPoints::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="37" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_filter_points_1ae961bbdc20e31f6c2c5e11f88a250dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterPoints::FilterPoints</definition>
+        <argsstring>(DataParser config)</argsstring>
+        <name>FilterPoints</name>
+        <param>
+          <type><ref refid="class_data_parser" kindref="compound">DataParser</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="24" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterPoints::AddPoint</definition>
+        <argsstring>(float *point)</argsstring>
+        <name>AddPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Добавление точки в список всех точек, подлежащих фильтрации </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- добавляемая точка </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="25" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterPoints::ExcludeEqualPoints</definition>
+        <argsstring>()</argsstring>
+        <name>ExcludeEqualPoints</name>
+        <briefdescription>
+<para>Исключение эквивалентных точек. Функция включает в себя этапы удаления одинаковых точек и вывода уже &quot;отфильтрованного&quot; списка точек </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="26" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_points_1a05208c4421d0e0fc377c42f27f00abfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterPoints::~FilterPoints</definition>
+        <argsstring>()</argsstring>
+        <name>~FilterPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="27" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="64" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_filter_points_1a49a687bf25136ef6990a4be79eaf7f0d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterPoints::DeleteEqualPoints</definition>
+        <argsstring>()</argsstring>
+        <name>DeleteEqualPoints</name>
+        <briefdescription>
+<para>Удаление эквивалентных точек из списка всех точек. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="30" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="21" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_filter_points_1aa4ee0488331ce79af05676c47beb783a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterPoints::OutputPoints</definition>
+        <argsstring>()</argsstring>
+        <name>OutputPoints</name>
+        <briefdescription>
+<para>Вывод списка точек в файл </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="31" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp" bodystart="45" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="21" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="21" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" prot="public" virt="non-virtual"><scope>FilterPoints</scope><name>AddPoint</name></member>
+      <member refid="class_filter_points_1a49a687bf25136ef6990a4be79eaf7f0d" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>DeleteEqualPoints</name></member>
+      <member refid="class_filter_points_1a4ef06e2764e9a60cfdf53832baa388ad" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>dim</name></member>
+      <member refid="class_filter_points_1a3132c8e736ecb5221a8baac2f6cb096f" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>eps</name></member>
+      <member refid="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" prot="public" virt="non-virtual"><scope>FilterPoints</scope><name>ExcludeEqualPoints</name></member>
+      <member refid="class_filter_points_1ae961bbdc20e31f6c2c5e11f88a250dd4" prot="public" virt="non-virtual"><scope>FilterPoints</scope><name>FilterPoints</name></member>
+      <member refid="class_filter_points_1a922144add0f65f9df222f2d5b7b82e9c" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>output_file</name></member>
+      <member refid="class_filter_points_1aa4ee0488331ce79af05676c47beb783a" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>OutputPoints</name></member>
+      <member refid="class_filter_points_1ab2c951c04546e88a3eae23593255f464" prot="private" virt="non-virtual"><scope>FilterPoints</scope><name>points</name></member>
+      <member refid="class_filter_points_1a05208c4421d0e0fc377c42f27f00abfc" prot="public" virt="non-virtual"><scope>FilterPoints</scope><name>~FilterPoints</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,781 @@
+%\documentclass[10pt,pdf,hyperref={unicode}]{beamer}
+\documentclass[fullscreen=true, unicode, bookmarks=false]{beamer}
+
+% \documentclass[aspectratio=43]{beamer}
+% \documentclass[aspectratio=1610]{beamer}
+% \documentclass[aspectratio=169]{beamer}
+
+\usepackage{lmodern}
+
+% Standard packages
+\usepackage[T2A]{fontenc} 
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[export]{adjustbox}
+\sloppy
+
+% отключить клавиши навигации
+\setbeamertemplate{navigation symbols}{}
+
+% тема оформления
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+%\usetheme{Frankfurt}
+%\usetheme{Darmstadt}
+%\usetheme{Warsaw}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{default}
+%\usetheme{Pittsburgh}
+%\usetheme{Copenhagen}
+
+% цветовая схема
+%\usecolortheme{orchid}
+\usecolortheme{whale}
+
+\usefonttheme{professionalfonts} % default family is serif
+
+\setbeamertemplate{footline}{\hspace*{.5cm}\scriptsize{\insertshorttitle
+\hspace*{50pt} \hfill\hspace*{.5cm}}\vspace{5pt}} 
+
+\setbeamercolor{bibliography entry author}{fg=black}
+
+\title[]{Динамические свойства одного класса импульсных систем}   
+\author[]{{\large Леонид Ивановский}} 
+\date{}
+\institute[]
+{Аспирант, \\
+ЯрГУ им. П.Г.Демидова, \\
+Ярославль
+}
+% \logo{\includegraphics[height=5mm]{images/logo.png}\vspace{-7pt}}
+\titlegraphic{
+   \includegraphics[scale = 0.27]{yargu.jpg}
+}
+
+\begin{document}
+
+% титульный слайд
+\begin{frame}
+\titlepage
+\end{frame} 
+
+\begin{frame}
+\frametitle{Исследуемая динамическая система} 
+\begin{eqnarray}\label{u_system} 
+	\dot{u_j} = d(a_1u_{j-1}-a_2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \nonumber \\ j=\overline{1,m},
+\end{eqnarray}		
+
+\pause
+$$ a_1, a_2 \in \{0, 1, 2\}, \quad \lambda >> 1, \; \beta > 0, \; \alpha > 1 + \beta; $$
+$$ u_j=u_j(t)>0, \quad f(u), g(u) \in C^2(\mathbb{R}_+), $$
+$$ f(0) = g(0) = 1, \quad 0 < \beta g(u) < \alpha, \; \forall u \in \mathbb{R}_+; $$
+$$ f(u), g(u), uf'(u), ug'(u), u^2f''(u), u^2g''(u) = O(1/u), \; u \to +\infty. $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Релаксационные автоколебания в нейронных системах. I //
+Дифференциальные уравнения. 2011. Т. 47, № 7. С. 919 – 932. }
+
+\vspace{0.5cm}
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Релаксационные автоколебания в нейронных системах. II //
+Дифференциальные уравнения. 2011. Т. 47, № 12. С. 1675 – 1692. }
+
+\vspace{0.5cm}
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Релаксационные автоколебания в нейронных системах. III //
+Дифференциальные уравнения. 2012. Т. 48, № 2. С. 155 – 170. }
+
+\vspace{0.5cm}
+
+\textit{Кащенко С.\,А., Майоров В.\,В. } 
+{Модели волновой памяти //
+М.: Либроком, 2009. -- 288 с. }
+\end{frame}
+
+\begin{frame}
+\frametitle{Синхронный цикл} 
+
+$$ u_1 \equiv u_2 \equiv \ldots \equiv u_m = u_*(t, \lambda) $$
+
+\vfill
+
+\pause
+$$ \dot{u} = \lambda(-1+\alpha f(u(t-1)) - \beta g(u))u $$
+
+\vfill
+
+\pause
+$$ T_*(\lambda): \quad \lim_{\lambda\to\infty} T_*(\lambda) = T_0, $$
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+
+\end{frame}
+
+\begin{frame}
+
+$$ \lambda >> 1: \quad u_*(t, \lambda) \rightarrow e^{\lambda x_0}. $$
+
+$$
+x_0(t) = 
+\begin{array}{l}
+\begin{cases}
+(\alpha-1)t, & \text{при} \quad 0 \leqslant t \leqslant 1 \\
+\alpha-t, & \text{при} \quad 1 \leqslant t \leqslant \alpha \\
+-(1+\beta)(t-\alpha), & \text{при} \quad \alpha \leqslant t \leqslant \alpha + 1 \\
+(\alpha - \beta - 1)(t - \alpha - 1) - 1 - \beta, & \text{при} \quad \alpha+1 \leqslant t \leqslant T_0
+\end{cases}
+\end{array}.
+$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Замены} 
+$$ u_1 = \mbox{exp} \left( \frac{x}{\varepsilon} \right), \quad \varepsilon = \frac{1}{\lambda} << 1, $$
+$$ u_j = \mbox{exp} \left( \frac{x}{\varepsilon} + \sum\limits_{k=1}^{j-1} y_k \right), \quad j = \overline{2,m}, $$ 
+\vspace{1.5cm}
+\pause
+$$ \dot{x} = -1 + \alpha f \left( \mbox{exp} \, \left( \frac{x(t-1)}{\varepsilon} \right) \right) - \beta g \left( \mbox{exp} \, \left( \frac{x}{\varepsilon} \right) \right), $$
+\vfill
+\pause
+$$ x \approx x_0. $$
+\end{frame}
+
+\begin{frame}
+\frametitle{Релаксационная система} 
+
+$$ \dot{x} = \varepsilon d(\mbox{exp} \, y_1 - 1) + F(x, x(t-1), \varepsilon), $$
+
+$$ \dot{y_j} = d(\mbox{exp} \, y_{j+1} + \mbox{exp}(-y_j) - \mbox{exp} \, y_j - \mbox{exp}(-y_{j-1})) + $$
+$$ + G_j(x, x(t-1), y_1, \, \ldots \, , y_j, y_1(t-1), \, \ldots \, , y_j(t-1), \varepsilon), $$
+
+$$ j = \overline{1,m-1} $$
+
+\end{frame}
+
+\begin{frame}
+
+$$ F(x, u, \varepsilon) = -1 + \alpha f \left( \mbox{exp} \left( \frac{u}{\varepsilon} \right) \right) + \beta g \left( \mbox{exp} \left( \frac{x}{\varepsilon} \right) \right), $$
+
+$$ G_j(x, u, y_1,  \, \ldots \, , y_j, v_1,  \, \ldots \, , v_j, \varepsilon) =  $$
+$$ \frac{\alpha}{\varepsilon} \left[ f \left( \mbox{exp} \left( \frac{u}{\varepsilon} + \sum \limits_{k=1}^j v_k \right) \right) - f \left( \mbox{exp} \left( \frac{u}{\varepsilon}  + \sum \limits_{k=1}^{j-1} v_k \right) \right) \right] + $$
+$$ + \frac{\beta}{\varepsilon} \left[ g \left( \mbox{exp} \left( \frac{x}{\varepsilon} + \sum \limits_{k=1}^{j-1} y_k \right) \right) - g \left( \mbox{exp} \left( \frac{x}{\varepsilon}  + \sum \limits_{k=1}^j y_k \right) \right) \right], $$
+
+$$ j = \overline{1,m-1}. $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Дискретные автоволны в нейронных системах //
+Журнал вычислительной математики и математической физики. 2012. Т. 52, № 5. С. 840–858. } 
+
+\vspace{1.0cm}
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Моделирование эффекта взрыва в нейронных системах //
+Математические заметки. 2013. Т. 93, № 5. С. 682–699. }
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Импульсная система} 
+
+\begin{eqnarray}\label{y_system}
+\dot{y_1} = d(\mbox{exp}\,y_{j+1} + a_1\,\mbox{exp}\,(-y_j) - \mbox{exp}\,y_j - a_1\,\mbox{exp}\:y_{j-1}), \nonumber \\ j=\overline{1,m-1},
+\end{eqnarray}
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0). $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Модельное отображение} 
+\begin{equation}\label{phi_z} 
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+\end{equation}
+
+\vspace{0.2cm}
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1}, $$
+$$ y_j \approx \mbox{ln} u_{j+1} - \mbox{ln} u_j, \quad j=\overline{1,m-1} $$
+
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+\pause
+\begin{block}{Теорема}
+Любой грубой неподвижной точке $z_{*}$ отображения \eqref{phi_z}, в системе (1) соответствует цикл периода $ T_0 $ с теми же свойствами устойчивости.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Метод исследования: программная часть} 
+\begin{figure}
+\includegraphics[scale=0.1]{cplusplus.png}
+\hfill 
+\includegraphics[scale=0.04]{qt.png}
+\hfill
+\includegraphics[scale=0.16]{python.png} 
+\vfill 
+\includegraphics[scale=0.5]{openmp.png}  
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Метод исследования: алгоритмическая часть} 
+$$
+	\begin{pmatrix}
+	 y_1(-0) \\
+	 \vdots \\
+	 y_{m-1}(-0)
+	\end{pmatrix}
+	\to
+	\dots
+	\to
+	\begin{pmatrix}
+	 y_1(T_0) \\
+	 \vdots \\
+	 y_{m-1}(T_0)
+	\end{pmatrix},
+$$
+\medskip
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+
+\pause
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), \quad y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), \quad j = \overline{1,m-1}. $$
+\end{frame}
+
+\begin{frame}
+\frametitle{Предельное отображение} 
+
+$$ P^t(z): \quad t \in \mathbb{R}, \; z \in \mathbb{R}^{m-1}, \; P^0(z) = z $$
+
+\vfill
+\pause
+$$ \Phi(z) = (P^{T_0-\alpha-1} \circ P_4 \circ P^1 \circ P_3 \circ P^{\alpha-1} \circ P_2 \circ P^1 \circ P_1)(z), $$
+\vfill
+\pause
+$$ P_1(z) = \frac{\alpha-1}{\alpha-\beta-1}z, \quad P_2(z) = z - \frac{\alpha}{\alpha-1}P^{-1}(z), $$
+$$  P_3(z) = (\beta + 1)(z), \quad P_4(z) = z - \frac{\alpha}{\beta-1}P^{-1}(z). $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{Глызин С.\,Д., Колесов А.\,Ю., Розов Н.\,Х. } 
+{Релаксационные автоколебания сетях импульсных нейронов //
+УМН. 2015. Т. 70. Вып. 3(423). С. 3 – 76. }
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+$$
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+$$
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1}, $$
+
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+\end{frame}
+
+\begin{frame}
+\frametitle{ Одномерный случай }
+
+$$ m=2 $$
+
+\pause
+\vfill
+$$ \dot{y} = -2\sh y $$
+
+\pause
+\vfill
+$$ 
+P^t(z) = \ln \frac{1 + \th(z/2)\,\mbox{exp}(-2dt)}{1 - \th(z/2)\,\mbox{exp}(-2dt)}, \quad t \in \mathbb{R} 
+$$
+
+\pause
+\vfill
+$$ \Phi(z) > 0, \quad \forall z \in (0, +\infty), $$
+$$ \lim_{z \to +\infty}\Phi(z) = \Phi_* > 0, $$
+$$ \Phi(z) = \Phi(-z). $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\hspace{-2.0cm}
+\includegraphics[scale=0.35]{1D.png}
+\end{minipage}
+\vfill
+\center{ {\scriptsize $ \alpha = 1.1, \beta = 0.05 $} }
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Исследуемые виды трехмерных систем} 
+
+$$ m=3 $$
+
+\pause
+
+\begin{itemize}
+\item { $ a_1 = 1, \, a_2 = 2; $
+
+$ u_0=u_1, \; u_3=u_4. $ }
+\vspace{0.8cm}
+
+\pause
+\item { $ a_1 = 1, \, a_2 = 2; $
+
+$ u_0=u_3, \; u_1=u_4. $ }
+\vspace{0.8cm}
+
+\pause
+\item { $ a_1 = 0, \, a_2 = 1; $
+
+$ u_1=u_4. $ }
+\end{itemize}	
+	
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$ a_1 = 1, \, a_2 = 2: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j-1}-2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \; j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_0=u_1, \; u_3=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(1 + e^{-y_2} - e^{y_2} - e^{-y_1})
+\end{cases}
+\end{array}
+$$
+
+\medskip
+\pause
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = 0.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0)
+         \end{pmatrix}.
+$$
+\bigskip
+\pause
+
+\textit{Ивановский Л.\,И., Самсонов С.\,О. } 
+{Фазовые перестройки одной двумерной динамической системы с импульсным воздействием.
+// Модел. и анализ информ. систем, 2014. Т. 21, №6. С. 179 – 181. } 
+
+\bigskip
+
+\textit{Ивановский Л.\,И. }
+{Динамика одного двумерного отображения и устойчивые режимы сингулярно возмущенной системы нейронного типа. // Вычислительные технологии в естественных науках. Методы суперкомпьютерного моделирования. Часть 2. Сборник трудов, 2015. С. 121 – 132. }
+\end{frame}
+
+\begin{frame}
+\frametitle{Области с одинаковыми сценариями фазовых перестроек} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_neuman.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_1$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{neuI1.pdf} \\ {\scriptsize $ d < 0.019 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{neuI2.pdf} \\ {\scriptsize $ 0.019 < d < 0.031 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{neuI3.pdf} \\ {\scriptsize $ 0.031 < d < 0.059 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{neuI4.pdf} \\ {\scriptsize $ 0.059 < d < 0.13 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 5.0, \beta = 0.4 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_2$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{0,04.pdf} \\ {\scriptsize $ d < 0.04 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{0,047.pdf} \\ {\scriptsize $ 0.04 < d < 0.047 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{0,056.pdf} \\ {\scriptsize $ 0.047 < d < 0.056 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.33]{0,058.pdf} \\ {\scriptsize $ 0.056 < d < 0.058 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 5.0, \beta = 3.0 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_3$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII1.pdf} \\ {\scriptsize $ d < 0.04 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII2.pdf} \\ {\scriptsize $ 0.04 < d < 0.049 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII3.pdf} \\ {\scriptsize $ 0.049 < d < 0.053 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII4.pdf} \\ {\scriptsize $ 0.053 < d < 0.055 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 4.0, \beta = 2.3 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_3$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII5.pdf} \\ {\scriptsize $ 0.055 < d < 0.057 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII6.pdf} \\ {\scriptsize $ 0.057 < d < 0.069 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{neuIII7.pdf} \\ {\scriptsize $ 0.069 < d < 0.17 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{pic5.pdf} \\ {\scriptsize $ d > 0.17 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 5.0, \beta = 0.4 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$ a_1 = 1, \, a_2 = 2: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j-1}-2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \; j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_0=u_3, \; u_1=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(1 + e^{-y_2} - e^{y_2} - e^{-y_1})
+\end{cases}
+\end{array}
+$$
+
+\pause
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = -\sum\limits_{k=1}^{m-1} y_k.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0)
+         \end{pmatrix}.
+$$
+\vspace{1.5cm}
+\pause
+
+\textit{Ивановский Л.\,И. }
+{Динамические свойства одного класса импульсных систем // Вычислительные технологии в естественных науках. Методы суперкомпьютерного моделирования. Часть 3. Сборник трудов, 2015. С. 126 - 131. }
+\end{frame}
+
+\begin{frame}
+\frametitle{Области с одинаковыми сценариями фазовых перестроек} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_periodic.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_1$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picI1.pdf} \\ {\scriptsize $ d < 0.021 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picI2.pdf} \\ {\scriptsize $ 0.021 < d < 0.031 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picI3.pdf} \\ {\scriptsize $ 0.031 < d < 0.058 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{pic5.pdf} \\ {\scriptsize $ d > 0.058 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 5.0, \beta = 0.4 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_2$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picII1.pdf} \\ {\scriptsize $ d < 0.003 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picII2.pdf} \\ {\scriptsize $ 0.003 < d < 0.006 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{picII3.pdf} \\ {\scriptsize $ 0.006 < d < 0.021 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{pic5.pdf} \\ {\scriptsize $ d > 0.021 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 1.9, \beta = 0.1 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{picI1.pdf} \\ {\footnotesize $ A_1: \;\; \alpha = 5.0, \: \beta = 2.98 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{picII1.pdf} \\ {\footnotesize $ A_2: \;\; \alpha = 5.0, \: \beta = 3.02  $}}
+\end{minipage}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Область $A_3$} 
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.85]{transarea.pdf}
+\center{ $ \alpha = 5.0, \: \beta = 3.0 $ }
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$ a_1 = 0, \, a_2 = 1: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j+1}-u_j)+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \quad j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_1=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+
+$$
+\begin{cases}
+	\dot{y_1} = d[\mbox{exp} \, y_2 - \mbox{exp} \, y_1 ], \\
+	\dot{y_2} = d[\mbox{exp} \, y_3 - \mbox{exp} \, y_2 ], \\
+\end{cases}
+$$
+
+\pause
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = 0.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты исследования} 
+$$
+\Phi(z): \begin{pmatrix}
+          z_1 \\
+          z_2
+         \end{pmatrix}
+		 \to
+		 \begin{pmatrix}
+          y_1(T_0) \\
+          y_2(T_0)
+         \end{pmatrix}.
+$$
+
+\bigskip
+\pause
+
+\textit{Ивановский Л.\,И. }
+{Устойчивые режимы динамических систем с импульсными воздействиями // Динамические системы, 2016, т. 6 (34), №2, с. 113 – 132}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Области с одинаковыми сценариями фазовых перестроек} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_uniwave.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_1$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_I_1.pdf} \\ {\scriptsize $ d < 0.008 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_I_2.pdf} \\ {\scriptsize $ 0.008 < d < 0.19 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 3.6, \beta = 0.4 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_2$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_1.pdf} \\ {\scriptsize $ d < 0.316 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_2.pdf} \\ {\scriptsize $ 0.316 < d < 0.317 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_3.pdf} \\ {\scriptsize $ 0.317 < d < 0.3174 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_4.pdf} \\ {\scriptsize $ 0.3174 < d < 0.3178 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 1.9, \beta = 0.1 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Основные бифуркации в области $A_3$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_III_1.pdf} \\ {\scriptsize $ d < 0.013 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_III_2.pdf} \\ {\scriptsize $ 0.013 < d < 0.017 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 2.1, \beta = 0.1 $} }
+\end{figure}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,256 @@
+\documentclass{a0poster}
+\usepackage{fancytikzposter} 
+ 
+\usepackage[T1]{fontenc} 
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{amssymb}
+\usepackage{mathtext}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{lscape}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{ulem}
+\usepackage{indentfirst}
+\usepackage{enumerate}
+
+\usepackage[margin=\margin cm, paperwidth=84.1cm, paperheight=118.9cm]{geometry}
+
+%%%%% --------- Change here if you want ---------- %%%%%
+%% margin for the geometry package, must be changed before using the geometry package
+%% default value is 4cm
+% \setmargin{4}
+
+%% the space between the blocks
+%% default value is 2cm
+% \setblockspacing{2}
+
+%% the height of the title stripe in block nodes, decrease it to save space
+%% default value is 3cm
+% \setblocktitleheight{3}
+
+%% the number of columns in the poster, possible values 2,3
+%% default value is 2
+% \setcolumnnumber{3}
+
+%% the space between two or more groups of authors from different institutions
+%% used in \maketitle
+% \setinstituteshift{10}
+
+\usetemplate{4}
+
+%% components of the templates
+%% (the maximal possible numbers are mentioned as the parameters)
+% \usecolortemplate{4}
+% \usebackgroundtemplate{5}
+% \usetitletemplate{2}
+% \useblocknodetemplate{5}
+% \useplainblocktemplate{4}
+% \useinnerblocktemplate{2}
+
+
+%% the height of the head drawing on top 
+%% applicable to templates N3, 4 and 5
+% \setheaddrawingheight{14}
+
+
+%% change the basic colors
+%\definecolor{myblue}{HTML}{008888} 
+%\setfirstcolor{myblue}% default 116699
+%\setsecondcolor{gray!80!}% default CCCCCC
+%\setthirdcolor{red!80!black}% default 991111
+
+%% change the more specific colors
+% \setbackgrounddarkcolor{colorone!70!black}
+% \setbackgroundlightcolor{colorone!70!}
+% \settitletextcolor{textcolor}
+% \settitlefillcolor{white}
+% \settitledrawcolor{colortwo}
+% \setblocktextcolor{textcolor}
+% \setblockfillcolor{white}
+% \setblocktitletextcolor{colorone}
+% \setblocktitlefillcolor{colortwo} %the color of the border
+% \setplainblocktextcolor{textcolor}
+\setplainblockfillcolor{colorone!10!}
+% \setplainblocktitletextcolor{textcolor}
+\setplainblocktitlefillcolor{colorone!60!}
+% \setinnerblocktextcolor{textcolor}
+% \setinnerblockfillcolor{white}
+% \setinnerblocktitletextcolor{white}
+% \setinnerblocktitlefillcolor{colorthree}
+
+%% changing the fonts
+%\usepackage{cmbright}
+
+\renewcommand\normalsize{\fontsize{32}{39.8pt}\selectfont}
+
+%% add your packages here
+\usepackage{hyperref}
+
+\title{Dynamics of system with impulse influences for a chain of connected oscillators}
+\author{Leonid Ivanovsky\\
+  P.G. Demidov Yaroslavl State University\\
+  \textit{postgraduate student, faculty of computer science}
+}
+
+\begin{document}
+
+%%%%% ---------- the background picture ---------- %%%%%
+%% to change it modify the macro \BackgroundPicture
+\ClearShipoutPicture
+\AddToShipoutPicture{\BackgroundPicture}
+
+\noindent % to have the picture right in the center
+\begin{tikzpicture}
+  \initializesizeandshifts
+  % \setxshift{15}
+  % \setyshift{2}
+
+  %% the title block, #1 - shift, the default value is (0,0), #2 - width, #3 - scale
+  %% the alias of the title block is `title', so we can refer to its boundaries later
+  \ifthenelse{\equal{\template}{1}}{ 
+    \titleblock{47}{1}
+  }{
+    \titleblock{47}{1.5}
+  }
+
+  %% a logo can be added to the title block
+  %% #1 - anchor relative to the title block, #2 - shift, #3 - width, #3 - file name
+  % \ifthenelse{\equal{\template}{2}}{ 
+  %   \addlogo[south west]{(2,0)}{6cm}{unibz_b.png}
+  % }{
+  %   \addlogo[south west]{(2,0)}{6cm}{unibz_w.png}
+  % }
+
+  %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknodew{37}{Dynamic system} %
+  {
+  	\begin{equation}
+		\dot{u_j} = d(u_{j+1}-2u_j+u_{j-1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \quad j=\overline{1,m},
+	\end{equation}		
+	$$ u_j=u_j(t)>0, \; u_0=u_m, \; u_1=u_{m+1}, \; m \ge 2, \; \lambda >> 1, $$
+	$$ f(u), g(u) \in C^2(\mathbb{R}_+): \quad \mathbb{R}_+  = \{ u \in \mathbb{R}: u \geqslant 0\}, $$
+	$$ \beta > 0, \; \alpha > 1 + \beta, \; 0 < \beta g(u) < \alpha; \quad f(0) = g(0) = 1, \; \forall u \in \mathbb{R}_+; $$
+	$$ f(u), g(u), uf'(u), ug'(u), u^2f''(u), u^2g''(u) = O(1/u), \; u \to +\infty. $$
+  }
+
+%%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknode%{37}
+  {System with impulse influences}%
+  {  
+
+\vspace{0.5cm}
+  
+	\begin{equation}
+		\dot{y_j} = d[\mbox{exp} \, y_{j+1} + \mbox{exp}(-y_j) - \mbox{exp} \, y_j - \mbox{exp}(-y_{j-1})],
+	\end{equation}
+	
+\vspace{0.5cm}
+	
+	$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), \; y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+	$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), \; y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0),  $$
+	
+	$$ y_0 = y_m = -\sum\limits_{k=1}^{m-1} y_k , \quad j = \overline{1,m-1}.  $$
+
+\vspace{0.2cm}
+
+  }
+
+%%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknodew[($(currenty)+(19.5,0)$)]{76}{Bifufcations in the case $\alpha = 1.9, \; \beta = 0.1$ } %
+  { 
+	
+\vspace{0.1cm}	
+			
+	\begin{minipage}[h]{0.4\linewidth}
+	\center{\includegraphics[width=0.7\linewidth]{picIII1.pdf} \\ a) $ d < 0{,}003 $ }
+	\end{minipage}
+	\hspace{-7.5cm}
+	\begin{minipage}[h]{0.4\linewidth}
+	\center{\includegraphics[width=0.7\linewidth]{picIII2.pdf} \\ b) $ 0{,}003 \leqslant d < 0{,}006 $ }
+	\end{minipage}
+	\hspace{-7.5cm}
+	\begin{minipage}[h]{0.4\linewidth}
+	\center{\includegraphics[width=0.7\linewidth]{picIII3.pdf} \\ c) $ 0{,}006 \leqslant d < 0{,}021 $ }
+	\end{minipage} 	
+	
+	~\\	
+	
+	\begin{minipage}[h]{0.7\linewidth}
+	\center{\includegraphics[width=0.4\linewidth]{picIII4.pdf} \\ d) $ 0{,}021 \leqslant d < 0{,}43 $ }
+	\end{minipage}
+	\hspace{-30.0cm}
+	\begin{minipage}[h]{0.7\linewidth}
+	\center{\includegraphics[width=0.4\linewidth]{pic5.pdf} \\ e) $ d \geqslant 0{,}43 $ }
+	\end{minipage}
+	
+  }
+  
+  %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \plainblock[0]{($(currenty)$)}{64}{Bibliography} %
+  {
+  
+\vspace{0.5cm}
+    \textit{Glyzin S.D., Kolesov A.Yu, Rozov N.Kh.} Relaxation self-oscillations in neuron systems. III // Differential Equations. 2012. V. 48, ¹ 2. P. 159 – 175.
+    
+   }  
+
+  %%%%%%%%%%%%% NEW COLUMN %%%%%%%%%%%%%%% 
+  \startsecondcolumn 
+
+  %%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknode%{37}
+  {Substitutions}%
+  {
+  
+\vspace{0.55cm} 
+  
+  $$ u_1 = \mbox{exp} \left( \frac{x}{\varepsilon} \right), \quad \varepsilon = \frac{1}{\lambda} << 1. $$
+  $$ u_j = \mbox{exp} \left( \frac{x}{\varepsilon} + \sum\limits_{k=1}^{j-1} y_k \right), \quad j = \overline{2,m} , $$
+	
+\vspace{1.05cm} 	
+	
+	$$ \dot{x} = -1 + \alpha f \left( \mbox{exp} \, \left( \frac{x(t-1)}{\varepsilon} \right) \right) - \beta g \left( \mbox{exp} \, \left( \frac{x}{\varepsilon} \right) \right). $$
+
+\vspace{0.55cm}
+
+  }
+
+%%%%%%%%%% ------------------------------------------ %%%%%%%%%%
+  \blocknodew{37}{Research mapping} %
+  {
+	\begin{equation}
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+	\end{equation}
+	
+	$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1}, \quad T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+	
+\hfill	
+	
+\begin{minipage}{\linewidth}
+        \coloredbox{colorthree!100!}{\textbf{Theorem:} For any stable point $z_*$ of mapping (3) there exists a stable relaxational cycle with period $T_0$ in system (1).}
+      \end{minipage}	
+      
+\vspace{0.35cm}
+
+  }
+
+\end{tikzpicture}
+
+\end{document}

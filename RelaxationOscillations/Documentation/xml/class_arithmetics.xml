@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_arithmetics" kind="class" language="C++" prot="public">
+    <compoundname>Arithmetics</compoundname>
+    <includes refid="arithmetic_8h" local="no">arithmetic.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_arithmetics_1afdaeab6d774c7f71d0abbf3723c2c76d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arithmetics::Arithmetics</definition>
+        <argsstring>()</argsstring>
+        <name>Arithmetics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" line="48" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arithmetics_1a93e2f5a9112c403aaceef9e1913dbd96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arithmetics::~Arithmetics</definition>
+        <argsstring>()</argsstring>
+        <name>~Arithmetics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" line="49" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_arithmetics_1a2496e1ae47ea96f3abd3dffc3b43d841" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float Arithmetics::RandomBetween</definition>
+        <argsstring>(float first_val, float last_val)</argsstring>
+        <name>RandomBetween</name>
+        <param>
+          <type>float</type>
+          <declname>first_val</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>last_val</declname>
+        </param>
+        <briefdescription>
+<para>Возврат случайного числа из интервала </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- левая граница интервала </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- правая граница интервала </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>случайное число из интервала </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" line="59" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_arithmetics_1a06388394a8a4162176567d6735fb4a39" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int *</type>
+        <definition>static int* Arithmetics::GetNextGridIndex</definition>
+        <argsstring>(int *grid_idx, int steps)</argsstring>
+        <name>GetNextGridIndex</name>
+        <param>
+          <type>int *</type>
+          <declname>grid_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>steps</declname>
+        </param>
+        <briefdescription>
+<para>Возврат следующего по счету многомерного целочисленного индекса, участвующего в формировании значений коорднинат точек сетки </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>grid_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- многомерный целочисленный индекс, относительно которого требуется получить следующий по счету индекс </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- количество делений по каждой проекции области сетки. Оно определяет величину увеличения индекса </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>следующий по счету многомерный целочисленный индекс </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" line="72" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" bodystart="72" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" line="45" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/arithmetic.h" bodystart="45" bodyend="86"/>
+    <listofallmembers>
+      <member refid="class_arithmetics_1afdaeab6d774c7f71d0abbf3723c2c76d" prot="public" virt="non-virtual"><scope>Arithmetics</scope><name>Arithmetics</name></member>
+      <member refid="class_arithmetics_1a06388394a8a4162176567d6735fb4a39" prot="public" virt="non-virtual"><scope>Arithmetics</scope><name>GetNextGridIndex</name></member>
+      <member refid="class_arithmetics_1a2496e1ae47ea96f3abd3dffc3b43d841" prot="public" virt="non-virtual"><scope>Arithmetics</scope><name>RandomBetween</name></member>
+      <member refid="class_arithmetics_1a93e2f5a9112c403aaceef9e1913dbd96" prot="public" virt="non-virtual"><scope>Arithmetics</scope><name>~Arithmetics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

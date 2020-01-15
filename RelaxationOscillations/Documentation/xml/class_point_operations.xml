@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_point_operations" kind="class" language="C++" prot="public">
+    <compoundname>PointOperations</compoundname>
+    <includes refid="operations_8h" local="no">operations.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_point_operations_1a547905af69bcb06620ec91c2905b7650" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PointOperations::PointOperations</definition>
+        <argsstring>()</argsstring>
+        <name>PointOperations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="18" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1ab2579f86d6be95165f93e343fcce078a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PointOperations::~PointOperations</definition>
+        <argsstring>()</argsstring>
+        <name>~PointOperations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="19" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PointOperations::ZeroizePoint</definition>
+        <argsstring>(float *point=NULL)</argsstring>
+        <name>ZeroizePoint</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Обнуление координат вектора-точки с вещественными координатами </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вектор-точка, чьи координаты требуется обнулить </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="27" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1a60f7b165f2a705d199f2e2932e1e3972" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PointOperations::ZeroizePoint</definition>
+        <argsstring>(int *point=NULL)</argsstring>
+        <name>ZeroizePoint</name>
+        <param>
+          <type>int *</type>
+          <declname>point</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Обнуление координат вектора-точки с целочисленными координатами </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вектор-точка, чьи координаты требуется обнулить </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="37" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PointOperations::SetPoint</definition>
+        <argsstring>(float *point=NULL, float *other_point=NULL)</argsstring>
+        <name>SetPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>other_point</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Установка в изначальную точку новых значений координат другой точки </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- изначальная точка, в которую требуется установить новые значения координат </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка с необходимыми значениями координат </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="48" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PointOperations::InitPoint</definition>
+        <argsstring>(float *point=NULL, float *other_point=NULL)</argsstring>
+        <name>InitPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+          <defval>NULL</defval>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>other_point</declname>
+          <defval>NULL</defval>
+        </param>
+        <briefdescription>
+<para>Инициализация изначальной точкй другой точкой </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- изначальная точка, которую необходимо инициализировать </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>other_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка с необходимыми значениями координат </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="60" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool PointOperations::IsEqualPoints</definition>
+        <argsstring>(float *point1, float *point2, float eps)</argsstring>
+        <name>IsEqualPoints</name>
+        <param>
+          <type>float *</type>
+          <declname>point1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>point2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>eps</declname>
+        </param>
+        <briefdescription>
+<para>Проверка пары точек на эквивалентность (близость). 2 точки эквивалентны, если каждая координата одной точки отличается от соответствующей координаты другой точки не более чем на определеную, очень малую величину </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- первая точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вторая точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- малая величина сравнения координат двух точек </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если точки эквивалентны, false - иначе </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="73" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="73" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float* PointOperations::GetGridPoint</definition>
+        <argsstring>(float *start_grid_point, int *grid_idx, float discr)</argsstring>
+        <name>GetGridPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>start_grid_point</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>grid_idx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>discr</declname>
+        </param>
+        <briefdescription>
+<para>Возврат сгенерированной точки сетки </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_grid_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- изначальная точка, относительно которой генерируется сетка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grid_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- многомерный целочисленный индекс, определяющий на какое расстояние по каждой проекции необходимо уйти от изначальной точки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>discr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- растояние между ближайшими координатами соседних точек. Этой величине кратно расстояние по каждой проекции, на которое необходимо уйти от начальной точки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>сгенерированная точка сетки </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="88" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="88" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float* PointOperations::GetOppositeGridPoint</definition>
+        <argsstring>(float *start_grid_point, float discr, float steps, float dim)</argsstring>
+        <name>GetOppositeGridPoint</name>
+        <param>
+          <type>float *</type>
+          <declname>start_grid_point</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>discr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>steps</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+<para>Возврат другой точки сетки, противоположной начальной (относительно &quot;центральной&quot; точки сетки) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_grid_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- стартовая точка, относительно которой подсчитываются координаты противоположной точки сетки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>discr</parametername>
+<parametername>steps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- параметры, определяющие величину отступа (discr*steps) по значениям каждой координаты относительно начальной точки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- размерность задачи, определяющая количество координат противоположной точки, по которым нужно сделать смещение в сторону относительно начальной точки сетки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>точка сетки, противоположная начальной </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="105" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="105" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float* PointOperations::GetRandomPointBetween</definition>
+        <argsstring>(float *start_point, float *opposite_point)</argsstring>
+        <name>GetRandomPointBetween</name>
+        <param>
+          <type>float *</type>
+          <declname>start_point</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>opposite_point</declname>
+        </param>
+        <briefdescription>
+<para>Возврат случайной точки из многомерного кубика </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_point</parametername>
+<parametername>opposite_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- противоположные точки многомерного кубика. Они определяют многомерный кубик, из которого будет браться некоторая случайная точка </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>случайная точка из многоменого кубика </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="119" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="119" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float* PointOperations::GluePoint</definition>
+        <argsstring>(float *point1, int dim1, float *point2, int dim2)</argsstring>
+        <name>GluePoint</name>
+        <param>
+          <type>float *</type>
+          <declname>point1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>point2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim2</declname>
+        </param>
+        <briefdescription>
+<para>Возврат &quot;склеенной&quot; точки </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- первая точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- количество координат первой точки </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вторая точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- количество координат второй точки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&quot;склеенная&quot; точка, в которой последовательно записаны сначала координат первой точки, а потом второй. В том случае, если количество координат обеих точек превышает максимально возможную размерность, в &quot;склееную&quot; точку записывается максимально возможное (поскольку размерность первой точки не может превышать максимально допустимое значение, гарантированно все координаты первой точки можно записать в &quot;склеенную&quot;). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="141" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="141" bodyend="155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" line="15" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h" bodystart="15" bodyend="159"/>
+    <listofallmembers>
+      <member refid="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>GetGridPoint</name></member>
+      <member refid="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>GetOppositeGridPoint</name></member>
+      <member refid="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>GetRandomPointBetween</name></member>
+      <member refid="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>GluePoint</name></member>
+      <member refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>InitPoint</name></member>
+      <member refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>IsEqualPoints</name></member>
+      <member refid="class_point_operations_1a547905af69bcb06620ec91c2905b7650" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>PointOperations</name></member>
+      <member refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>SetPoint</name></member>
+      <member refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>ZeroizePoint</name></member>
+      <member refid="class_point_operations_1a60f7b165f2a705d199f2e2932e1e3972" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>ZeroizePoint</name></member>
+      <member refid="class_point_operations_1ab2579f86d6be95165f93e343fcce078a" prot="public" virt="non-virtual"><scope>PointOperations</scope><name>~PointOperations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

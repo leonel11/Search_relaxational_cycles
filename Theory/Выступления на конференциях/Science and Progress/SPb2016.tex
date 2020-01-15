@@ -1,0 +1,490 @@
+%\documentclass[10pt,pdf,hyperref={unicode}]{beamer}
+\documentclass[fullscreen=true, unicode, bookmarks=false]{beamer}
+
+% \documentclass[aspectratio=43]{beamer}
+% \documentclass[aspectratio=1610]{beamer}
+% \documentclass[aspectratio=169]{beamer}
+
+\usepackage{lmodern}
+
+% Standard packages
+\usepackage[T2A]{fontenc} 
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[export]{adjustbox}
+\usepackage{textgreek}
+\sloppy
+
+% ��������� ������� ���������
+\setbeamertemplate{navigation symbols}{}
+
+% ���� ����������
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+%\usetheme{Frankfurt}
+%\usetheme{Darmstadt}
+%\usetheme{Warsaw}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{default}
+%\usetheme{Pittsburgh}
+%\usetheme{Copenhagen}
+
+% �������� �����
+%\usecolortheme{orchid}
+\usecolortheme{whale}
+
+\usefonttheme{professionalfonts} % default family is serif
+
+\setbeamertemplate{footline}{\hspace*{.5cm}\scriptsize{\insertshorttitle
+\hspace*{50pt} \hfill\hspace*{.5cm}}\vspace{5pt}} 
+
+\setbeamercolor{bibliography entry author}{fg=black}
+
+\title[]{Stable regimes and toruses of one class of impulsive systems}   
+\author[]{{\large Leonid Ivanovsky}} 
+\date{}
+\institute[]
+{postgraduate student of P.G. Demidov YarSU, \\
+laboratory researcher in SCC RAS
+}
+% \logo{\includegraphics[height=5mm]{images/logo.png}\vspace{-7pt}}
+\titlegraphic{
+   \includegraphics[scale = 0.5]{yarsu_logo.png}
+   \hspace{2cm}
+   \includegraphics[scale = 1.05]{chg_logo.png}
+}
+
+\begin{document}
+
+% ��������� �����
+\begin{frame}
+\titlepage
+\end{frame} 
+
+\begin{frame}
+\frametitle{Dynamic system} 
+\begin{eqnarray}\label{u_system} 
+	\dot{u_j} = d(a_1u_{j-1}-a_2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \nonumber \\ j=\overline{1,m},
+\end{eqnarray}		
+
+\pause
+$$ a_1, a_2 \in \{0, 1, 2\}, \quad \lambda >> 1, \; \beta > 0, \; \alpha > 1 + \beta; $$
+$$ u_j=u_j(t)>0, \quad f(u), g(u) \in C^2(\mathbb{R}_+), $$
+$$ f(0) = g(0) = 1, \quad 0 < \beta g(u) < \alpha, \; \forall u \in \mathbb{R}_+; $$
+$$ f(u), g(u), uf'(u), ug'(u), u^2f''(u), u^2g''(u) = O(1/u), \; u \to +\infty. $$
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. I //
+Differential Equations. 2011. V. 47,  12. P. 927 � 941. }
+
+\vspace{1cm}
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. II //
+Differential Equations. 2011. V. 47,  12. P. 1697 � 1713. }
+
+\vspace{1cm}
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. III //
+Differential Equations. 2012. V. 48,  2. P. 159 � 175. }
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Substitutions} 
+$$ u_1 = \mbox{exp} \left( \frac{x}{\varepsilon} \right), \quad \varepsilon = \frac{1}{\lambda} << 1, $$
+$$ u_j = \mbox{exp} \left( \frac{x}{\varepsilon} + \sum\limits_{k=1}^{j-1} y_k \right), \quad j = \overline{2,m}, $$ 
+\vspace{1.5cm}
+\pause
+$$ \dot{x} = -1 + \alpha f \left( \mbox{exp} \, \left( \frac{x(t-1)}{\varepsilon} \right) \right) - \beta g \left( \mbox{exp} \, \left( \frac{x}{\varepsilon} \right) \right). $$
+\end{frame}
+
+\begin{frame}
+\frametitle{Impulsive system} 
+
+\begin{eqnarray}\label{y_system}
+\dot{y_1} = d(\mbox{exp}\,y_{j+1} + a_1\,\mbox{exp}\,(-y_j) - \mbox{exp}\,y_j - a_1\,\mbox{exp}\:y_{j-1}), \nonumber \\ j=\overline{1,m-1},
+\end{eqnarray}
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0). $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Researched map} 
+\begin{equation}\label{phi_z} 
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+\end{equation}
+
+\vspace{0.2cm}
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1}, $$
+$$ y_j \approx \mbox{ln} u_{j+1} - \mbox{ln} u_j, \quad j=\overline{1,m-1} $$
+
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+\pause
+\begin{block}{Theorem}
+For any stable point $z_{*}$ of map \eqref{phi_z}, in systems (1) and (2) there is a relaxational cycle with period $ T_0 $ and the same behaviour of stability.
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Numerical research} 
+\begin{figure}
+\includegraphics[scale=0.1]{cplusplus.png}
+\hfill 
+\includegraphics[scale=0.04]{qt.png}
+\hfill
+\includegraphics[scale=0.16]{python.png} 
+\vfill 
+\includegraphics[scale=0.5]{openmp.png}  
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+$$
+	\Phi(z): \begin{pmatrix}
+           z_1 \\
+           \vdots \\
+           z_{m-1}
+          \end{pmatrix}
+					\to
+					\begin{pmatrix}
+           y_1(T_0) \\
+           \vdots \\
+           y_{m-1}(T_0)
+          \end{pmatrix},
+$$
+
+$$ y_1(-0) = z_1, \: \dots \: , \: y_{m-1}(-0) = z_{m-1}, $$
+
+$$ T_0 = \alpha + 1 + (\beta+1)/(\alpha - \beta - 1). $$
+
+\vfill
+
+\pause
+
+This research was supported by the Russian Science Foundation (project nos. 14-21-00158)
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$ a_1 = 1, \, a_2 = 2: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j-1}-2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \; j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_0=u_1, \; u_3=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(1 + e^{-y_2} - e^{y_2} - e^{-y_1})
+\end{cases}
+\end{array}
+$$
+
+\medskip
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = 0.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Regions with the same bifurcations} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_neuman.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{$ (\alpha, \beta) \in A_1 $} 
+\begin{center}
+  \includegraphics[scale=0.85]{neuI1.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{$ (\alpha, \beta) \in A_2 $} 
+\begin{center}
+  \includegraphics[scale=0.85]{0,056.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{$ (\alpha, \beta) \in A_3 $} 
+\begin{center}
+  \includegraphics[scale=0.85]{neuIII2.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{L.~Ivanovsky, S.~Samsonov. } 
+{Phase rebuildings of one two-dimensional dynamic system with impulsive influences //
+Modeling and Analysis of Information Systems. 2014. V. 21,  6. P. 179 � 181. }
+
+\vspace{2cm}
+
+\textit{L.~Ivanovsky, S.~Samsonov. } 
+{Dynamics of two-dimensional mapping and stable regimes of singularly perturbed neuron system //
+Computer technologies in sciences. Methods of simulations on supercomputers. Part 2. Proceedings. 2015. P. 121 - 132. }
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$ a_1 = 1, \, a_2 = 2: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j-1}-2u_j+u_{j+1})+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \; j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_0=u_3, \; u_1=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$
+\begin{array}{l}
+\begin{cases}
+\dot{y_1} = d(e^{y_2} + e^{-y_1} - e^{y_1} - 1) \\
+\dot{y_2} = d(1 + e^{-y_2} - e^{y_2} - e^{-y_1})
+\end{cases}
+\end{array}
+$$
+
+\medskip
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = -\sum\limits_{k=1}^{m-1} y_k.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Regions with the same bifurcations} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_periodic.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Main cases} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{picI1.pdf} \\ {\scriptsize $ (\alpha, \beta) \in A_1 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{picII1.pdf} \\ {\scriptsize $ (\alpha, \beta) \in A_2 $}}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{$ (\alpha, \beta) \in A_3 $} 
+\begin{center}
+  \includegraphics[scale=0.85]{transarea.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{L.~Ivanovsky. } 
+{Dynamic properties of one class of impulse systems //
+Computer technologies in sciences. Methods of simulations on supercomputers. Part 3. Proceedings. 2015. P. 126 - 131. }
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$ a_1 = 0, \, a_2 = 1: $$
+
+\begin{eqnarray}
+	\dot{u_j} = d(u_{j+1}-u_j)+\lambda[-1+\alpha f(u_j(t-1)) - \beta g(u_j)]u_j, \quad j=\overline{1,3}, \nonumber
+\end{eqnarray}		
+
+$$ \underline{u_1=u_4} $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Results of research} 
+
+$$
+\begin{cases}
+	\dot{y_1} = d[\mbox{exp} \, y_2 - \mbox{exp} \, y_1 ], \\
+	\dot{y_2} = d[\mbox{exp} \, y_3 - \mbox{exp} \, y_2 ], \\
+\end{cases}
+$$
+
+\medskip
+
+$$ y_j(+0) = \frac{\alpha -1}{\alpha - \beta - 1}y_j(-0), $$
+$$ y_j(1+0) = y_j(1-0) - \frac{\alpha}{\alpha - 1}y_j(+0), $$
+$$ y_j(\alpha + 0) = (1 + \beta)y_j(\alpha - 0), $$
+$$ y_j(\alpha + 1 + 0) = y_j(\alpha + 1 - 0) - \frac{\alpha}{1 + \beta}y_j(\alpha + 0), $$
+$$ y_0 = y_3 = 0.  $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Regions with the same bifurcations} 
+\begin{center}
+  \includegraphics[scale=0.9]{Areas_uniwave.pdf}  
+ \end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{L.~Ivanovsky, S.~Samsonov. } 
+{Dynamics of two-dimensional mapping and stable regimes of singularly perturbed neuron system //
+Computer technologies in sciences. Methods of simulations on supercomputers. Part 2. Proceedings. 2015. P. 121 - 132. }
+
+\vspace{1cm}
+
+\textit{L.~Ivanovsky. } 
+{Dynamic properties of one class of impulse systems //
+Computer technologies in sciences. Methods of simulations on supercomputers. Part 3. Proceedings. 2015. P. 126 - 131. }
+
+\vspace{1cm}
+
+\textit{L.~Ivanovsky. } 
+{Phase rebuildings of dynamic systems with impulsive influences //
+International Scientific Conference "XII Belorussian Mathematical Conference". Conference proceedings. Part 3. 2016. P. 8 � 9. }
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Bifurcations in $A_1$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_I_1.pdf} \\ {\scriptsize $ d < 0.008 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_I_2.pdf} \\ {\scriptsize $ 0.008 < d < 0.19 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 3.6, \beta = 0.4 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bifurcations in $A_2$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_1.pdf} \\ {\scriptsize $ d < 0.316 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_2.pdf} \\ {\scriptsize $ 0.316 < d < 0.317 $}}
+\end{minipage}
+\vfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_3.pdf} \\ {\scriptsize $ 0.317 < d < 0.3174 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.32]{port_II_4.pdf} \\ {\scriptsize $ 0.3174 < d < 0.3178 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 1.9, \beta = 0.1 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bifurcations in $A_3$} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_III_1.pdf} \\ {\scriptsize $ d < 0.013 $}}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_III_2.pdf} \\ {\scriptsize $ 0.013 < d < 0.017 $}}
+\end{minipage}
+\center{ {\scriptsize $ \alpha = 2.1, \beta = 0.1 $} }
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+\begin{figure}[h]
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_II_1.pdf} }
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.49\linewidth}
+\center{\includegraphics[scale=0.7]{port_II_2.pdf} }
+\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{} 
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. I //
+Differential Equations. 2011. V. 47,  12. P. 927 � 941. }
+
+\vspace{1cm}
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. II //
+Differential Equations. 2011. V. 47,  12. P. 1697 � 1713. }
+
+\vspace{1cm}
+
+\textit{S.\,D.~Glyzin , A.\,Yu.~Kolesov, N.\,Kh.~Rozov. } 
+{Relaxation self-oscillations in neuron systems. III //
+Differential Equations. 2012. V. 48,  2. P. 159 � 175. }
+
+\end{frame}
+
+\end{document}

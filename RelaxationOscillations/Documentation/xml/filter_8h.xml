@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="filter_8h" kind="file" language="C++">
+    <compoundname>filter.h</compoundname>
+    <includes refid="parser_8h" local="yes">parser.h</includes>
+    <includedby refid="controller_8h" local="yes">controller.h</includedby>
+    <includedby refid="filter_8cpp" local="yes">filter.cpp</includedby>
+    <incdepgraph>
+      <node id="153">
+        <label>iomanip</label>
+      </node>
+      <node id="149">
+        <label>windows.h</label>
+      </node>
+      <node id="140">
+        <label>filter.h</label>
+        <link refid="filter.h"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>stdlib.h</label>
+      </node>
+      <node id="144">
+        <label>arithmetic.h</label>
+        <link refid="arithmetic_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="155">
+        <label>string</label>
+      </node>
+      <node id="143">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>omp.h</label>
+      </node>
+      <node id="142">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>string.h</label>
+      </node>
+      <node id="156">
+        <label>vector</label>
+      </node>
+      <node id="141">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>sstream</label>
+      </node>
+      <node id="150">
+        <label>time.h</label>
+      </node>
+      <node id="148">
+        <label>math.h</label>
+      </node>
+      <node id="152">
+        <label>iostream</label>
+      </node>
+      <node id="157">
+        <label>algorithm</label>
+      </node>
+      <node id="145">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="160">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>filter.h</label>
+        <link refid="filter.h"/>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="162">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="161">
+        <label>controller.cpp</label>
+        <link refid="controller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_filter_points" prot="public">FilterPoints</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="filter_8h_1aa94b00949cd9c8805e52bdfb2819edc1" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* path_to_output_file</definition>
+        <argsstring></argsstring>
+        <name>path_to_output_file</name>
+        <initializer>= &quot;different_stationary_points.txt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" line="12" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>region<sp/>Вспомогательные<sp/>заголовочные<sp/>файлы</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="parser_8h" kindref="compound">parser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FILTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Путь<sp/>до<sp/>файла<sp/>вывода<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="filter_8h_1aa94b00949cd9c8805e52bdfb2819edc1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="filter_8h_1aa94b00949cd9c8805e52bdfb2819edc1" kindref="member">path_to_output_file</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;different_stationary_points.txt&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>файл<sp/>для<sp/>вывода<sp/>различных<sp/>стационарных<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Описание<sp/>структуры<sp/>класса</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_filter_points" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_filter_points" kindref="compound">FilterPoints</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_filter_points_1ae961bbdc20e31f6c2c5e11f88a250dd4" kindref="member">FilterPoints</ref>(<ref refid="class_data_parser" kindref="compound">DataParser</ref><sp/>config);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" kindref="member">AddPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point);<sp/></highlight><highlight class="comment">//<sp/>добавление<sp/>точки</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" kindref="member">ExcludeEqualPoints</ref>();<sp/></highlight><highlight class="comment">//<sp/>исключение<sp/>эквивалентных<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_filter_points_1a05208c4421d0e0fc377c42f27f00abfc" kindref="member">~FilterPoints</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DeleteEqualPoints();<sp/></highlight><highlight class="comment">//<sp/>удаление<sp/>эквивалентных<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OutputPoints();<sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;float&gt;&gt;<sp/>points;<sp/></highlight><highlight class="comment">//<sp/>список<sp/>всех<sp/>точек<sp/>фильтра</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FILE<sp/>*output_file;<sp/></highlight><highlight class="comment">//<sp/>файл<sp/>для<sp/>вывода<sp/>информации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dim;<sp/></highlight><highlight class="comment">//<sp/>размерность<sp/>задачи<sp/>(переменная<sp/>необходима<sp/>для<sp/>вывода<sp/>только<sp/>необходимых<sp/>координат<sp/>точек)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps;<sp/></highlight><highlight class="comment">//<sp/>точность<sp/>сравнения<sp/>двух<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.h"/>
+  </compounddef>
+</doxygen>

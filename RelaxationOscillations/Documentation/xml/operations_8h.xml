@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="operations_8h" kind="file" language="C++">
+    <compoundname>operations.h</compoundname>
+    <includes refid="arithmetic_8h" local="yes">arithmetic.h</includes>
+    <includedby refid="types_8h" local="yes">types.h</includedby>
+    <incdepgraph>
+      <node id="197">
+        <label>iomanip</label>
+      </node>
+      <node id="193">
+        <label>windows.h</label>
+      </node>
+      <node id="190">
+        <label>stdlib.h</label>
+      </node>
+      <node id="188">
+        <label>arithmetic.h</label>
+        <link refid="arithmetic_8h"/>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>string</label>
+      </node>
+      <node id="187">
+        <label>operations.h</label>
+        <link refid="operations.h"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>omp.h</label>
+      </node>
+      <node id="191">
+        <label>string.h</label>
+      </node>
+      <node id="200">
+        <label>vector</label>
+      </node>
+      <node id="198">
+        <label>sstream</label>
+      </node>
+      <node id="194">
+        <label>time.h</label>
+      </node>
+      <node id="192">
+        <label>math.h</label>
+      </node>
+      <node id="196">
+        <label>iostream</label>
+      </node>
+      <node id="201">
+        <label>algorithm</label>
+      </node>
+      <node id="189">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="207">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>calculation.cpp</label>
+        <link refid="calculation_8cpp"/>
+      </node>
+      <node id="210">
+        <label>filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>calculation.h</label>
+        <link refid="calculation_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>operations.h</label>
+        <link refid="operations.h"/>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>parser.cpp</label>
+        <link refid="parser_8cpp"/>
+      </node>
+      <node id="204">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="213">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>filter.cpp</label>
+        <link refid="filter_8cpp"/>
+      </node>
+      <node id="209">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="208">
+        <label>controller.cpp</label>
+        <link refid="controller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_point_operations" prot="public">PointOperations</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>region<sp/>Вспомогательные<sp/>заголовочные<sp/>файлы</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arithmetic_8h" kindref="compound">arithmetic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OPERATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPERATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Описание<sp/>структуры<sp/>статического<sp/>класса</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_point_operations" refkind="compound"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_point_operations" kindref="compound">PointOperations</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_point_operations_1a547905af69bcb06620ec91c2905b7650" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a547905af69bcb06620ec91c2905b7650" kindref="member">PointOperations</ref>()<sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="19" refid="class_point_operations_1ab2579f86d6be95165f93e343fcce078a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1ab2579f86d6be95165f93e343fcce078a" kindref="member">~PointOperations</ref>()<sp/>{<sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>region<sp/>static<sp/>public<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point<sp/>=<sp/>NULL)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(point<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается<sp/>в<sp/>том<sp/>случае,<sp/>если<sp/>обнуляемая<sp/>точка<sp/>существует</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>i++)<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point[i]<sp/>=<sp/>0.0;<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_point_operations_1a60f7b165f2a705d199f2e2932e1e3972" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_operations_1a60f7b165f2a705d199f2e2932e1e3972" kindref="member">ZeroizePoint</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*point<sp/>=<sp/>NULL)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(point<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается<sp/>в<sp/>том<sp/>случае,<sp/>если<sp/>обнуляемая<sp/>точка<sp/>существует</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>i++)<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point[i]<sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" kindref="member">SetPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point<sp/>=<sp/>NULL,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*other_point<sp/>=<sp/>NULL)<sp/>{<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((point<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/>(other_point<sp/>!=<sp/>NULL))<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>обе<sp/>точки<sp/>существуют</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point[i]<sp/>=<sp/>other_point[i];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>инициализация<sp/>изначальной<sp/>точки<sp/>(point)<sp/>другой<sp/>точкой<sp/>(other_point)</highlight></codeline>
+<codeline lineno="60" refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">InitPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point<sp/>=<sp/>NULL,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*other_point<sp/>=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(point);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" kindref="member">SetPoint</ref>(point,<sp/>other_point);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" kindref="member">IsEqualPoints</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point2,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((point1<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/>(point2<sp/>!=<sp/>NULL))<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>обе<sp/>точки<sp/>существуют<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fabs(point1[i]<sp/>-<sp/>point2[i])<sp/>&gt;=<sp/>eps))</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" kindref="member">GetGridPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*start_grid_point,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*grid_idx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>discr)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(res);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>начальная<sp/>точка<sp/>сетки<sp/>и<sp/>многомерный<sp/>индекс<sp/>для<sp/>генерации<sp/>существуют</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((start_grid_point<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/>(grid_idx<sp/>!=<sp/>NULL))<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[i]<sp/>=<sp/>start_grid_point[i]+grid_idx[i]*discr;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" kindref="member">GetOppositeGridPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*start_grid_point,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>discr,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>steps,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dim)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(res);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(start_grid_point<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>стартовая<sp/>точка<sp/>генерации<sp/>сетки<sp/>существует</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>dim;<sp/>i++)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[i]<sp/>=<sp/>start_grid_point[i]+discr*steps;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" kindref="member">GetRandomPointBetween</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*start_point,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*opposite_point)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(res);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((start_point<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/>(opposite_point<sp/>!=<sp/>NULL))<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>обе<sp/>точки<sp/>существуют<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>first_val<sp/>=<sp/>min(start_point[i],<sp/>opposite_point[i]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>last_val<sp/>=<sp/>max(start_point[i],<sp/>opposite_point[i]);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[i]<sp/>=<sp/><ref refid="class_arithmetics_1a2496e1ae47ea96f3abd3dffc3b43d841" kindref="member">Arithmetics::RandomBetween</ref>(first_val,<sp/>last_val);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" kindref="member">GluePoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim2)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*res<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">ZeroizePoint</ref>(res);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((point1<sp/>!=<sp/>NULL)<sp/>&amp;&amp;<sp/>(point2<sp/>!=<sp/>NULL))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>обе<sp/>точки<sp/>существуют<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/><ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;=<sp/>dim1)<sp/></highlight><highlight class="comment">//<sp/>запись<sp/>координат<sp/>первой<sp/>точки<sp/>в<sp/>&quot;склеенную&quot;<sp/>точку</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[i]<sp/>=<sp/>point1[i];</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((i<sp/>&gt;<sp/>dim1)<sp/>&amp;&amp;<sp/>(i<sp/>&lt;=<sp/>dim1+dim2))<sp/></highlight><highlight class="comment">//<sp/>запись<sp/>координат<sp/>второй<sp/>точки<sp/>в<sp/>&quot;склеенную&quot;<sp/>точку</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>res[i]<sp/>=<sp/>point2[i-dim1];</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/operations.h"/>
+  </compounddef>
+</doxygen>

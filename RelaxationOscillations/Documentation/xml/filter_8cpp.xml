@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="filter_8cpp" kind="file" language="C++">
+    <compoundname>filter.cpp</compoundname>
+    <includes refid="filter_8h" local="yes">filter.h</includes>
+    <incdepgraph>
+      <node id="133">
+        <label>iomanip</label>
+      </node>
+      <node id="129">
+        <label>windows.h</label>
+      </node>
+      <node id="120">
+        <label>filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>stdlib.h</label>
+      </node>
+      <node id="124">
+        <label>arithmetic.h</label>
+        <link refid="arithmetic_8h"/>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>string</label>
+      </node>
+      <node id="123">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>omp.h</label>
+      </node>
+      <node id="122">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>string.h</label>
+      </node>
+      <node id="136">
+        <label>vector</label>
+      </node>
+      <node id="121">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>sstream</label>
+      </node>
+      <node id="119">
+        <label>filter.cpp</label>
+        <link refid="filter.cpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>time.h</label>
+      </node>
+      <node id="128">
+        <label>math.h</label>
+      </node>
+      <node id="132">
+        <label>iostream</label>
+      </node>
+      <node id="137">
+        <label>algorithm</label>
+      </node>
+      <node id="125">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="filter_8h" kindref="compound">filter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_filter_points_1ae961bbdc20e31f6c2c5e11f88a250dd4" kindref="member">FilterPoints::FilterPoints</ref>(<ref refid="class_data_parser" kindref="compound">DataParser</ref><sp/>config)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>dim<sp/>=<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>eps<sp/>=<sp/>config.<ref refid="class_data_parser_1ab82aae2922755c17eafa460578ff587b" kindref="member">Eps</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>output_file<sp/>=<sp/>fopen(<ref refid="filter_8h_1aa94b00949cd9c8805e52bdfb2819edc1" kindref="member">path_to_output_file</ref>,<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>открытие<sp/>файла<sp/>вывода<sp/>различных<sp/>точек<sp/>для<sp/>записи</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" kindref="member">FilterPoints::AddPoint</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*point)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(point<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>продолжается<sp/>в<sp/>том<sp/>случае,<sp/>если<sp/>точка<sp/>существует</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points.push_back(<ref refid="class_types_change_1af8ecb0a087f1140a2aefccbf661b25e5" kindref="member">TypesChange::PointToFloatVector</ref>(point));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FilterPoints::DeleteEqualPoints()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)points.size()-1))<sp/>{<sp/></highlight><highlight class="comment">//<sp/>пробег<sp/>по<sp/>всем<sp/>элементам<sp/>списка<sp/>различных<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>текущая<sp/>точка<sp/>списка,<sp/>которая<sp/>будет<sp/>сравниваться<sp/>со<sp/>следующими<sp/>за<sp/>ней<sp/>в<sp/>списке<sp/>точками<sp/>на<sp/>эквивалентность</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*cur_sln<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(cur_sln,<sp/>&amp;(points.at(i))[0]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i+1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(j<sp/>&lt;<sp/>points.size())<sp/>{<sp/></highlight><highlight class="comment">//<sp/>сравнение<sp/>с<sp/>остальными<sp/>точками<sp/>списка.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Сравнение<sp/>идёт<sp/>со<sp/>всеми<sp/>другими<sp/>точками<sp/>списка,<sp/>которые<sp/>расположены<sp/>в<sp/>списке<sp/>после<sp/>текущей<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(т.к.<sp/>с<sp/>точками,<sp/>идущими<sp/>в<sp/>списке<sp/>раньше<sp/>текущей,<sp/>проверка<sp/>уже<sp/>проводилась<sp/>на<sp/>более<sp/>ранних<sp/>итерациях)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*other_point<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>другая<sp/>точка<sp/>из<sp/>списка,<sp/>которая<sp/>будет<sp/>сравниваться<sp/>с<sp/>текущей</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(other_point,<sp/><ref refid="class_types_change_1a44905ab5b36cc55302532575ee45024e" kindref="member">TypesChange::FloatVectorToPoint</ref>(points.at(j)));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" kindref="member">PointOperations::IsEqualPoints</ref>(cur_sln,<sp/>other_point,<sp/>eps))<sp/></highlight><highlight class="comment">//<sp/>в<sp/>случае,<sp/>если<sp/>точки<sp/>оказались<sp/>эквивалентными</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points.erase(points.begin()+j);<sp/></highlight><highlight class="comment">//<sp/>удаление<sp/>другой<sp/>точки<sp/>списка,<sp/>которую<sp/>только<sp/>что<sp/>сравнивали<sp/>с<sp/>текущей</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FilterPoints::OutputPoints()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(output_file<sp/>!=<sp/>NULL)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>процесс<sp/>начинается,<sp/>если<sp/>файл<sp/>для<sp/>вывода<sp/>точек<sp/>открыт<sp/>для<sp/>записи</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>points.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cur_point[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(cur_point,<sp/><ref refid="class_types_change_1a44905ab5b36cc55302532575ee45024e" kindref="member">TypesChange::FloatVectorToPoint</ref>(points.at(i)));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(output_file,<sp/></highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kindref="member">TypesChange::PointToString</ref>(cur_point,<sp/>1,<sp/>dim).c_str());</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fclose(output_file);<sp/></highlight><highlight class="comment">//<sp/>закрытие<sp/>файла<sp/>после<sp/>вывода<sp/>списка<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" kindref="member">FilterPoints::ExcludeEqualPoints</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>DeleteEqualPoints();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>OutputPoints();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><ref refid="class_filter_points_1a05208c4421d0e0fc377c42f27f00abfc" kindref="member">FilterPoints::~FilterPoints</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/filter.cpp"/>
+  </compounddef>
+</doxygen>

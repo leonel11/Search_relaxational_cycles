@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>RelaxationOscillations: Исходный файл arithmetic.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RelaxationOscillations
+   </div>
+   <div id="projectbrief">RelaxationOscillations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">arithmetic.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="arithmetic_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STD_THINGS </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STD_THINGS</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma region Используемые стандартные заголовочные файлы</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;omp.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span> </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma region Используемые стандартные пространства имён</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#ifndef ARITHMETIC_H</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="arithmetic_8h.html#a913239c557dc40d7353fd682bb2e795e">   31</a></span>&#160;<span class="preprocessor">#define ARITHMETIC_H</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#pragma region Константы-размерности класса</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a> = 20; <span class="comment">// максимально возможная размерность задачи (и как следствие вектора-решения)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">   36</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a> = 10000; <span class="comment">// максимально возможная длина массива</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma region Описание структуры статического класса</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_arithmetics.html">   45</a></span>&#160;<span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_arithmetics.html">Arithmetics</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_arithmetics.html#afdaeab6d774c7f71d0abbf3723c2c76d">   48</a></span>&#160;        <a class="code" href="class_arithmetics.html#afdaeab6d774c7f71d0abbf3723c2c76d">Arithmetics</a>() { };</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_arithmetics.html#a93e2f5a9112c403aaceef9e1913dbd96">   49</a></span>&#160;        <a class="code" href="class_arithmetics.html#a93e2f5a9112c403aaceef9e1913dbd96">~Arithmetics</a>() { };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    #pragma region static public functions</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_arithmetics.html#a2496e1ae47ea96f3abd3dffc3b43d841">   59</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_arithmetics.html#a2496e1ae47ea96f3abd3dffc3b43d841">RandomBetween</a>(<span class="keywordtype">float</span> first_val, <span class="keywordtype">float</span> last_val) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">float</span> diff = last_val-first_val;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">float</span> rest = ((float) rand()) / (<span class="keywordtype">float</span>) RAND_MAX * diff;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">float</span> random_number = first_val+rest;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> random_number;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_arithmetics.html#a06388394a8a4162176567d6735fb4a39">   72</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> *<a class="code" href="class_arithmetics.html#a06388394a8a4162176567d6735fb4a39">GetNextGridIndex</a>(<span class="keywordtype">int</span> *grid_idx, <span class="keywordtype">int</span> steps) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span> (grid_idx != NULL) { <span class="comment">// процесс продолжается, если многомерный индекс существует</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordtype">int</span> rest = 1; <span class="comment">// &quot;перенос&quot; при сложении</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; <a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>; i++) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordtype">int</span> tmp = grid_idx[i];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    grid_idx[i] = (tmp+rest) % steps;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    rest = (tmp+rest) / steps;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> grid_idx;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="arithmetic_8h_html_abdb68df7b02fded293d9a021b5d4b98b"><div class="ttname"><a href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a></div><div class="ttdeci">const int MAX_DIM</div><div class="ttdef"><b>Definition:</b> arithmetic.h:35</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_arithmetics_html_afdaeab6d774c7f71d0abbf3723c2c76d"><div class="ttname"><a href="class_arithmetics.html#afdaeab6d774c7f71d0abbf3723c2c76d">Arithmetics::Arithmetics</a></div><div class="ttdeci">Arithmetics()</div><div class="ttdef"><b>Definition:</b> arithmetic.h:48</div></div>
+<div class="ttc" id="arithmetic_8h_html_a21afaf2dcbf3be6bc362d358ab3378d9"><div class="ttname"><a href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a></div><div class="ttdeci">const int MAX_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> arithmetic.h:36</div></div>
+<div class="ttc" id="class_arithmetics_html_a2496e1ae47ea96f3abd3dffc3b43d841"><div class="ttname"><a href="class_arithmetics.html#a2496e1ae47ea96f3abd3dffc3b43d841">Arithmetics::RandomBetween</a></div><div class="ttdeci">static float RandomBetween(float first_val, float last_val)</div><div class="ttdoc">Возврат случайного числа из интервала </div><div class="ttdef"><b>Definition:</b> arithmetic.h:59</div></div>
+<div class="ttc" id="class_arithmetics_html"><div class="ttname"><a href="class_arithmetics.html">Arithmetics</a></div><div class="ttdef"><b>Definition:</b> arithmetic.h:45</div></div>
+<div class="ttc" id="class_arithmetics_html_a06388394a8a4162176567d6735fb4a39"><div class="ttname"><a href="class_arithmetics.html#a06388394a8a4162176567d6735fb4a39">Arithmetics::GetNextGridIndex</a></div><div class="ttdeci">static int * GetNextGridIndex(int *grid_idx, int steps)</div><div class="ttdoc">Возврат следующего по счету многомерного целочисленного индекса, участвующего в формировании значений...</div><div class="ttdef"><b>Definition:</b> arithmetic.h:72</div></div>
+<div class="ttc" id="class_arithmetics_html_a93e2f5a9112c403aaceef9e1913dbd96"><div class="ttname"><a href="class_arithmetics.html#a93e2f5a9112c403aaceef9e1913dbd96">Arithmetics::~Arithmetics</a></div><div class="ttdeci">~Arithmetics()</div><div class="ttdef"><b>Definition:</b> arithmetic.h:49</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по RelaxationOscillations. Последние изменения: Сб 20 Июн 2015 13:35:59. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>RelaxationOscillations: Исходный файл calculation.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RelaxationOscillations
+   </div>
+   <div id="projectbrief">RelaxationOscillations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">calculation.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calculation_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma region Вспомогательные заголовочные файлы</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parser_8h.html">parser.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef CALCULATION_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define CALCULATION_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma region Описание структуры класса</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_relaxarion_oscillations.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_relaxarion_oscillations.html">RelaxarionOscillations</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_relaxarion_oscillations.html#ade0e59e1059cde99b18be8878736638c">RelaxarionOscillations</a>(<a class="code" href="class_data_parser.html">DataParser</a> config, <span class="keywordtype">float</span> *start_point);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_relaxarion_oscillations.html#afb7f1fd0b0d02ca54ae0f9b63e43fb9a">SetSolution</a>(<span class="keywordtype">float</span> *solution); <span class="comment">// установка других значений координат точки в точку-решение</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">float</span> *<a class="code" href="class_relaxarion_oscillations.html#ab5e64b9ca53763b51f541ae620134748">GetSolution</a>(); <span class="comment">// возврат точки-решения</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_relaxarion_oscillations.html#ad5c4c127a5c314536a095ab983471422">CalculateSolution</a>(); <span class="comment">// расчёт координат точки-решения после релаксационных колебаний</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_relaxarion_oscillations.html#ae7de123edaf002b2741bc2739eb167f3">~RelaxarionOscillations</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    #pragma region static public functions</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_relaxarion_oscillations.html#a3e1a73c2ba6f446e1e425b7ce7ddc07f">   30</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_relaxarion_oscillations.html#a3e1a73c2ba6f446e1e425b7ce7ddc07f">DisplayTheoreticalSolutions</a>(<a class="code" href="class_data_parser.html">DataParser</a> config) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">int</span> dim = config.<a class="code" href="class_data_parser.html#aabdef48a661a4737ec01d3d31e00ccb3">Dim</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">float</span> d = config.<a class="code" href="class_data_parser.html#af0cc37893ec5aa4aa05130cea1988d53">D</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">float</span> alpha = config.<a class="code" href="class_data_parser.html#a12892b6cc8bb7b24159e7709852649cd">Alpha</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">float</span> beta = config.<a class="code" href="class_data_parser.html#a31d430da03dca13e7cec8f84401c12a6">Beta</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;Stationary points of the theory for given initial values:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">float</span> theor_sln[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>]; <span class="comment">// массив для хранения координат решения, получающегося из теории</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">PointOperations::ZeroizePoint</a>(theor_sln);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            cout &lt;&lt; <a class="code" href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">TypesChange::PointToString</a>(theor_sln, 1, dim) &lt;&lt; endl;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt;= dim; ++k) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">PointOperations::ZeroizePoint</a>(theor_sln);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="comment">// расчет различных теоретических результатов в зависимости от области параметров</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="comment">// (см. Теорему 2 из файла DU0155.pdf)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> idx = 1; idx &lt;= dim; ++idx) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <span class="comment">// (alpha, beta) in U1 = {(alpha, beta): alpha &gt; (beta+1)*(beta+2), beta &gt; 0}             or</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <span class="comment">// (alpha, beta) in U3 = {(alpha, beta): 2*beta+2 &lt; alpha &lt; (beta+1)*(beta+2), beta &gt; 0}  or</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    <span class="comment">// (alpha, beta) in U4 = {(alpha, beta): max(2, 1+beta) &lt; alpha &lt; 2*beta+2, beta &gt; 0}</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">if</span> ((beta &gt; 0.0 &amp;&amp; alpha &gt; (beta+1.0)*(beta+2.0)) || </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                        (beta &gt; 0.0 &amp;&amp; alpha &gt; 2.0*beta+2.0 &amp;&amp; alpha &lt; (beta+1.0)*(beta+2.0)) ||</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        (beta &gt; 0.0 &amp;&amp; alpha &gt; max(2.0, 1.0+beta) &amp;&amp; alpha &lt; 2.0*beta+2.0)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="keywordflow">if</span> (idx &lt;= k) <span class="comment">// idx = 1...k</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                            theor_sln[idx] = log(1.0/d)-log((beta+1.0)/(alpha-beta-1.0))+log((<span class="keywordtype">double</span>)k+1.0-idx);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        <span class="keywordflow">else</span> <span class="comment">// idx = k+1...m-1</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                            theor_sln[idx] = -log(1.0/d)+log((beta+1.0)/(alpha-beta-1.0))-log((<span class="keywordtype">double</span>)idx-k);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <span class="comment">// (alpha, beta) in U2 = {(alpha, beta): 1 &lt; alpha &lt; 2, 0 &lt; beta&lt;(alpha-1)*(2-alpha)}          or</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <span class="comment">// (alpha, beta) in U5 = {(alpha, beta): 1 &lt; alpha &lt; 2, (alpha-1)*(2-alpha) &lt; beta &lt; alpha-1}</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((alpha &gt; 1.0 &amp;&amp; alpha &lt; 2.0 &amp;&amp; beta &gt; 0.0 &amp;&amp; beta &lt; (alpha-1.0)*(2.0-alpha)) || </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                             (alpha &gt; 1.0 &amp;&amp; alpha &lt; 2.0 &amp;&amp; beta &gt; (alpha-1.0)*(2.0-alpha) &amp;&amp; beta &lt; (alpha-1.0))) { </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <span class="keywordflow">if</span> (idx &lt;= k) <span class="comment">// idx = 1...k</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            theor_sln[idx] = -(alpha-1.0)*log(1.0/d)-(alpha-1.0)*log((<span class="keywordtype">double</span>)k+1.0-idx)+alpha*log(alpha-1.0);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="keywordflow">else</span> <span class="comment">// idx = k+1...m-1</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                            theor_sln[idx] = (alpha-1.0)*log(1.0/d)+(alpha-1.0)*log((<span class="keywordtype">double</span>)idx-k)-alpha*log(alpha-1.0);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                cout &lt;&lt; <a class="code" href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">TypesChange::PointToString</a>(theor_sln, 1, dim) &lt;&lt; endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">float</span> Period(); <span class="comment">// возврат значения периода</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> ZeroizeBoundaryConditions(); <span class="comment">// обнуление координат точек-краевых условий начального дифференциального уравнения</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">bool</span> IsPassedSwitchPoint(<span class="keywordtype">float</span> t); <span class="comment">// проверка была ли пройдена точка переключения, в которой системе придаётся импульс</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> RungeKuttaMethod(); <span class="comment">// расчёт новых координат точки-решения методом Рунге-Кутты четвертого порядка</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> MakeImpetusToSolution(<span class="keywordtype">float</span> t); <span class="comment">// воздействие импульсом на координаты решения в точках переключения в зависимости от времени</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">int</span> dim;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">float</span> alpha;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">float</span> beta;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">float</span> d; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">float</span> h;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">float</span> eps;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">float</span> sln[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>]; <span class="comment">// массив для хранения координат решения</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                            <span class="comment">// координаты точек, полученных из краевых условий, которые нужны для последующих расчётов:</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">float</span> bound_cond_plus_zero[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>]; <span class="comment">// z(+0)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">float</span> bound_cond_alpha_plus_zero[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>]; <span class="comment">// z(alpha+0)</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="arithmetic_8h_html_abdb68df7b02fded293d9a021b5d4b98b"><div class="ttname"><a href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a></div><div class="ttdeci">const int MAX_DIM</div><div class="ttdef"><b>Definition:</b> arithmetic.h:35</div></div>
+<div class="ttc" id="class_data_parser_html_a31d430da03dca13e7cec8f84401c12a6"><div class="ttname"><a href="class_data_parser.html#a31d430da03dca13e7cec8f84401c12a6">DataParser::Beta</a></div><div class="ttdeci">float Beta()</div><div class="ttdef"><b>Definition:</b> parser.h:41</div></div>
+<div class="ttc" id="class_types_change_html_a2f6b7c2c40aa4b8bfca016a689053673"><div class="ttname"><a href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">TypesChange::PointToString</a></div><div class="ttdeci">static string PointToString(float *point, int first_pos, int last_pos)</div><div class="ttdoc">Возврат строки, хранящую определенные вещественные координаты точки в виде ( p1, p2, ..., pn ) </div><div class="ttdef"><b>Definition:</b> types.h:85</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_afb7f1fd0b0d02ca54ae0f9b63e43fb9a"><div class="ttname"><a href="class_relaxarion_oscillations.html#afb7f1fd0b0d02ca54ae0f9b63e43fb9a">RelaxarionOscillations::SetSolution</a></div><div class="ttdeci">void SetSolution(float *solution)</div><div class="ttdoc">Установка других значений координат точки в точку-решение. </div><div class="ttdef"><b>Definition:</b> calculation.cpp:26</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_ab5e64b9ca53763b51f541ae620134748"><div class="ttname"><a href="class_relaxarion_oscillations.html#ab5e64b9ca53763b51f541ae620134748">RelaxarionOscillations::GetSolution</a></div><div class="ttdeci">float * GetSolution()</div><div class="ttdoc">Возврат точки-решения </div><div class="ttdef"><b>Definition:</b> calculation.cpp:33</div></div>
+<div class="ttc" id="class_point_operations_html_a97def43827da6fe4ad1004015f62f7fb"><div class="ttname"><a href="class_point_operations.html#a97def43827da6fe4ad1004015f62f7fb">PointOperations::ZeroizePoint</a></div><div class="ttdeci">static void ZeroizePoint(float *point=NULL)</div><div class="ttdoc">Обнуление координат вектора-точки с вещественными координатами </div><div class="ttdef"><b>Definition:</b> operations.h:27</div></div>
+<div class="ttc" id="parser_8h_html"><div class="ttname"><a href="parser_8h.html">parser.h</a></div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html"><div class="ttname"><a href="class_relaxarion_oscillations.html">RelaxarionOscillations</a></div><div class="ttdef"><b>Definition:</b> calculation.h:15</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_ad5c4c127a5c314536a095ab983471422"><div class="ttname"><a href="class_relaxarion_oscillations.html#ad5c4c127a5c314536a095ab983471422">RelaxarionOscillations::CalculateSolution</a></div><div class="ttdeci">void CalculateSolution()</div><div class="ttdoc">Расчёт координат точки-решения в результате релаксационных колебаний </div><div class="ttdef"><b>Definition:</b> calculation.cpp:100</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_a3e1a73c2ba6f446e1e425b7ce7ddc07f"><div class="ttname"><a href="class_relaxarion_oscillations.html#a3e1a73c2ba6f446e1e425b7ce7ddc07f">RelaxarionOscillations::DisplayTheoreticalSolutions</a></div><div class="ttdeci">static void DisplayTheoreticalSolutions(DataParser config)</div><div class="ttdoc">Печать на экран стационарных точек, которые должны получаться в теории, исходя из начальных параметро...</div><div class="ttdef"><b>Definition:</b> calculation.h:30</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_ae7de123edaf002b2741bc2739eb167f3"><div class="ttname"><a href="class_relaxarion_oscillations.html#ae7de123edaf002b2741bc2739eb167f3">RelaxarionOscillations::~RelaxarionOscillations</a></div><div class="ttdeci">~RelaxarionOscillations()</div><div class="ttdef"><b>Definition:</b> calculation.cpp:114</div></div>
+<div class="ttc" id="class_data_parser_html_aabdef48a661a4737ec01d3d31e00ccb3"><div class="ttname"><a href="class_data_parser.html#aabdef48a661a4737ec01d3d31e00ccb3">DataParser::Dim</a></div><div class="ttdeci">int Dim()</div><div class="ttdef"><b>Definition:</b> parser.h:33</div></div>
+<div class="ttc" id="class_relaxarion_oscillations_html_ade0e59e1059cde99b18be8878736638c"><div class="ttname"><a href="class_relaxarion_oscillations.html#ade0e59e1059cde99b18be8878736638c">RelaxarionOscillations::RelaxarionOscillations</a></div><div class="ttdeci">RelaxarionOscillations(DataParser config, float *start_point)</div><div class="ttdef"><b>Definition:</b> calculation.cpp:3</div></div>
+<div class="ttc" id="class_data_parser_html"><div class="ttname"><a href="class_data_parser.html">DataParser</a></div><div class="ttdef"><b>Definition:</b> parser.h:24</div></div>
+<div class="ttc" id="class_data_parser_html_a12892b6cc8bb7b24159e7709852649cd"><div class="ttname"><a href="class_data_parser.html#a12892b6cc8bb7b24159e7709852649cd">DataParser::Alpha</a></div><div class="ttdeci">float Alpha()</div><div class="ttdef"><b>Definition:</b> parser.h:40</div></div>
+<div class="ttc" id="class_data_parser_html_af0cc37893ec5aa4aa05130cea1988d53"><div class="ttname"><a href="class_data_parser.html#af0cc37893ec5aa4aa05130cea1988d53">DataParser::D</a></div><div class="ttdeci">float D()</div><div class="ttdef"><b>Definition:</b> parser.h:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по RelaxationOscillations. Последние изменения: Сб 20 Июн 2015 13:35:59. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

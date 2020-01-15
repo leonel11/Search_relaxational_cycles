@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="calculation_8h" kind="file" language="C++">
+    <compoundname>calculation.h</compoundname>
+    <includes refid="parser_8h" local="yes">parser.h</includes>
+    <includedby refid="calculation_8cpp" local="yes">calculation.cpp</includedby>
+    <includedby refid="controller_8h" local="yes">controller.h</includedby>
+    <incdepgraph>
+      <node id="61">
+        <label>iomanip</label>
+      </node>
+      <node id="57">
+        <label>windows.h</label>
+      </node>
+      <node id="54">
+        <label>stdlib.h</label>
+      </node>
+      <node id="52">
+        <label>arithmetic.h</label>
+        <link refid="arithmetic_8h"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>string</label>
+      </node>
+      <node id="48">
+        <label>calculation.h</label>
+        <link refid="calculation.h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>omp.h</label>
+      </node>
+      <node id="50">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>string.h</label>
+      </node>
+      <node id="64">
+        <label>vector</label>
+      </node>
+      <node id="49">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>sstream</label>
+      </node>
+      <node id="58">
+        <label>time.h</label>
+      </node>
+      <node id="56">
+        <label>math.h</label>
+      </node>
+      <node id="60">
+        <label>iostream</label>
+      </node>
+      <node id="65">
+        <label>algorithm</label>
+      </node>
+      <node id="53">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="69">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>calculation.cpp</label>
+        <link refid="calculation_8cpp"/>
+      </node>
+      <node id="67">
+        <label>calculation.h</label>
+        <link refid="calculation.h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="70">
+        <label>controller.cpp</label>
+        <link refid="controller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_relaxarion_oscillations" prot="public">RelaxarionOscillations</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>region<sp/>Вспомогательные<sp/>заголовочные<sp/>файлы</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="parser_8h" kindref="compound">parser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CALCULATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CALCULATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>region<sp/>Описание<sp/>структуры<sp/>класса</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_relaxarion_oscillations" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_relaxarion_oscillations" kindref="compound">RelaxarionOscillations</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_relaxarion_oscillations_1ade0e59e1059cde99b18be8878736638c" kindref="member">RelaxarionOscillations</ref>(<ref refid="class_data_parser" kindref="compound">DataParser</ref><sp/>config,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*start_point);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_relaxarion_oscillations_1afb7f1fd0b0d02ca54ae0f9b63e43fb9a" kindref="member">SetSolution</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*solution);<sp/></highlight><highlight class="comment">//<sp/>установка<sp/>других<sp/>значений<sp/>координат<sp/>точки<sp/>в<sp/>точку-решение</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*<ref refid="class_relaxarion_oscillations_1ab5e64b9ca53763b51f541ae620134748" kindref="member">GetSolution</ref>();<sp/></highlight><highlight class="comment">//<sp/>возврат<sp/>точки-решения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_relaxarion_oscillations_1ad5c4c127a5c314536a095ab983471422" kindref="member">CalculateSolution</ref>();<sp/></highlight><highlight class="comment">//<sp/>расчёт<sp/>координат<sp/>точки-решения<sp/>после<sp/>релаксационных<sp/>колебаний</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_relaxarion_oscillations_1ae7de123edaf002b2741bc2739eb167f3" kindref="member">~RelaxarionOscillations</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>region<sp/>static<sp/>public<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" kindref="member">DisplayTheoreticalSolutions</ref>(<ref refid="class_data_parser" kindref="compound">DataParser</ref><sp/>config)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>config.<ref refid="class_data_parser_1af0cc37893ec5aa4aa05130cea1988d53" kindref="member">D</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha<sp/>=<sp/>config.<ref refid="class_data_parser_1a12892b6cc8bb7b24159e7709852649cd" kindref="member">Alpha</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta<sp/>=<sp/>config.<ref refid="class_data_parser_1a31d430da03dca13e7cec8f84401c12a6" kindref="member">Beta</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Stationary<sp/>points<sp/>of<sp/>the<sp/>theory<sp/>for<sp/>given<sp/>initial<sp/>values:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>theor_sln[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>массив<sp/>для<sp/>хранения<sp/>координат<sp/>решения,<sp/>получающегося<sp/>из<sp/>теории</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">PointOperations::ZeroizePoint</ref>(theor_sln);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kindref="member">TypesChange::PointToString</ref>(theor_sln,<sp/>1,<sp/>dim)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;=<sp/>dim;<sp/>++k)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">PointOperations::ZeroizePoint</ref>(theor_sln);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>расчет<sp/>различных<sp/>теоретических<sp/>результатов<sp/>в<sp/>зависимости<sp/>от<sp/>области<sp/>параметров</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(см.<sp/>Теорему<sp/>2<sp/>из<sp/>файла<sp/>DU0155.pdf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>1;<sp/>idx<sp/>&lt;=<sp/>dim;<sp/>++idx)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(alpha,<sp/>beta)<sp/>in<sp/>U1<sp/>=<sp/>{(alpha,<sp/>beta):<sp/>alpha<sp/>&gt;<sp/>(beta+1)*(beta+2),<sp/>beta<sp/>&gt;<sp/>0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(alpha,<sp/>beta)<sp/>in<sp/>U3<sp/>=<sp/>{(alpha,<sp/>beta):<sp/>2*beta+2<sp/>&lt;<sp/>alpha<sp/>&lt;<sp/>(beta+1)*(beta+2),<sp/>beta<sp/>&gt;<sp/>0}<sp/><sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(alpha,<sp/>beta)<sp/>in<sp/>U4<sp/>=<sp/>{(alpha,<sp/>beta):<sp/>max(2,<sp/>1+beta)<sp/>&lt;<sp/>alpha<sp/>&lt;<sp/>2*beta+2,<sp/>beta<sp/>&gt;<sp/>0}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((beta<sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/>alpha<sp/>&gt;<sp/>(beta+1.0)*(beta+2.0))<sp/>||<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(beta<sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/>alpha<sp/>&gt;<sp/>2.0*beta+2.0<sp/>&amp;&amp;<sp/>alpha<sp/>&lt;<sp/>(beta+1.0)*(beta+2.0))<sp/>||</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(beta<sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/>alpha<sp/>&gt;<sp/>max(2.0,<sp/>1.0+beta)<sp/>&amp;&amp;<sp/>alpha<sp/>&lt;<sp/>2.0*beta+2.0))<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&lt;=<sp/>k)<sp/></highlight><highlight class="comment">//<sp/>idx<sp/>=<sp/>1...k</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theor_sln[idx]<sp/>=<sp/>log(1.0/d)-log((beta+1.0)/(alpha-beta-1.0))+log((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)k+1.0-idx);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>idx<sp/>=<sp/>k+1...m-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theor_sln[idx]<sp/>=<sp/>-log(1.0/d)+log((beta+1.0)/(alpha-beta-1.0))-log((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)idx-k);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(alpha,<sp/>beta)<sp/>in<sp/>U2<sp/>=<sp/>{(alpha,<sp/>beta):<sp/>1<sp/>&lt;<sp/>alpha<sp/>&lt;<sp/>2,<sp/>0<sp/>&lt;<sp/>beta&lt;(alpha-1)*(2-alpha)}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(alpha,<sp/>beta)<sp/>in<sp/>U5<sp/>=<sp/>{(alpha,<sp/>beta):<sp/>1<sp/>&lt;<sp/>alpha<sp/>&lt;<sp/>2,<sp/>(alpha-1)*(2-alpha)<sp/>&lt;<sp/>beta<sp/>&lt;<sp/>alpha-1}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((alpha<sp/>&gt;<sp/>1.0<sp/>&amp;&amp;<sp/>alpha<sp/>&lt;<sp/>2.0<sp/>&amp;&amp;<sp/>beta<sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/>beta<sp/>&lt;<sp/>(alpha-1.0)*(2.0-alpha))<sp/>||<sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(alpha<sp/>&gt;<sp/>1.0<sp/>&amp;&amp;<sp/>alpha<sp/>&lt;<sp/>2.0<sp/>&amp;&amp;<sp/>beta<sp/>&gt;<sp/>(alpha-1.0)*(2.0-alpha)<sp/>&amp;&amp;<sp/>beta<sp/>&lt;<sp/>(alpha-1.0)))<sp/>{<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&lt;=<sp/>k)<sp/></highlight><highlight class="comment">//<sp/>idx<sp/>=<sp/>1...k</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theor_sln[idx]<sp/>=<sp/>-(alpha-1.0)*log(1.0/d)-(alpha-1.0)*log((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)k+1.0-idx)+alpha*log(alpha-1.0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>idx<sp/>=<sp/>k+1...m-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theor_sln[idx]<sp/>=<sp/>(alpha-1.0)*log(1.0/d)+(alpha-1.0)*log((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)idx-k)-alpha*log(alpha-1.0);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kindref="member">TypesChange::PointToString</ref>(theor_sln,<sp/>1,<sp/>dim)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Period();<sp/></highlight><highlight class="comment">//<sp/>возврат<sp/>значения<sp/>периода</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ZeroizeBoundaryConditions();<sp/></highlight><highlight class="comment">//<sp/>обнуление<sp/>координат<sp/>точек-краевых<sp/>условий<sp/>начального<sp/>дифференциального<sp/>уравнения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPassedSwitchPoint(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);<sp/></highlight><highlight class="comment">//<sp/>проверка<sp/>была<sp/>ли<sp/>пройдена<sp/>точка<sp/>переключения,<sp/>в<sp/>которой<sp/>системе<sp/>придаётся<sp/>импульс</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RungeKuttaMethod();<sp/></highlight><highlight class="comment">//<sp/>расчёт<sp/>новых<sp/>координат<sp/>точки-решения<sp/>методом<sp/>Рунге-Кутты<sp/>четвертого<sp/>порядка</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MakeImpetusToSolution(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t);<sp/></highlight><highlight class="comment">//<sp/>воздействие<sp/>импульсом<sp/>на<sp/>координаты<sp/>решения<sp/>в<sp/>точках<sp/>переключения<sp/>в<sp/>зависимости<sp/>от<sp/>времени</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>alpha;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>beta;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>d;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>h;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>eps;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sln[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>массив<sp/>для<sp/>хранения<sp/>координат<sp/>решения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>координаты<sp/>точек,<sp/>полученных<sp/>из<sp/>краевых<sp/>условий,<sp/>которые<sp/>нужны<sp/>для<sp/>последующих<sp/>расчётов:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bound_cond_plus_zero[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>z(+0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>bound_cond_alpha_plus_zero[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>z(alpha+0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>endregion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h"/>
+  </compounddef>
+</doxygen>

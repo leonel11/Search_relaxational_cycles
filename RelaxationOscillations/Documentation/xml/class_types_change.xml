@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_types_change" kind="class" language="C++" prot="public">
+    <compoundname>TypesChange</compoundname>
+    <includes refid="types_8h" local="no">types.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_types_change_1a2cec8ef75648e46702ea7babfe01d80f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TypesChange::TypesChange</definition>
+        <argsstring>()</argsstring>
+        <name>TypesChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="18" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1af2231f556161643b79ea81a8cf76d141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TypesChange::~TypesChange</definition>
+        <argsstring>()</argsstring>
+        <name>~TypesChange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="19" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_types_change_1a8c84a2aa20d11c31bf9416a64e8aee10" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* TypesChange::FloatToCharArray</definition>
+        <argsstring>(float numb, int precision=6)</argsstring>
+        <name>FloatToCharArray</name>
+        <param>
+          <type>float</type>
+          <declname>numb</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+<para>Возврат символьного массива, преобразованного из вещественного числа с определенной точностью знаков после запятой </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вещественное число </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точность знаков после запятой. По умолчанию значение этого параметра равно 6 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>символьный массив, хранящий в себе вещественное число </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="29" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::IntToString</definition>
+        <argsstring>(int numb)</argsstring>
+        <name>IntToString</name>
+        <param>
+          <type>int</type>
+          <declname>numb</declname>
+        </param>
+        <briefdescription>
+<para>Возврат строки, преобразованной из целого числа </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- целое число </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка, хранящая в себе целое число </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="44" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::FloatToString</definition>
+        <argsstring>(float numb)</argsstring>
+        <name>FloatToString</name>
+        <param>
+          <type>float</type>
+          <declname>numb</declname>
+        </param>
+        <briefdescription>
+<para>Возврат строки, преобразованной из вещественного числа </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вещественное число </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка, хранящая в себе вещественное число </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="56" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a3b3b728634baf3e6192824b5f1221cc5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::CharArrayToString</definition>
+        <argsstring>(char symbols[MAX_ARRAY_SIZE])</argsstring>
+        <name>CharArrayToString</name>
+        <param>
+          <type>char</type>
+          <declname>symbols</declname>
+          <array>[MAX_ARRAY_SIZE]</array>
+        </param>
+        <briefdescription>
+<para>Возврат строки, преобразованной из массива символов </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>symbols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- символьный массив </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка, хранящая в себе все необходимые непустые символы из массива </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="70" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::PointToString</definition>
+        <argsstring>(float *point, int first_pos, int last_pos)</argsstring>
+        <name>PointToString</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>last_pos</declname>
+        </param>
+        <briefdescription>
+<para>Возврат строки, хранящую определенные вещественные координаты точки в виде ( p1, p2, ..., pn ) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- начальная позиция координаты точки, которую необходимо перевести в строковый вид </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- конечная позиция координаты точки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка вида ( p1, p2, ..., pn ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="85" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a3e09f3c31597ee4e584eeedf16beaf4d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::IntPointToString</definition>
+        <argsstring>(int *point, int first_pos, int last_pos)</argsstring>
+        <name>IntPointToString</name>
+        <param>
+          <type>int *</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>last_pos</declname>
+        </param>
+        <briefdescription>
+<para>Возврат строки, хранящую определенные целочисленные координаты точки в виде ( p1, p2, ..., pn ) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- начальная позиция координаты точки, которую необходимо перевести в строковый вид </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- конечная позиция координаты точки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка вида ( p1, p2, ..., pn ) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="106" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="106" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string TypesChange::PointCoordinatesToString</definition>
+        <argsstring>(float *point, int first_pos, int last_pos)</argsstring>
+        <name>PointCoordinatesToString</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>first_pos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>last_pos</declname>
+        </param>
+        <briefdescription>
+<para>Возврат строки, хранящую определенные вещественные координаты точки в виде p1 p2 ... pn. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>first_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- начальная позиция координаты точки, которую необходимо перевести в строковый вид </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- конечная позиция координаты точки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>строка вида p1 p2 ... pn </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="127" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="127" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1af8ecb0a087f1140a2aefccbf661b25e5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector&lt; float &gt;</type>
+        <definition>static vector&lt;float&gt; TypesChange::PointToFloatVector</definition>
+        <argsstring>(float *point)</argsstring>
+        <name>PointToFloatVector</name>
+        <param>
+          <type>float *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+<para>Возврат вектора вещественных чисел, хранящего в себе вещественные координаты точки </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>вектор вещественных чисел </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="143" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="143" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_types_change_1a44905ab5b36cc55302532575ee45024e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>static float* TypesChange::FloatVectorToPoint</definition>
+        <argsstring>(vector&lt; float &gt; vect_point)</argsstring>
+        <name>FloatVectorToPoint</name>
+        <param>
+          <type>vector&lt; float &gt;</type>
+          <declname>vect_point</declname>
+        </param>
+        <briefdescription>
+<para>Возврат точки, преобразованной из вектора вещественных чисел </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vect_point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вектор вещественных чисел </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>точка </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="155" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" line="15" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/types.h" bodystart="15" bodyend="163"/>
+    <listofallmembers>
+      <member refid="class_types_change_1a3b3b728634baf3e6192824b5f1221cc5" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>CharArrayToString</name></member>
+      <member refid="class_types_change_1a8c84a2aa20d11c31bf9416a64e8aee10" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>FloatToCharArray</name></member>
+      <member refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>FloatToString</name></member>
+      <member refid="class_types_change_1a44905ab5b36cc55302532575ee45024e" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>FloatVectorToPoint</name></member>
+      <member refid="class_types_change_1a3e09f3c31597ee4e584eeedf16beaf4d" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>IntPointToString</name></member>
+      <member refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>IntToString</name></member>
+      <member refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>PointCoordinatesToString</name></member>
+      <member refid="class_types_change_1af8ecb0a087f1140a2aefccbf661b25e5" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>PointToFloatVector</name></member>
+      <member refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>PointToString</name></member>
+      <member refid="class_types_change_1a2cec8ef75648e46702ea7babfe01d80f" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>TypesChange</name></member>
+      <member refid="class_types_change_1af2231f556161643b79ea81a8cf76d141" prot="public" virt="non-virtual"><scope>TypesChange</scope><name>~TypesChange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

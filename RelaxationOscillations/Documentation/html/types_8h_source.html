@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>RelaxationOscillations: Исходный файл types.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">RelaxationOscillations
+   </div>
+   <div id="projectbrief">RelaxationOscillations</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">types.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="types_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma region Вспомогательные заголовочные файлы</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operations_8h.html">operations.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef TYPES_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define TYPES_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma region Описание структуры статического класса</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_types_change.html">   15</a></span>&#160;<span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="class_types_change.html">TypesChange</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_types_change.html#a2cec8ef75648e46702ea7babfe01d80f">   18</a></span>&#160;        <a class="code" href="class_types_change.html#a2cec8ef75648e46702ea7babfe01d80f">TypesChange</a>() { };</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_types_change.html#af2231f556161643b79ea81a8cf76d141">   19</a></span>&#160;        <a class="code" href="class_types_change.html#af2231f556161643b79ea81a8cf76d141">~TypesChange</a>() { };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #pragma region static public functions</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">   29</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">char</span>* <a class="code" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">FloatToCharArray</a>(<span class="keywordtype">float</span> numb, <span class="keywordtype">int</span> precision = 6) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordtype">char</span> res[<a class="code" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a>];</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="comment">// формирование форматной строки для дальнейшего преобразования числа в массив символов</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">char</span> buffer[<a class="code" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a>];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            itoa(precision, buffer, 10);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">string</span> str_format = <span class="stringliteral">&quot;%.&quot;</span> + <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(buffer) + <span class="stringliteral">&quot;f&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            sprintf(res, str_format.c_str(), numb); <span class="comment">// перевод числа в массив символов</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_types_change.html#a7f648ce98eca5da08b991002dc6d0204">   44</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a7f648ce98eca5da08b991002dc6d0204">IntToString</a>(<span class="keywordtype">int</span> numb) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordtype">char</span> buffer[<a class="code" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a>];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            itoa(numb, buffer, 10);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">string</span> res = <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(buffer);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_types_change.html#a3a510e44ef4e44bb1085108650d2a266">   56</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a3a510e44ef4e44bb1085108650d2a266">FloatToString</a>(<span class="keywordtype">float</span> numb) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">string</span> res = <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(<a class="code" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">FloatToCharArray</a>(numb));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">// выкидывание всех нулей, которые идут после ненулевой цифры, из дробной части строковой записи вещественного числа</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            res = res.substr(0, res.find_last_not_of(<span class="charliteral">&#39;0&#39;</span>)+1); </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (res[res.size()-1] == <span class="charliteral">&#39;.&#39;</span>) <span class="comment">// случай, когда были откинуты все цифры из дробной части строки-вещественного числа</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                res += <span class="stringliteral">&quot;0&quot;</span>; <span class="comment">// после точки искусственно добавляется один 0</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">   70</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(<span class="keywordtype">char</span> symbols[<a class="code" href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a>]) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordtype">string</span> res = string(symbols);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">// если в конце символьного массива находится стандартный пустой символ &#39;\0&#39;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span> (res[res.size()-1] == char(10))</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                res = res.substr(0, strlen(symbols)-1); <span class="comment">// то этот символ удаляется из строки</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">   85</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">PointToString</a>(<span class="keywordtype">float</span> *point, <span class="keywordtype">int</span> first_pos, <span class="keywordtype">int</span> last_pos) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">string</span> res = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> (point != NULL) { <span class="comment">// процесс начинается в том случае, если точка существует</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                res += <span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = first_pos; i &lt;= last_pos; i++) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    res += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(<a class="code" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">FloatToCharArray</a>(point[i], 4));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">if</span> (i != last_pos)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        res += <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                res += <span class="stringliteral">&quot; )&quot;</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> res; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_types_change.html#a3e09f3c31597ee4e584eeedf16beaf4d">  106</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a3e09f3c31597ee4e584eeedf16beaf4d">IntPointToString</a>(<span class="keywordtype">int</span> *point, <span class="keywordtype">int</span> first_pos, <span class="keywordtype">int</span> last_pos) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordtype">string</span> res = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (point != NULL) { <span class="comment">// процесс начинается в том случае, если точка существует</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                res += <span class="stringliteral">&quot;(&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = first_pos; i &lt;= last_pos; i++) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    res += <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(<a class="code" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">FloatToCharArray</a>(point[i], 4));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">if</span> (i != last_pos)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        res += <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                res += <span class="stringliteral">&quot; )&quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span> res; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_types_change.html#a4209e8869d97ca1206a0da3b6db85c40">  127</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code" href="class_types_change.html#a4209e8869d97ca1206a0da3b6db85c40">PointCoordinatesToString</a>(<span class="keywordtype">float</span> *point, <span class="keywordtype">int</span> first_pos, <span class="keywordtype">int</span> last_pos) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordtype">string</span> res = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (point != NULL) <span class="comment">// процесс начинается в том случае, если точка существует</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = first_pos; i &lt;= last_pos; i++) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    res += <a class="code" href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">CharArrayToString</a>(<a class="code" href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">FloatToCharArray</a>(point[i], 4));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    <span class="keywordflow">if</span> (i != last_pos)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        res += <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_types_change.html#af8ecb0a087f1140a2aefccbf661b25e5">  143</a></span>&#160;        <span class="keyword">static</span> vector&lt;float&gt; <a class="code" href="class_types_change.html#af8ecb0a087f1140a2aefccbf661b25e5">PointToFloatVector</a>(<span class="keywordtype">float</span> *point) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordtype">float</span> aux_point[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">PointOperations::InitPoint</a>(aux_point, point);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            vector&lt;float&gt; res(aux_point, aux_point + <span class="keyword">sizeof</span>(aux_point) / <span class="keyword">sizeof</span>(aux_point[0]));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="class_types_change.html#a44905ab5b36cc55302532575ee45024e">  155</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span>* <a class="code" href="class_types_change.html#a44905ab5b36cc55302532575ee45024e">FloatVectorToPoint</a>(vector&lt;float&gt; vect_point) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordtype">float</span> *point = <span class="keyword">new</span> <span class="keywordtype">float</span>[<a class="code" href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a>];</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <a class="code" href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">PointOperations::InitPoint</a>(point, &amp;(vect_point)[0]);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">return</span> point;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">    #pragma endregion</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#pragma endregion</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_point_operations_html_af856a7ce25a39cb868725f8e25f65296"><div class="ttname"><a href="class_point_operations.html#af856a7ce25a39cb868725f8e25f65296">PointOperations::InitPoint</a></div><div class="ttdeci">static void InitPoint(float *point=NULL, float *other_point=NULL)</div><div class="ttdoc">Инициализация изначальной точкй другой точкой </div><div class="ttdef"><b>Definition:</b> operations.h:60</div></div>
+<div class="ttc" id="arithmetic_8h_html_abdb68df7b02fded293d9a021b5d4b98b"><div class="ttname"><a href="arithmetic_8h.html#abdb68df7b02fded293d9a021b5d4b98b">MAX_DIM</a></div><div class="ttdeci">const int MAX_DIM</div><div class="ttdef"><b>Definition:</b> arithmetic.h:35</div></div>
+<div class="ttc" id="class_types_change_html_a3e09f3c31597ee4e584eeedf16beaf4d"><div class="ttname"><a href="class_types_change.html#a3e09f3c31597ee4e584eeedf16beaf4d">TypesChange::IntPointToString</a></div><div class="ttdeci">static string IntPointToString(int *point, int first_pos, int last_pos)</div><div class="ttdoc">Возврат строки, хранящую определенные целочисленные координаты точки в виде ( p1, p2...</div><div class="ttdef"><b>Definition:</b> types.h:106</div></div>
+<div class="ttc" id="class_types_change_html_a2f6b7c2c40aa4b8bfca016a689053673"><div class="ttname"><a href="class_types_change.html#a2f6b7c2c40aa4b8bfca016a689053673">TypesChange::PointToString</a></div><div class="ttdeci">static string PointToString(float *point, int first_pos, int last_pos)</div><div class="ttdoc">Возврат строки, хранящую определенные вещественные координаты точки в виде ( p1, p2, ..., pn ) </div><div class="ttdef"><b>Definition:</b> types.h:85</div></div>
+<div class="ttc" id="operations_8h_html"><div class="ttname"><a href="operations_8h.html">operations.h</a></div></div>
+<div class="ttc" id="class_types_change_html_a7f648ce98eca5da08b991002dc6d0204"><div class="ttname"><a href="class_types_change.html#a7f648ce98eca5da08b991002dc6d0204">TypesChange::IntToString</a></div><div class="ttdeci">static string IntToString(int numb)</div><div class="ttdoc">Возврат строки, преобразованной из целого числа </div><div class="ttdef"><b>Definition:</b> types.h:44</div></div>
+<div class="ttc" id="class_types_change_html_a3b3b728634baf3e6192824b5f1221cc5"><div class="ttname"><a href="class_types_change.html#a3b3b728634baf3e6192824b5f1221cc5">TypesChange::CharArrayToString</a></div><div class="ttdeci">static string CharArrayToString(char symbols[MAX_ARRAY_SIZE])</div><div class="ttdoc">Возврат строки, преобразованной из массива символов </div><div class="ttdef"><b>Definition:</b> types.h:70</div></div>
+<div class="ttc" id="class_types_change_html_a2cec8ef75648e46702ea7babfe01d80f"><div class="ttname"><a href="class_types_change.html#a2cec8ef75648e46702ea7babfe01d80f">TypesChange::TypesChange</a></div><div class="ttdeci">TypesChange()</div><div class="ttdef"><b>Definition:</b> types.h:18</div></div>
+<div class="ttc" id="arithmetic_8h_html_a21afaf2dcbf3be6bc362d358ab3378d9"><div class="ttname"><a href="arithmetic_8h.html#a21afaf2dcbf3be6bc362d358ab3378d9">MAX_ARRAY_SIZE</a></div><div class="ttdeci">const int MAX_ARRAY_SIZE</div><div class="ttdef"><b>Definition:</b> arithmetic.h:36</div></div>
+<div class="ttc" id="class_types_change_html_a4209e8869d97ca1206a0da3b6db85c40"><div class="ttname"><a href="class_types_change.html#a4209e8869d97ca1206a0da3b6db85c40">TypesChange::PointCoordinatesToString</a></div><div class="ttdeci">static string PointCoordinatesToString(float *point, int first_pos, int last_pos)</div><div class="ttdoc">Возврат строки, хранящую определенные вещественные координаты точки в виде p1 p2 ... pn. </div><div class="ttdef"><b>Definition:</b> types.h:127</div></div>
+<div class="ttc" id="class_types_change_html_a3a510e44ef4e44bb1085108650d2a266"><div class="ttname"><a href="class_types_change.html#a3a510e44ef4e44bb1085108650d2a266">TypesChange::FloatToString</a></div><div class="ttdeci">static string FloatToString(float numb)</div><div class="ttdoc">Возврат строки, преобразованной из вещественного числа </div><div class="ttdef"><b>Definition:</b> types.h:56</div></div>
+<div class="ttc" id="class_types_change_html_af8ecb0a087f1140a2aefccbf661b25e5"><div class="ttname"><a href="class_types_change.html#af8ecb0a087f1140a2aefccbf661b25e5">TypesChange::PointToFloatVector</a></div><div class="ttdeci">static vector&lt; float &gt; PointToFloatVector(float *point)</div><div class="ttdoc">Возврат вектора вещественных чисел, хранящего в себе вещественные координаты точки ...</div><div class="ttdef"><b>Definition:</b> types.h:143</div></div>
+<div class="ttc" id="class_types_change_html_a8c84a2aa20d11c31bf9416a64e8aee10"><div class="ttname"><a href="class_types_change.html#a8c84a2aa20d11c31bf9416a64e8aee10">TypesChange::FloatToCharArray</a></div><div class="ttdeci">static char * FloatToCharArray(float numb, int precision=6)</div><div class="ttdoc">Возврат символьного массива, преобразованного из вещественного числа с определенной точностью знаков ...</div><div class="ttdef"><b>Definition:</b> types.h:29</div></div>
+<div class="ttc" id="class_types_change_html_af2231f556161643b79ea81a8cf76d141"><div class="ttname"><a href="class_types_change.html#af2231f556161643b79ea81a8cf76d141">TypesChange::~TypesChange</a></div><div class="ttdeci">~TypesChange()</div><div class="ttdef"><b>Definition:</b> types.h:19</div></div>
+<div class="ttc" id="class_types_change_html_a44905ab5b36cc55302532575ee45024e"><div class="ttname"><a href="class_types_change.html#a44905ab5b36cc55302532575ee45024e">TypesChange::FloatVectorToPoint</a></div><div class="ttdeci">static float * FloatVectorToPoint(vector&lt; float &gt; vect_point)</div><div class="ttdoc">Возврат точки, преобразованной из вектора вещественных чисел </div><div class="ttdef"><b>Definition:</b> types.h:155</div></div>
+<div class="ttc" id="class_types_change_html"><div class="ttname"><a href="class_types_change.html">TypesChange</a></div><div class="ttdef"><b>Definition:</b> types.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по RelaxationOscillations. Последние изменения: Сб 20 Июн 2015 13:35:59. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.9.1
+</small></address>
+</body>
+</html>

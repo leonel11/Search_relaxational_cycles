@@ -1,0 +1,77 @@
+[data_program]
+dimension = 2
+point_coordinates = -2.5 -2.5
+d = 0.06
+alpha = 1.5
+beta = 0.1
+calculation_accuracy = 0.001
+max_iter = 5000
+eps = 0.0001
+steps_count = 1
+discr = 0.5
+
+
+ CYCLE
+[data_program]
+dimension = 2
+point_coordinates = -4.7 -5.4
+d = 0.03
+alpha = 12
+beta = 1.9
+calculation_accuracy = 0.0001
+max_iter = 500
+eps = 0.001
+
+RELAX:
+
+U4
+[data_program]
+dimension = 2
+point_coordinates = 1.2 -1.4
+d = 0.05
+alpha = 5
+beta = 3
+calculation_accuracy = 0.001
+max_iter = 5000
+eps = 0.00001
+steps_count = 10 
+discr = 0.02
+
+U4
+[data_program]
+dimension = 2
+point_coordinates = -1.5 -1.5
+d = 0.05
+alpha = 5
+beta = 3
+calculation_accuracy = 0.001
+max_iter = 5000
+eps = 0.00001
+steps_count = 10 
+discr = 0.4
+
+G1
+[data_program]
+dimension = 2
+point_coordinates = -1.5 -1.5
+d = 0.05
+alpha = 7.0
+beta = 1.0
+calculation_accuracy = 0.001
+max_iter = 5000
+eps = 0.00001
+steps_count = 10
+discr = 0.3
+
+G2
+[data_program]
+dimension = 2
+point_coordinates = -1.5 -1.5
+d = 0.05
+alpha = 4.0
+beta = 1.0
+calculation_accuracy = 0.001
+max_iter = 5000
+eps = 0.00001
+steps_count = 10
+discr = 0.3

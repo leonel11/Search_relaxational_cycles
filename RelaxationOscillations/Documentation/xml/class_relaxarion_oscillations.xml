@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_relaxarion_oscillations" kind="class" language="C++" prot="public">
+    <compoundname>RelaxarionOscillations</compoundname>
+    <includes refid="calculation_8h" local="no">calculation.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1ac653f6900ac40bf5920b5931820855a8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RelaxarionOscillations::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="84" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a7c17915bcb792a952e167f4f67a32db5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="85" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a9da94d07ea8985b34d90f1826d201c70" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="86" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a873bd0e5f0b71b16a36019f9a3a8cea4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="87" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a14eb814cc8b73f9e03923e5715793a10" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="88" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a7b35da292a8f3ab2624185a803f8f86f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="89" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a102622c147caace4e1cda1fb8fe66d6e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::sln[MAX_DIM]</definition>
+        <argsstring>[MAX_DIM]</argsstring>
+        <name>sln</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="90" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1a896093f7a0fecf437e426c2d10dc222b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::bound_cond_plus_zero[MAX_DIM]</definition>
+        <argsstring>[MAX_DIM]</argsstring>
+        <name>bound_cond_plus_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="92" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_relaxarion_oscillations_1ae1494095868416931c0008ff1192cb77" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::bound_cond_alpha_plus_zero[MAX_DIM]</definition>
+        <argsstring>[MAX_DIM]</argsstring>
+        <name>bound_cond_alpha_plus_zero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="93" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_relaxarion_oscillations_1ade0e59e1059cde99b18be8878736638c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RelaxarionOscillations::RelaxarionOscillations</definition>
+        <argsstring>(DataParser config, float *start_point)</argsstring>
+        <name>RelaxarionOscillations</name>
+        <param>
+          <type><ref refid="class_data_parser" kindref="compound">DataParser</ref></type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>start_point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="18" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="3" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1afb7f1fd0b0d02ca54ae0f9b63e43fb9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelaxarionOscillations::SetSolution</definition>
+        <argsstring>(float *solution)</argsstring>
+        <name>SetSolution</name>
+        <param>
+          <type>float *</type>
+          <declname>solution</declname>
+        </param>
+        <briefdescription>
+<para>Установка других значений координат точки в точку-решение. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- точка, хранящая в себе необходимые координаты для присваивания </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="19" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1ab5e64b9ca53763b51f541ae620134748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float *</type>
+        <definition>float * RelaxarionOscillations::GetSolution</definition>
+        <argsstring>()</argsstring>
+        <name>GetSolution</name>
+        <briefdescription>
+<para>Возврат точки-решения </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="20" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1ad5c4c127a5c314536a095ab983471422" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelaxarionOscillations::CalculateSolution</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateSolution</name>
+        <briefdescription>
+<para>Расчёт координат точки-решения в результате релаксационных колебаний </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="21" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="100" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1ae7de123edaf002b2741bc2739eb167f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RelaxarionOscillations::~RelaxarionOscillations</definition>
+        <argsstring>()</argsstring>
+        <name>~RelaxarionOscillations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="22" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="114" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RelaxarionOscillations::DisplayTheoreticalSolutions</definition>
+        <argsstring>(DataParser config)</argsstring>
+        <name>DisplayTheoreticalSolutions</name>
+        <param>
+          <type><ref refid="class_data_parser" kindref="compound">DataParser</ref></type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Печать на экран стационарных точек, которые должны получаться в теории, исходя из начальных параметров задачи </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- параметр, хранящий в себе все начальные параметры задачи </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="30" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="30" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_relaxarion_oscillations_1a86e35833679118d8e253546a311e1370" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RelaxarionOscillations::Period</definition>
+        <argsstring>()</argsstring>
+        <name>Period</name>
+        <briefdescription>
+<para>Возврат значения периода (T0) До этого значения изменяется значение времени, определяющего положение точки-решения в колебательной системе. Как только значение времени достигает значения периода, колебания в системе затухают и координаты точки-решения не изменяются </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="77" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1ad42c8164d079f0d84a4b35593cbc1b53" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelaxarionOscillations::ZeroizeBoundaryConditions</definition>
+        <argsstring>()</argsstring>
+        <name>ZeroizeBoundaryConditions</name>
+        <briefdescription>
+<para>Обнуление координат точек-краевых условий начального дифференциального уравнения. Они необходимы для расчета координат точки-решения после прохождения точки-переключения </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="78" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1a301f6e98512812202be975a2e96eb8ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RelaxarionOscillations::IsPassedSwitchPoint</definition>
+        <argsstring>(float t)</argsstring>
+        <name>IsPassedSwitchPoint</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Проверка была ли пройдена точка переключения, в которой системе придаётся импульс </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- параметр, хранящий в себе значение времени </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="79" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1a65460aa32f0233ef60d8e9bb65231a80" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelaxarionOscillations::RungeKuttaMethod</definition>
+        <argsstring>()</argsstring>
+        <name>RungeKuttaMethod</name>
+        <briefdescription>
+<para>Расчёт новых координат точки-решения методом Рунге-Кутты четвертого порядка <ulink url="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%A0%D1%83%D0%BD%D0%B3%D0%B5_%E2%80%94_%D0%9A%D1%83%D1%82%D1%82%D1%8B#.D0.9A.D0.BB.D0.B0.D1.81.D1.81.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B9_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4_.D0.A0.D1.83.D0.BD.D0.B3.D0.B5.C2.A0.E2.80.94.C2.A0.D0.9A.D1.83.D1.82.D1.82.D1.8B_.D1.87.D0.B5.D1.82.D0.B2.D1.91.D1.80.D1.82.D0.BE.D0.B3.D0.BE_.D0.BF.D0.BE.D1.80.D1.8F.D0.B4.D0.BA.D0.B0">https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D0%A0%D1%83%D0%BD%D0%B3%D0%B5_%E2%80%94_%D0%9A%D1%83%D1%82%D1%82%D1%8B#.D0.9A.D0.BB.D0.B0.D1.81.D1.81.D0.B8.D1.87.D0.B5.D1.81.D0.BA.D0.B8.D0.B9_.D0.BC.D0.B5.D1.82.D0.BE.D0.B4_.D0.A0.D1.83.D0.BD.D0.B3.D0.B5.C2.A0.E2.80.94.C2.A0.D0.9A.D1.83.D1.82.D1.82.D1.8B_.D1.87.D0.B5.D1.82.D0.B2.D1.91.D1.80.D1.82.D0.BE.D0.B3.D0.BE_.D0.BF.D0.BE.D1.80.D1.8F.D0.B4.D0.BA.D0.B0</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="80" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_relaxarion_oscillations_1aedebc4dedca3dc63fb84f0b9bb767343" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RelaxarionOscillations::MakeImpetusToSolution</definition>
+        <argsstring>(float t)</argsstring>
+        <name>MakeImpetusToSolution</name>
+        <param>
+          <type>float</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Воздействие импульсом на систему (на координаты точки-решения) в точках переключения </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- параметр времени, определяющий какую точку переключения прошла система </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="81" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.cpp" bodystart="50" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" line="15" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/calculation.h" bodystart="15" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_relaxarion_oscillations_1a7c17915bcb792a952e167f4f67a32db5" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>alpha</name></member>
+      <member refid="class_relaxarion_oscillations_1a9da94d07ea8985b34d90f1826d201c70" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>beta</name></member>
+      <member refid="class_relaxarion_oscillations_1ae1494095868416931c0008ff1192cb77" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>bound_cond_alpha_plus_zero</name></member>
+      <member refid="class_relaxarion_oscillations_1a896093f7a0fecf437e426c2d10dc222b" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>bound_cond_plus_zero</name></member>
+      <member refid="class_relaxarion_oscillations_1ad5c4c127a5c314536a095ab983471422" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>CalculateSolution</name></member>
+      <member refid="class_relaxarion_oscillations_1a873bd0e5f0b71b16a36019f9a3a8cea4" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>d</name></member>
+      <member refid="class_relaxarion_oscillations_1ac653f6900ac40bf5920b5931820855a8" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>dim</name></member>
+      <member refid="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>DisplayTheoreticalSolutions</name></member>
+      <member refid="class_relaxarion_oscillations_1a7b35da292a8f3ab2624185a803f8f86f" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>eps</name></member>
+      <member refid="class_relaxarion_oscillations_1ab5e64b9ca53763b51f541ae620134748" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>GetSolution</name></member>
+      <member refid="class_relaxarion_oscillations_1a14eb814cc8b73f9e03923e5715793a10" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>h</name></member>
+      <member refid="class_relaxarion_oscillations_1a301f6e98512812202be975a2e96eb8ae" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>IsPassedSwitchPoint</name></member>
+      <member refid="class_relaxarion_oscillations_1aedebc4dedca3dc63fb84f0b9bb767343" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>MakeImpetusToSolution</name></member>
+      <member refid="class_relaxarion_oscillations_1a86e35833679118d8e253546a311e1370" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>Period</name></member>
+      <member refid="class_relaxarion_oscillations_1ade0e59e1059cde99b18be8878736638c" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>RelaxarionOscillations</name></member>
+      <member refid="class_relaxarion_oscillations_1a65460aa32f0233ef60d8e9bb65231a80" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>RungeKuttaMethod</name></member>
+      <member refid="class_relaxarion_oscillations_1afb7f1fd0b0d02ca54ae0f9b63e43fb9a" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>SetSolution</name></member>
+      <member refid="class_relaxarion_oscillations_1a102622c147caace4e1cda1fb8fe66d6e" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>sln</name></member>
+      <member refid="class_relaxarion_oscillations_1ad42c8164d079f0d84a4b35593cbc1b53" prot="private" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>ZeroizeBoundaryConditions</name></member>
+      <member refid="class_relaxarion_oscillations_1ae7de123edaf002b2741bc2739eb167f3" prot="public" virt="non-virtual"><scope>RelaxarionOscillations</scope><name>~RelaxarionOscillations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

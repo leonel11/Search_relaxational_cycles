@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="controller_8cpp" kind="file" language="C++">
+    <compoundname>controller.cpp</compoundname>
+    <includes refid="controller_8h" local="yes">controller.h</includes>
+    <incdepgraph>
+      <node id="73">
+        <label>controller.h</label>
+        <link refid="controller_8h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>iomanip</label>
+      </node>
+      <node id="83">
+        <label>windows.h</label>
+      </node>
+      <node id="93">
+        <label>filter.h</label>
+        <link refid="filter_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>stdlib.h</label>
+      </node>
+      <node id="78">
+        <label>arithmetic.h</label>
+        <link refid="arithmetic_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>string</label>
+      </node>
+      <node id="74">
+        <label>calculation.h</label>
+        <link refid="calculation_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>omp.h</label>
+      </node>
+      <node id="76">
+        <label>types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>string.h</label>
+      </node>
+      <node id="90">
+        <label>vector</label>
+      </node>
+      <node id="75">
+        <label>parser.h</label>
+        <link refid="parser_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>program.h</label>
+        <link refid="program_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>sstream</label>
+      </node>
+      <node id="84">
+        <label>time.h</label>
+      </node>
+      <node id="82">
+        <label>math.h</label>
+      </node>
+      <node id="86">
+        <label>iostream</label>
+      </node>
+      <node id="91">
+        <label>algorithm</label>
+      </node>
+      <node id="79">
+        <label>stdio.h</label>
+      </node>
+      <node id="72">
+        <label>controller.cpp</label>
+        <link refid="controller.cpp"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="controller_8h" kindref="compound">controller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_controller_1a95c56822d667e94b031451729ce069a9" kindref="member">Controller::Controller</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>config.<ref refid="class_data_parser_1ae80dfe8258521c73d2dab00b1f1f74aa" kindref="member">PullData</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1a17abb2cec6c0109e9b2df3cdc082eaad" kindref="member">Controller::Run</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config.<ref refid="class_data_parser_1a0ba5763774146b6ea7c7c6504ae47053" kindref="member">ReadingState</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>omp_set_num_threads(<ref refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kindref="member">THREADS</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OpenAuxFiles();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RunCalculations();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseAuxFiles();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UniteFiles();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DrawPhasePortrait();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::OpenAuxFiles()<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>file_parameters<sp/>=<sp/>fopen(<ref refid="controller_8h_1aab76d360ef58ea4d44418cc2b8f8ed4e" kindref="member">path_to_file_parameters</ref>,<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>file_all_stationary_points<sp/>=<sp/>fopen(<ref refid="controller_8h_1add983d60c6c962922daa0ecf63727828" kindref="member">path_to_file_all_stationary_points</ref>,<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>file_start_points<sp/>=<sp/>fopen(<ref refid="controller_8h_1ad5751a4b058ec1642d0cc3ab05eb3a48" kindref="member">path_to_file_start_points</ref>,<sp/></highlight><highlight class="stringliteral">&quot;rt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pth<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../risovalka/risovalka/trajectories.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>file_united_trajectories<sp/>=<sp/>fopen(pth.c_str(),<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kindref="member">THREADS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pth<sp/>=<sp/><ref refid="controller_8h_1ab24169201ffe6432657476645cc9da11" kindref="member">dir_to_temp_file_trajectories</ref><sp/>+<sp/><ref refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kindref="member">TypesChange::IntToString</ref>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_trajectories[i]<sp/>=<sp/>fopen(pth.c_str(),<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::SearchStationaryPoint(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*solution,<sp/><ref refid="class_filter_points" kindref="compound">FilterPoints</ref><sp/>*filter)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_relaxarion_oscillations" kindref="compound">RelaxarionOscillations</ref><sp/>calculator(config,<sp/>solution);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cur_thread<sp/>=<sp/>omp_get_thread_num();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>!=<sp/>1)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" kindref="member">TypesChange::PointCoordinatesToString</ref>(solution,<sp/>1,<sp/>dim).c_str());</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*prev_sln<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>решение,<sp/>полученное<sp/>на<sp/><sp/>предыдущей<sp/>итерации</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(prev_sln,<sp/>solution);<sp/></highlight><highlight class="comment">//<sp/>в<sp/>начальный<sp/>момент<sp/>времени<sp/>считается,<sp/>что<sp/>ранее<sp/>координаты<sp/>точки<sp/>не<sp/>менялись</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(iter<sp/>=<sp/>0;<sp/>iter<sp/>&lt;<sp/>config.<ref refid="class_data_parser_1a439f05ed92743973cc8dc6da38e50868" kindref="member">Max_Iter</ref>();<sp/>++iter)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>во<sp/>всех<sp/>итерациях,<sp/>кроме<sp/>первой,<sp/>нужно<sp/>сначала<sp/>установить<sp/>в<sp/>качестве<sp/>начальной<sp/>точки<sp/>решение,<sp/>полученное<sp/>на<sp/>прошлом<sp/>шаге</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iter<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calculator.SetSolution(prev_sln);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calculator.CalculateSolution();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*cur_sln<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(cur_sln,<sp/>calculator.GetSolution());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>==<sp/>1)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>в<sp/>случае<sp/>одномерной<sp/>задачи</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>необходимо<sp/>сформировать<sp/>двумерную<sp/>точку<sp/>вида<sp/>(y_n,<sp/>y_n+1),<sp/>&quot;склеив&quot;<sp/>2<sp/>одномерные,<sp/>полученные<sp/>на<sp/>предыдущей<sp/>и<sp/>текущей<sp/>итерации<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*sln_2d<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(sln_2d,<sp/><ref refid="class_point_operations_1ae4d32b67ba42d0f9ad372b431b9af81b" kindref="member">PointOperations::GluePoint</ref>(prev_sln,<sp/>dim,<sp/>cur_sln,<sp/>dim));</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>&quot;склеенной&quot;<sp/>двумерной<sp/>точки<sp/>в<sp/>файл<sp/>траекторий</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" kindref="member">TypesChange::PointCoordinatesToString</ref>(sln_2d,<sp/>1,<sp/>2*dim).c_str());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" kindref="member">TypesChange::PointCoordinatesToString</ref>(cur_sln,<sp/>1,<sp/>dim).c_str());<sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>точки<sp/>в<sp/>файл<sp/>траекторий</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>если<sp/>полученная<sp/>точка<sp/>оказалась<sp/>стационарной,<sp/>т.е.<sp/>после<sp/>релаксационных<sp/>колебаний<sp/>координаты<sp/>точки<sp/>изменяются<sp/>несильно</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_point_operations_1a462940940e3ee8a60089a47b67a96cb6" kindref="member">PointOperations::IsEqualPoints</ref>(prev_sln,<sp/>cur_sln,<sp/>config.<ref refid="class_data_parser_1ab82aae2922755c17eafa460578ff587b" kindref="member">Eps</ref>()))<sp/>{<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>добавление<sp/>полученной<sp/>стационарной<sp/>точки<sp/>в<sp/>список-хранилище<sp/>всех<sp/>стационарных<sp/>точек</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filter-&gt;<ref refid="class_filter_points_1a30df113a7e80d1e5b203d2716a4744b4" kindref="member">AddPoint</ref>(cur_sln);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>стационарной<sp/>точки<sp/>в<sp/>необходимые<sp/>файлы</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>печать<sp/>координат<sp/>начальной<sp/>и<sp/>конечной<sp/>точки<sp/>релаксационного<sp/>отображения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kindref="member">TypesChange::PointToString</ref>(solution,<sp/>1,<sp/>dim)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t=&gt;\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_types_change_1a2f6b7c2c40aa4b8bfca016a689053673" kindref="member">TypesChange::PointToString</ref>(cur_sln,<sp/>1,<sp/>dim)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_all_stationary_points,<sp/></highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a4209e8869d97ca1206a0da3b6db85c40" kindref="member">TypesChange::PointCoordinatesToString</ref>(cur_sln,<sp/>1,<sp/>dim).c_str());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a4f5463040b9da28ceeaa6a773dbf03da" kindref="member">PointOperations::SetPoint</ref>(prev_sln,<sp/>cur_sln);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iter<sp/>==<sp/>config.<ref refid="class_data_parser_1a439f05ed92743973cc8dc6da38e50868" kindref="member">Max_Iter</ref>())<sp/>{<sp/></highlight><highlight class="comment">//<sp/>в<sp/>том<sp/>случае<sp/>если<sp/>достигнута<sp/>максимальная<sp/>итерация,<sp/>но<sp/>стационарная<sp/>точка<sp/>так<sp/>и<sp/>не<sp/>найдена</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>Max<sp/>iteration<sp/>was<sp/>reached!&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>соответствующего<sp/>сообщения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_trajectories[cur_thread],<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::RunCalculations()<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trajectories<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>количество<sp/>траекторий<sp/>фазового<sp/>портрета</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>печать<sp/>координат<sp/>точек-решений,<sp/>которые<sp/>должны<sp/>получиться<sp/>исходя<sp/>из<sp/>теоретических<sp/>результатов</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_relaxarion_oscillations_1a3e1a73c2ba6f446e1e425b7ce7ddc07f" kindref="member">RelaxarionOscillations::DisplayTheoreticalSolutions</ref>(config);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(time(NULL));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>получение<sp/>практических<sp/>результатов</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Calculations:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_filter_points" kindref="compound">FilterPoints</ref><sp/>filter(config);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*sln<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];<sp/></highlight><highlight class="comment">//<sp/>массив<sp/>для<sp/>хранения<sp/>координат<sp/>решения</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(sln,<sp/>config.<ref refid="class_data_parser_1a9d821449a8250d30ad65c976885a0f48" kindref="member">Start_Point</ref>());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config.<ref refid="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" kindref="member">Points_Source</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;FROM_FILE&quot;</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>если<sp/>точки,<sp/>для<sp/>которых<sp/>осуществляются<sp/>релаксационные<sp/>колебания<sp/>хранятся<sp/>в<sp/>файле</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(file_start_points)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;=<sp/>dim;<sp/>i++)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!fscanf(file_start_points,<sp/></highlight><highlight class="stringliteral">&quot;%f&quot;</highlight><highlight class="normal">,<sp/>&amp;sln[i]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectories++;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SearchStationaryPoint(sln,<sp/>&amp;filter);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(feof(file_start_points))</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config.<ref refid="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" kindref="member">Points_Source</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;GENERATE_GRID&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>если<sp/>точки,<sp/>для<sp/>которых<sp/>осуществляются<sp/>релаксационные<sp/>колебания<sp/>генерируются<sp/>в<sp/>качестве<sp/>сетки</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps<sp/>=<sp/>config.<ref refid="class_data_parser_1a404e5625180ca25b07a84971d8ff1bd5" kindref="member">Steps</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start_points<sp/>=<sp/>(int)<sp/>pow((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/>steps,<sp/>(double)<sp/>dim);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*grid_idx<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1a97def43827da6fe4ad1004015f62f7fb" kindref="member">PointOperations::ZeroizePoint</ref>(grid_idx);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectories<sp/>=<sp/>start_points;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#pragma<sp/>omp<sp/>parallel<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>trajectories;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*cur_point<sp/>=<sp/><ref refid="class_point_operations_1af33f111f2d976cc64b79e4c0febacdbd" kindref="member">PointOperations::GetGridPoint</ref>(sln,<sp/>grid_idx,<sp/>config.<ref refid="class_data_parser_1a1f0cbc39bbf7e976c53fad6a4a389417" kindref="member">Discr</ref>());</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SearchStationaryPoint(cur_point,<sp/>&amp;filter);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grid_idx<sp/>=<sp/><ref refid="class_arithmetics_1a06388394a8a4162176567d6735fb4a39" kindref="member">Arithmetics::GetNextGridIndex</ref>(grid_idx,<sp/>steps);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(config.<ref refid="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" kindref="member">Points_Source</ref>()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;GENERATE_RANDOM&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>если<sp/>точки,<sp/>для<sp/>которых<sp/>осуществляются<sp/>релаксационные<sp/>колебания<sp/>генерируются<sp/>случайным<sp/>образом</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*start_point<sp/>=<sp/>config.<ref refid="class_data_parser_1a9d821449a8250d30ad65c976885a0f48" kindref="member">Start_Point</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*opposite_point<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>[<ref refid="arithmetic_8h_1abdb68df7b02fded293d9a021b5d4b98b" kindref="member">MAX_DIM</ref>];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_point_operations_1af856a7ce25a39cb868725f8e25f65296" kindref="member">PointOperations::InitPoint</ref>(opposite_point,<sp/><ref refid="class_point_operations_1ae0ea740a7a33489e5ecc0cab9f76c332" kindref="member">PointOperations::GetOppositeGridPoint</ref>(start_point,<sp/>config.<ref refid="class_data_parser_1a1f0cbc39bbf7e976c53fad6a4a389417" kindref="member">Discr</ref>(),<sp/>config.<ref refid="class_data_parser_1a404e5625180ca25b07a84971d8ff1bd5" kindref="member">Steps</ref>(),<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>()));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trajectories<sp/>=<sp/>config.<ref refid="class_data_parser_1ae4a86a8c02c03d52881be3e5411bc572" kindref="member">Sample</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#pragma<sp/>omp<sp/>parallel<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>trajectories;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*cur_point<sp/>=<sp/><ref refid="class_point_operations_1a5a47fc472dd2640d89b8c2af8a9d0906" kindref="member">PointOperations::GetRandomPointBetween</ref>(start_point,<sp/>opposite_point);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SearchStationaryPoint(cur_point,<sp/>&amp;filter);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>вывод<sp/>необходимых<sp/>параметров<sp/>задачи<sp/>во<sp/>вспомогательный<sp/>файл</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(file_parameters,<sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>%s<sp/>%s<sp/>%s<sp/>%s<sp/>%s<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kindref="member">TypesChange::IntToString</ref>(config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>()).c_str(),<sp/><ref refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kindref="member">TypesChange::FloatToString</ref>(config.<ref refid="class_data_parser_1a12892b6cc8bb7b24159e7709852649cd" kindref="member">Alpha</ref>()).c_str(),<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kindref="member">TypesChange::FloatToString</ref>(config.<ref refid="class_data_parser_1a31d430da03dca13e7cec8f84401c12a6" kindref="member">Beta</ref>()).c_str(),<sp/><ref refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kindref="member">TypesChange::FloatToString</ref>(config.<ref refid="class_data_parser_1af0cc37893ec5aa4aa05130cea1988d53" kindref="member">D</ref>()).c_str(),<sp/><ref refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kindref="member">TypesChange::FloatToString</ref>(config.<ref refid="class_data_parser_1a124b97cf683480bcb705256af645e446" kindref="member">H</ref>()).c_str(),<sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_types_change_1a3a510e44ef4e44bb1085108650d2a266" kindref="member">TypesChange::FloatToString</ref>(config.<ref refid="class_data_parser_1ab82aae2922755c17eafa460578ff587b" kindref="member">Eps</ref>()).c_str(),<sp/><ref refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kindref="member">TypesChange::IntToString</ref>(trajectories).c_str());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>filter.<ref refid="class_filter_points_1a0195ed6cca50a69c1fea12a7b154a4c7" kindref="member">ExcludeEqualPoints</ref>();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::DrawPhasePortrait()<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim<sp/>=<sp/>config.<ref refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" kindref="member">Dim</ref>();<sp/></highlight><highlight class="comment">//<sp/>запуск<sp/>сторонних<sp/>утилит<sp/>зависит<sp/>от<sp/>размерноти<sp/>задачи,<sp/>определяющего<sp/>многомерность<sp/>фазового<sp/>портрета</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dim<sp/>==<sp/>1)<sp/>||<sp/>(dim<sp/>==<sp/>2))<sp/></highlight><highlight class="comment">//<sp/>в<sp/>случае<sp/>одномерной<sp/>или<sp/>двумерной<sp/>задачи</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_program_operations_1a8c235d376a548ad980c192634a2eaf22" kindref="member">ProgramOperations::RunExeFile</ref>(<ref refid="controller_8h_1aa4972fa76cb62933c0d1b174c8f34648" kindref="member">path_to_app_risovalka</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim<sp/>==<sp/>3)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>в<sp/>случае<sp/>трехмерной<sp/>задачи</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>launch_params<sp/>=<sp/><ref refid="class_types_change_1a3b3b728634baf3e6192824b5f1221cc5" kindref="member">TypesChange::CharArrayToString</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/><ref refid="controller_8h_1a2115a81e0cc00c0b03bc292b1f984d74" kindref="member">path_to_file_trajectories</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_types_change_1a3b3b728634baf3e6192824b5f1221cc5" kindref="member">TypesChange::CharArrayToString</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/><ref refid="controller_8h_1aab76d360ef58ea4d44418cc2b8f8ed4e" kindref="member">path_to_file_parameters</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_program_operations_1a7d9d871067d78908033c6d538d1cd1e4" kindref="member">ProgramOperations::RunPythonScript</ref>(<ref refid="controller_8h_1a96b67cdbda9b74034a0af0606dc8be95" kindref="member">path_to_app_risovalka3d</ref>,<sp/>launch_params);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::UniteFiles()<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pth<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../risovalka/risovalka/trajectories.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>file_united_trajectories<sp/>=<sp/>fopen(pth.c_str(),<sp/></highlight><highlight class="stringliteral">&quot;wt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kindref="member">THREADS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>pth<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../risovalka/risovalka/trajectories&quot;</highlight><highlight class="normal">+<ref refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kindref="member">TypesChange::IntToString</ref>(i)+</highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_trajectories[i]<sp/>=<sp/>fopen(pth.c_str(),<sp/></highlight><highlight class="stringliteral">&quot;rt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[<ref refid="arithmetic_8h_1a21afaf2dcbf3be6bc362d358ab3378d9" kindref="member">MAX_ARRAY_SIZE</ref>];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;4;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fgets(buffer,<sp/><ref refid="arithmetic_8h_1a21afaf2dcbf3be6bc362d358ab3378d9" kindref="member">MAX_ARRAY_SIZE</ref>,<sp/>file_trajectories[i])<sp/>==<sp/>NULL<sp/>)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(file_united_trajectories,<sp/></highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>buffer);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kindref="member">THREADS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fclose(file_trajectories[i]);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(string(<ref refid="controller_8h_1ab24169201ffe6432657476645cc9da11" kindref="member">dir_to_temp_file_trajectories</ref><sp/>+<sp/><ref refid="class_types_change_1a7f648ce98eca5da08b991002dc6d0204" kindref="member">TypesChange::IntToString</ref>(i)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.txt&quot;</highlight><highlight class="normal">).c_str());</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file_united_trajectories);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Controller::CloseAuxFiles()<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="controller_8h_1ac10525cd392b023a67f1b9f3260f87bc" kindref="member">THREADS</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fclose(file_trajectories[i]);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file_united_trajectories);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file_parameters);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file_start_points);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>fclose(file_all_stationary_points);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><ref refid="class_controller_1a0ab87934c4f7a266cfdb86e0f36bc1b5" kindref="member">Controller::~Controller</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/controller.cpp"/>
+  </compounddef>
+</doxygen>

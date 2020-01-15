@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="class_data_parser" kind="class" language="C++" prot="public">
+    <compoundname>DataParser</compoundname>
+    <includes refid="parser_8h" local="no">parser.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_data_parser_1a547276ab20bf8aed961828dfb0912665" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DataParser::dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="50" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a34295aca691e47ce65f6abe7d20e780e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string DataParser::points_source</definition>
+        <argsstring></argsstring>
+        <name>points_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="51" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a09f1b0cd3534432320b9c48a74e82fec" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::start_point[MAX_DIM]</definition>
+        <argsstring>[MAX_DIM]</argsstring>
+        <name>start_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="52" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1acfa3dfcaa76f75110c19a89a41a3506e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::discr</definition>
+        <argsstring></argsstring>
+        <name>discr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="53" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a6c8afcaa6d8fa22da4121f34545d9c64" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DataParser::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="54" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1aac905a8cb1d4eaf092abf8657df280ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DataParser::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="55" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1aa50ff15d6733685b8d1714f32b9e8d8e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="56" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a91d7257618b9668fb20f01e5c91ec5e1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="57" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1abb1a4002f21c0eaf1b69d9350141a46a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="58" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a9084d4787b83f5f332b87fa3a4471e64" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DataParser::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="59" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a0d73d7859ec21bf46372adbc0ff055c9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::eps</definition>
+        <argsstring></argsstring>
+        <name>eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="60" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1ac5ee4404c027b9fa002cba1d9f36afa2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DataParser::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="61" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_data_parser_1a264ad69a17cf9b9f39c0e37d7d9c149e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DataParser::reading_state</definition>
+        <argsstring></argsstring>
+        <name>reading_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="62" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_parser_1adde3fdb08b6d298dac0bdf59b94d77c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataParser::DataParser</definition>
+        <argsstring>()</argsstring>
+        <name>DataParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="27" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.cpp" bodystart="3" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a3814c58e35d81db3d7a1d5b96041efd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataParser::~DataParser</definition>
+        <argsstring>()</argsstring>
+        <name>~DataParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="28" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.cpp" bodystart="116" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1ae80dfe8258521c73d2dab00b1f1f74aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataParser::PullData</definition>
+        <argsstring>()</argsstring>
+        <name>PullData</name>
+        <briefdescription>
+<para>Вытягивание входных параметров программы для будущих расчетов </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="29" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.cpp" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int DataParser::Dim</definition>
+        <argsstring>()</argsstring>
+        <name>Dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="33" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string DataParser::Points_Source</definition>
+        <argsstring>()</argsstring>
+        <name>Points_Source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="34" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a9d821449a8250d30ad65c976885a0f48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float *</type>
+        <definition>float* DataParser::Start_Point</definition>
+        <argsstring>()</argsstring>
+        <name>Start_Point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="35" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a1f0cbc39bbf7e976c53fad6a4a389417" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::Discr</definition>
+        <argsstring>()</argsstring>
+        <name>Discr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="36" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a404e5625180ca25b07a84971d8ff1bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int DataParser::Steps</definition>
+        <argsstring>()</argsstring>
+        <name>Steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="37" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1ae4a86a8c02c03d52881be3e5411bc572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int DataParser::Sample</definition>
+        <argsstring>()</argsstring>
+        <name>Sample</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="38" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1af0cc37893ec5aa4aa05130cea1988d53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::D</definition>
+        <argsstring>()</argsstring>
+        <name>D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="39" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a12892b6cc8bb7b24159e7709852649cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::Alpha</definition>
+        <argsstring>()</argsstring>
+        <name>Alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="40" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a31d430da03dca13e7cec8f84401c12a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::Beta</definition>
+        <argsstring>()</argsstring>
+        <name>Beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="41" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a439f05ed92743973cc8dc6da38e50868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int DataParser::Max_Iter</definition>
+        <argsstring>()</argsstring>
+        <name>Max_Iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="42" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1ab82aae2922755c17eafa460578ff587b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::Eps</definition>
+        <argsstring>()</argsstring>
+        <name>Eps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="43" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a124b97cf683480bcb705256af645e446" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float DataParser::H</definition>
+        <argsstring>()</argsstring>
+        <name>H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="44" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a0ba5763774146b6ea7c7c6504ae47053" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataParser::ReadingState</definition>
+        <argsstring>()</argsstring>
+        <name>ReadingState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="45" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_data_parser_1af26ba834bbc3e66e3d18908ed2c7a644" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DataParser::IsParseData</definition>
+        <argsstring>()</argsstring>
+        <name>IsParseData</name>
+        <briefdescription>
+<para>Распарсивание данных из конфигурационного файла с помощью скрипта, написанного на Python. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, если всё прошло удачно, false, если скрипт не выполнился </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="64" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_parser_1a172e20e3abb75903e5831d0317cd36f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DataParser::ReadData</definition>
+        <argsstring>(FILE *aux_input_file)</argsstring>
+        <name>ReadData</name>
+        <param>
+          <type>FILE *</type>
+          <declname>aux_input_file</declname>
+        </param>
+        <briefdescription>
+<para>Считывание входных параметров программы для будущих расчетов с их соответствующей проверкой на корректность </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aux_input_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- вспомогательный файл, сформировавшийся в результате распарсивания, откуда следует считывать входные параметры задачи </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="65" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.cpp" bodystart="34" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" line="24" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.h" bodystart="24" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_data_parser_1a91d7257618b9668fb20f01e5c91ec5e1" prot="private" virt="non-virtual"><scope>DataParser</scope><name>alpha</name></member>
+      <member refid="class_data_parser_1a12892b6cc8bb7b24159e7709852649cd" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Alpha</name></member>
+      <member refid="class_data_parser_1abb1a4002f21c0eaf1b69d9350141a46a" prot="private" virt="non-virtual"><scope>DataParser</scope><name>beta</name></member>
+      <member refid="class_data_parser_1a31d430da03dca13e7cec8f84401c12a6" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Beta</name></member>
+      <member refid="class_data_parser_1aa50ff15d6733685b8d1714f32b9e8d8e" prot="private" virt="non-virtual"><scope>DataParser</scope><name>d</name></member>
+      <member refid="class_data_parser_1af0cc37893ec5aa4aa05130cea1988d53" prot="public" virt="non-virtual"><scope>DataParser</scope><name>D</name></member>
+      <member refid="class_data_parser_1adde3fdb08b6d298dac0bdf59b94d77c9" prot="public" virt="non-virtual"><scope>DataParser</scope><name>DataParser</name></member>
+      <member refid="class_data_parser_1aabdef48a661a4737ec01d3d31e00ccb3" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Dim</name></member>
+      <member refid="class_data_parser_1a547276ab20bf8aed961828dfb0912665" prot="private" virt="non-virtual"><scope>DataParser</scope><name>dim</name></member>
+      <member refid="class_data_parser_1acfa3dfcaa76f75110c19a89a41a3506e" prot="private" virt="non-virtual"><scope>DataParser</scope><name>discr</name></member>
+      <member refid="class_data_parser_1a1f0cbc39bbf7e976c53fad6a4a389417" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Discr</name></member>
+      <member refid="class_data_parser_1a0d73d7859ec21bf46372adbc0ff055c9" prot="private" virt="non-virtual"><scope>DataParser</scope><name>eps</name></member>
+      <member refid="class_data_parser_1ab82aae2922755c17eafa460578ff587b" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Eps</name></member>
+      <member refid="class_data_parser_1ac5ee4404c027b9fa002cba1d9f36afa2" prot="private" virt="non-virtual"><scope>DataParser</scope><name>h</name></member>
+      <member refid="class_data_parser_1a124b97cf683480bcb705256af645e446" prot="public" virt="non-virtual"><scope>DataParser</scope><name>H</name></member>
+      <member refid="class_data_parser_1af26ba834bbc3e66e3d18908ed2c7a644" prot="private" virt="non-virtual"><scope>DataParser</scope><name>IsParseData</name></member>
+      <member refid="class_data_parser_1a9084d4787b83f5f332b87fa3a4471e64" prot="private" virt="non-virtual"><scope>DataParser</scope><name>max_iter</name></member>
+      <member refid="class_data_parser_1a439f05ed92743973cc8dc6da38e50868" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Max_Iter</name></member>
+      <member refid="class_data_parser_1a34295aca691e47ce65f6abe7d20e780e" prot="private" virt="non-virtual"><scope>DataParser</scope><name>points_source</name></member>
+      <member refid="class_data_parser_1ab1c4d04690667c929da9c8cc7a08cf57" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Points_Source</name></member>
+      <member refid="class_data_parser_1ae80dfe8258521c73d2dab00b1f1f74aa" prot="public" virt="non-virtual"><scope>DataParser</scope><name>PullData</name></member>
+      <member refid="class_data_parser_1a172e20e3abb75903e5831d0317cd36f9" prot="private" virt="non-virtual"><scope>DataParser</scope><name>ReadData</name></member>
+      <member refid="class_data_parser_1a264ad69a17cf9b9f39c0e37d7d9c149e" prot="private" virt="non-virtual"><scope>DataParser</scope><name>reading_state</name></member>
+      <member refid="class_data_parser_1a0ba5763774146b6ea7c7c6504ae47053" prot="public" virt="non-virtual"><scope>DataParser</scope><name>ReadingState</name></member>
+      <member refid="class_data_parser_1ae4a86a8c02c03d52881be3e5411bc572" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Sample</name></member>
+      <member refid="class_data_parser_1aac905a8cb1d4eaf092abf8657df280ae" prot="private" virt="non-virtual"><scope>DataParser</scope><name>sample</name></member>
+      <member refid="class_data_parser_1a9d821449a8250d30ad65c976885a0f48" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Start_Point</name></member>
+      <member refid="class_data_parser_1a09f1b0cd3534432320b9c48a74e82fec" prot="private" virt="non-virtual"><scope>DataParser</scope><name>start_point</name></member>
+      <member refid="class_data_parser_1a404e5625180ca25b07a84971d8ff1bd5" prot="public" virt="non-virtual"><scope>DataParser</scope><name>Steps</name></member>
+      <member refid="class_data_parser_1a6c8afcaa6d8fa22da4121f34545d9c64" prot="private" virt="non-virtual"><scope>DataParser</scope><name>steps</name></member>
+      <member refid="class_data_parser_1a3814c58e35d81db3d7a1d5b96041efd5" prot="public" virt="non-virtual"><scope>DataParser</scope><name>~DataParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespaceparser" kind="namespace" language="Python">
+    <compoundname>parser</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceparser_1a1275ab0616c96f8c8e086ef9026a7172" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple parser.configfile</definition>
+        <argsstring></argsstring>
+        <name>configfile</name>
+        <initializer>= str(sys.argv[1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="76" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparser_1aca3dd530cb507eff86255735065312bd" prot="public" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple parser.reading_section</definition>
+        <argsstring></argsstring>
+        <name>reading_section</name>
+        <initializer>= str(sys.argv[2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="77" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceparser_1a96637ecdb2a6e4b1760d2068aa15151f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.has_ParamOption</definition>
+        <argsstring>(config, section, option)</argsstring>
+        <name>has_ParamOption</name>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <param>
+          <type>section</type>
+          <defname>section</defname>
+        </param>
+        <param>
+          <type>option</type>
+          <defname>option</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="9" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="9" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparser_1a09f407eb0fb7be0914b202f4af08ed94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.has_Params</definition>
+        <argsstring>(config, section, options)</argsstring>
+        <name>has_Params</name>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <param>
+          <type>section</type>
+          <defname>section</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="16" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="16" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparser_1a05835075e7fcbd4794a63d7558436cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.get_ListNecessaryOptions</definition>
+        <argsstring>()</argsstring>
+        <name>get_ListNecessaryOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="24" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparser_1af5c2057df7274d2e661af2978c2a8c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.get_ListAuxOptions</definition>
+        <argsstring>(points_source)</argsstring>
+        <name>get_ListAuxOptions</name>
+        <param>
+          <type>points_source</type>
+          <defname>points_source</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="28" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparser_1a014809020e9ba4c474961dc16c778ba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.parse_Params</definition>
+        <argsstring>(config, section, options)</argsstring>
+        <name>parse_Params</name>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <param>
+          <type>section</type>
+          <defname>section</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="36" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="36" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceparser_1a411809eefe1940be59a6ab7c9be4e087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def parser.parser_ConfigData</definition>
+        <argsstring>(configfile, section)</argsstring>
+        <name>parser_ConfigData</name>
+        <param>
+          <type><ref refid="namespaceparser_1a1275ab0616c96f8c8e086ef9026a7172" kindref="member">configfile</ref></type>
+          <defname>configfile</defname>
+        </param>
+        <param>
+          <type>section</type>
+          <defname>section</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="53" column="1" bodyfile="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" bodystart="53" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/_Glyzin/Search cycles for maps/RelaxationOscillations/parser.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

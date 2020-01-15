@@ -1,0 +1,51 @@
+\hypertarget{arithmetic_8h}{}\section{Файл arithmetic.\+h}
+\label{arithmetic_8h}\index{arithmetic.\+h@{arithmetic.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$omp.\+h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Граф включаемых заголовочных файлов для arithmetic.\+h\+:
+% FIG 0
+Граф файлов, в которые включается этот файл\+:
+% FIG 1
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Arithmetics}
+\end{DoxyCompactItemize}
+\subsection*{Макросы}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{arithmetic_8h_a913239c557dc40d7353fd682bb2e795e}{A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H}
+\end{DoxyCompactItemize}
+\subsection*{Переменные}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{arithmetic_8h_abdb68df7b02fded293d9a021b5d4b98b}{M\+A\+X\+\_\+\+D\+I\+M} = 20
+\item 
+const int \hyperlink{arithmetic_8h_a21afaf2dcbf3be6bc362d358ab3378d9}{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E} = 10000
+\end{DoxyCompactItemize}
+
+
+\subsection{Макросы}
+\hypertarget{arithmetic_8h_a913239c557dc40d7353fd682bb2e795e}{}\index{arithmetic.\+h@{arithmetic.\+h}!A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H@{A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H}}
+\index{A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H@{A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H}!arithmetic.\+h@{arithmetic.\+h}}
+\subsubsection[{A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+R\+I\+T\+H\+M\+E\+T\+I\+C\+\_\+\+H}\label{arithmetic_8h_a913239c557dc40d7353fd682bb2e795e}
+
+
+\subsection{Переменные}
+\hypertarget{arithmetic_8h_a21afaf2dcbf3be6bc362d358ab3378d9}{}\index{arithmetic.\+h@{arithmetic.\+h}!M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E}!arithmetic.\+h@{arithmetic.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}const int M\+A\+X\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+I\+Z\+E = 10000}\label{arithmetic_8h_a21afaf2dcbf3be6bc362d358ab3378d9}
+\hypertarget{arithmetic_8h_abdb68df7b02fded293d9a021b5d4b98b}{}\index{arithmetic.\+h@{arithmetic.\+h}!M\+A\+X\+\_\+\+D\+I\+M@{M\+A\+X\+\_\+\+D\+I\+M}}
+\index{M\+A\+X\+\_\+\+D\+I\+M@{M\+A\+X\+\_\+\+D\+I\+M}!arithmetic.\+h@{arithmetic.\+h}}
+\subsubsection[{M\+A\+X\+\_\+\+D\+I\+M}]{\setlength{\rightskip}{0pt plus 5cm}const int M\+A\+X\+\_\+\+D\+I\+M = 20}\label{arithmetic_8h_abdb68df7b02fded293d9a021b5d4b98b}
