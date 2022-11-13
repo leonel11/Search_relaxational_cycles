@@ -1,0 +1,39 @@
+%%%%%%%%%%%
+\renewcommand{\@evenhead}%
+{\raisebox{-10pt}[\headheight][0pt]%
+{\vbox{\hbox to\textwidth{\footnotesize{\thepage} \strut \hfil
+
+%%%%%%%% Заполняем колонтитул на четной странице фамилиями авторов
+%%%%В.\ Л.\ Петров \hfil }\hrule}}}
+\Leftclt{}\hfil }\hrule}}}
+\renewcommand{\@oddhead}%
+{\raisebox{-10pt}[\headheight][0pt]%
+{\vbox{\hbox to\textwidth{\strut \hfil
+
+%%%%%%%% Заполняем колонтитул на нечетной странице, помещая туда
+%%%%%%%% (сокращенное) название статьи.
+\Rightclt{}\hfil \thepage}\hrule}}}
+
+%\makeatother
+
+% Колонтитул на 1 странице
+\newcommand{\Mainclt}{
+  \thispagestyle{empty}
+ \vbox{\vspace{-2cm}
+ \begin{center}
+ {\footnotesize ISSN 2686-9667. Вестник российских университетов. Математика}\\[2pt]
+ \hrule
+ \end{center}
+
+ \vspace{-2.5mm}
+ \noindent \small {Том 00,\ №~000} \hfill
+     \small {0000}\\[0em]
+}
+\small
+}
+
+
+%\newenvironment{Titul}{\begin{center}}{\end{center}
+%\baselineskip 12pt
+%\addtolength{\textheight}{0mm}
+%}

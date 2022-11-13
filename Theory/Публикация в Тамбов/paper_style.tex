@@ -1,0 +1,116 @@
+\renewcommand{\baselinestretch}{1.07}
+\renewcommand{\thefootnote}{\mbox{}}
+
+\newcommand{\hm}[1]{#1\nobreak\discretionary{}{\hbox{\ensuremath{#1}}}{}}
+
+\newfont{\tenscr}{rsfs10 at 14.4pt}
+\newcommand{\scr}[1]{\mbox{\tenscr #1}}
+
+% ----------------------------------------------------------------
+{\theoremstyle{plain}
+\newtheorem{Theorem}{\hspace{\parindent}\normalfont\bfseries \mbox{Теорема}}}
+{\theoremstyle{plain}
+\newtheorem{Lemma}{\hspace{\parindent}\normalfont\bfseries \mbox{Лемма}}}
+{\theoremstyle{plain}
+\newtheorem{Corollary}{\hspace{\parindent}\normalfont\bfseries \mbox{Следствие}}}
+{\theoremstyle{plain}
+\newtheorem{Assertion}{\hspace{\parindent}\normalfont\bfseries \mbox{Утверждение}}}
+{\theoremstyle{definition}
+\newtheorem{Definition}{\hspace{\parindent}\normalfont \mbox{О п р е д е л е н и е \ }}}
+{\theoremstyle{definition}
+\newtheorem{Remark}{\hspace{\parindent}\normalfont \mbox{З а м е ч а н и е \ }}}
+{\theoremstyle{definition}
+\newtheorem{Example}{\hspace{\parindent}\normalfont \mbox{П р и м е р \ }}}
+{\theoremstyle{plain}
+\newtheorem{Proposition}{\hspace{\parindent}\normalfont \mbox{П р е д л о ж е н и е \ }}}
+{\theoremstyle{definition}
+\newtheorem{Condition}{\hspace{\parindent}\normalfont \mbox{У с л о в и е \ }}}
+{\theoremstyle{definition}
+\newtheorem{Property}{\hspace{\parindent}\normalfont \mbox{С в о й с т в о \ }}}
+{\theoremstyle{definition}
+\newtheorem{Question}{\hspace{\parindent}\normalfont \mbox{В о п р о с \ }}}
+
+
+\makeatletter
+
+\def\clext{\mathpalette\clext@{}}
+\def\clext@#1{\mathop{\@@overline
+  {\hbox{$#1\m@th\operator@font ext$}}}}
+\def\clco{\mathpalette\clco@{}}
+\def\clco@#1{\mathop{\@@overline
+  {\hbox{$#1\m@th\operator@font co$}}}}
+
+\providecommand{\qedsymbol}{\openbox}%
+%%%\newcommand{\myproofname}{\hspace{\parindent}\normalfont\scshape Доказательство}
+\newcommand{\myproofname}{\hspace{\parindent}\normalfont Д о к а з а т е л ь с т в о}
+\renewenvironment{proof}[1][\myproofname]{\par
+  \pushQED{\qed}%
+  \normalfont \topsep6\p@\@plus6\p@\relax
+  \trivlist
+  \item[\hskip\labelsep
+              \slshape
+    #1\@addpunct{.}]\ignorespaces
+}{%
+  \popQED\endtrivlist\@endpefalse
+}
+
+\renewcommand{\@biblabel}[1]{#1.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\theTheorem{\@arabic\c@section.\@arabic\c@Theorem}\@addtoreset{Theorem}{subsection}
+\renewcommand\theLemma{\@arabic\c@section.\@arabic\c@Lemma}\@addtoreset{Lemma}{subsection}
+\renewcommand\theCorollary{\@arabic\c@section.\@arabic\c@Corollary}\@addtoreset{Corollary}{subsection}
+\renewcommand\theAssertion{\@arabic\c@section.\@arabic\c@Assertion}\@addtoreset{Assertion}{subsection}
+\renewcommand\theDefinition{\@arabic\c@section.\@arabic\c@Definition}\@addtoreset{Definition}{subsection}
+\renewcommand\theRemark{\@arabic\c@section.\@arabic\c@Remark}\@addtoreset{Remark}{subsection}
+\renewcommand\theExample{\@arabic\c@section.\@arabic\c@Example}\@addtoreset{Example}{subsection}
+\renewcommand\theProposition{\@arabic\c@section.\@arabic\c@Proposition}\@addtoreset{Proposition}{subsection}
+\renewcommand\theCondition{\@arabic\c@section.\@arabic\c@Condition}\@addtoreset{Condition}{subsection}
+\renewcommand\theProperty{\@arabic\c@section.\@arabic\c@Property}\@addtoreset{Property}{subsection}
+\renewcommand\theQuestion{\@arabic\c@section.\@arabic\c@Question}\@addtoreset{Question}{subsection}
+\renewcommand\theequation{\@arabic\c@section.\@arabic\c@equation}\@addtoreset{equation}{subsection}
+
+\renewcommand{\thesection}{\mbox{\normalsize\arabic{section}.}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}.}
+\renewcommand{\section}{\@startsection
+    {section}
+    {1}
+    {0em}
+    {-\baselineskip}
+    {0.2\baselineskip}
+%    {\normalfont\bfseries\uppercase}}
+    {\centering\normalfont\bfseries\rmfamily}}%\uppercase%\raggedright}}
+\renewcommand{\subsection}{\@startsection
+    {subsection}
+    {2}
+    {0em}
+%    {12.7mm}
+    {-\baselineskip}
+    {0.2\baselineskip}
+    {\centering\normalfont\bfseries\rmfamily}}%\centering}}
+%    {\raggedright\normalfont\large\bfseries\sffamily}}
+
+\renewcommand{\l@section}{\@dottedtocline{1}{1em}{5em}}
+\renewcommand{\l@subsection}{\@dottedtocline{2}{3em}{3em}}
+\renewcommand{\@tocrmarg}{5em plus 1em minus 2em}
+
+\newcommand{\lookref}[1]{ \textup{(\textit{см.} \tagform@{\ref{#1}})}}
+
+\renewcommand{\@oddfoot}%
+{\raisebox{0pt}[\headheight][0pt]{%
+\vbox{\hbox to\textwidth{\hfill\thepage\hfill}}}}
+
+\renewcommand{\@evenfoot}{}
+\renewcommand{\@oddfoot}{}
+
+%\newenvironment{Abstract}{\begin{quote}\settowidth{\parindent}{~~~}\scriptsize\mbox{~~~}}{\end{quote}}
+
+\renewenvironment{abstract}
+{\vspace{-4mm}
+\list{}{\itemindent\listparindent\leftmargin 2\parindent
+\rightmargin\leftmargin}%
+\leftmargini 2em
+\footnotesize\item[]\relax\parindent12pt\leftmarginii3em\hskip\parindent}
+{\endlist\vskip12pt plus 3pt minus 2pt}
+
+\renewcommand{\refname}{\centerline{$\mbox{\small{References}}$}}

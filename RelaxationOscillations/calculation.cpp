@@ -134,16 +134,16 @@ void RelaxarionOscillations::RungeKuttaMethod() {
 	if (wave_type == "TWOCLUSTERS") {
 		for (int j = 1; j <= dim; j++) {
 			if (j == 1) {
-				k1 = h*d*(exp(-sln[1])+exp(sln[2])-exp(sln[1])-exp(sln[1]+sln[2]));
-				k2 = h*d*(exp(-sln[1]+h*k1/2)+exp(sln[2]+h*k1/2)-exp(sln[1]+h*k1/2)-exp(sln[1]+sln[2]+h*k1/2));
-				k3 = h*d*(exp(-sln[1]+h*k2/2)+exp(sln[2]+h*k2/2)-exp(sln[1]+h*k2/2)-exp(sln[1]+sln[2]+h*k2/2));
-				k4 = h*d*(exp(-sln[1]+h*k3)+exp(sln[2]+h*k3)-exp(sln[1]+h*k3)-exp(sln[1]+sln[2]+h*k3));
+				k1 = h*d*(Arithmetics::gate(exp(-sln[1]))+Arithmetics::gate(exp(sln[2]))-Arithmetics::gate(exp(sln[1]))-Arithmetics::gate(exp(sln[1]+sln[2])));
+				k2 = h*d*(Arithmetics::gate(exp(-sln[1]+h*k1/2))+Arithmetics::gate(exp(sln[2]+h*k1/2))-Arithmetics::gate(exp(sln[1]+h*k1/2))-Arithmetics::gate(exp(sln[1]+sln[2]+h*k1/2)));
+				k3 = h*d*(Arithmetics::gate(exp(-sln[1]+h*k2/2))+Arithmetics::gate(exp(sln[2]+h*k2/2))-Arithmetics::gate(exp(sln[1]+h*k2/2))-Arithmetics::gate(exp(sln[1]+sln[2]+h*k2/2)));
+				k4 = h*d*(Arithmetics::gate(exp(-sln[1]+h*k3))+Arithmetics::gate(exp(sln[2]+h*k3))-Arithmetics::gate(exp(sln[1]+h*k3))-Arithmetics::gate(exp(sln[1]+sln[2]+h*k3)));
 			}
 			if (j == 2) {
-				k1 = h*d*(exp(-sln[1]-sln[2])+exp(-sln[2])-exp(-sln[1])-exp(sln[2]));
-				k2 = h*d*(exp(-sln[1]-sln[2]+h*k1/2)+exp(-sln[2]+h*k1/2)-exp(-sln[1]+h*k1/2)-exp(sln[2]+h*k1/2));
-				k3 = h*d*(exp(-sln[1]-sln[2]+h*k2/2)+exp(-sln[2]+h*k2/2)-exp(-sln[1]+h*k2/2)-exp(sln[2]+h*k2/2));
-				k4 = h*d*(exp(-sln[1]-sln[2]+h*k3)+exp(-sln[2]+h*k3)-exp(-sln[1]+h*k3)-exp(sln[2]+h*k3));
+				k1 = h*d*(Arithmetics::gate(exp(-sln[1]-sln[2]))+Arithmetics::gate(exp(-sln[2]))-Arithmetics::gate(exp(-sln[1]))-Arithmetics::gate(exp(sln[2])));
+				k2 = h*d*(Arithmetics::gate(exp(-sln[1]-sln[2]+h*k1/2))+Arithmetics::gate(exp(-sln[2]+h*k1/2))-Arithmetics::gate(exp(-sln[1]+h*k1/2))-Arithmetics::gate(exp(sln[2]+h*k1/2)));
+				k3 = h*d*(Arithmetics::gate(exp(-sln[1]-sln[2]+h*k2/2))+Arithmetics::gate(exp(-sln[2]+h*k2/2))-Arithmetics::gate(exp(-sln[1]+h*k2/2))-Arithmetics::gate(exp(sln[2]+h*k2/2)));
+				k4 = h*d*(Arithmetics::gate(exp(-sln[1]-sln[2]+h*k3))+Arithmetics::gate(exp(-sln[2]+h*k3))-Arithmetics::gate(exp(-sln[1]+h*k3))-Arithmetics::gate(exp(sln[2]+h*k3)));
 			}
 			sln[j] = sln[j] + (1.0/6)*(k1+2*k2+2*k3+k4);
 		}

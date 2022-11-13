@@ -1,0 +1,472 @@
+\documentclass[12pt,twoside]{article}
+\usepackage{comment}
+\usepackage{indentfirst}
+\usepackage[T2A]{fontenc}    % кириллические шрифты
+\usepackage[cp1251]{inputenc}% в кодировке WINDOWS
+\usepackage[english,russian]{babel}  % правила русского языка
+\usepackage[active]{srcltx} % Для удобного перехода между WiNEdT и YAP
+\usepackage{layout}
+\usepackage{graphicx}       % Для включения графических изображений
+\usepackage{picinpar,rotating,calc,ifthen}
+\usepackage{longtable,makeidx}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,euscript,colon}
+%\usepackage{cite}           % Для корректного оформления литературы
+\usepackage{cite}
+ \usepackage{caption}
+\captionsetup{font=footnotesize%, format=hang, indention=-\parindent%1.2cm
+, labelsep=period}
+
+
+\usepackage{ifthen}                                         % используйте команду \cite{1,2,3,4,8,9,10},
+                                          % результат  [1-4; 8-10]
+\usepackage{epstopdf}
+
+\usepackage[hyper]{amsbib}
+
+
+% ----------------------------------------------------------------
+\textheight 240mm \textwidth 165mm \topmargin=0cm \oddsidemargin=3mm
+\evensidemargin=3mm \voffset=-20mm \hoffset=-8mm
+\setlength\baselineskip{.5cm} \mathsurround=2pt
+
+
+\mathsurround=2pt %
+
+% Введите свои значения параметров !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\newcommand{\Leftclt}{\footnotesize{И.\,И.~Иванов, П.\,П.~Петров}}     % Левый колонтитул - ИНИЦИАЛЫ ФАМИЛИЯ
+\newcommand{\Rightclt}{\footnotesize{КРАТКОЕ НАЗВАНИЕ СТАТЬИ}}     % Правый колонтитул
+
+
+%==========================================================================================================================
+%%%%%%%%%%%%%%% УВАЖАЕМЫЕ АВТОРЫ, ОФОРМЛЕНИЕ ТЕОРЕМ, ЛЕММ, ПРЕДЛОЖЕНИЙ, УТВЕРЖДЕНИЙ И Т.Д. ОПРЕДЕЛЕНО В СТИЛЕВОМ ФАЙЛЕ.
+%%%%%%%%%%%%%% МЕНЯТЬ ЭТО ОФОРМЛЕНИЕ, ПЕРЕОПРЕДЕЛЯЯ КОМАНДЫ НЕЛЬЗЯ!!!!!!!!!
+%==========================================================================================================================
+
+\begin{document}
+
+\Mainclt  % Печать колонтитула на первой странице
+
+\input paper_style.tex
+
+{\footnotesize
+\noindent \copyright \ Иванов И.И., Петров П.П., 2020\\
+\noindent DOI 10.20310/2686-9667-2020-xx-xx-xx-xx %ставится в редакции журнала
+\\
+\noindent УДК ххх}
+
+\null
+
+\begin{center}
+{\large\textbf{Название статьи}}
+
+\vspace{1ex}
+
+\textbf{Иван Иванович ИВАНОВ\!$^{1}$, Петр Петрович ПЕТРОВ\!$^{2}$}\\
+{\footnotesize
+$^{1}$ФГБОУ ВО <<Тамбовский государственный университет им. Г.Р. Державина>>\\
+392000, Российская Федерация, г. Тамбов, ул. Интернациональная, 33\\
+$^{2}$ФГБОУ ВО <<Липецкий государственный технический университет>>\\
+398055, Российская Федерация, г. Липецк, ул. Московская, 30}
+\end{center}% ПРОСЬБА СТРОГО СОБЛЮДАТЬ ПОСЛЕДОВАТЕЛЬНОСТЬ УКАЗАНИЯ ДАННЫХ В АДРЕСЕ МЕСТА РАБОТЫ
+
+\vspace{0.3cm}
+
+\begin{center}
+{\large\textbf{The title of the article}}
+
+\vspace{1ex}
+
+\textbf{Ivan I.~IVANOV\!$^{1}$, Petr P.~PETROV\!$^{2}$}\\
+{\footnotesize
+$^{1}$Derzhavin Tambov State University\\
+33 Internatsionalnaya St., Tambov 392000, Russian Federation \\
+$^{2}$Lipetsk State Technical University\\
+30 Moskovskaya St., Lipetsk 398055, Russian Federation}
+\end{center}% ПРОСЬБА СТРОГО СОБЛЮДАТЬ ПОСЛЕДОВАТЕЛЬНОСТЬ УКАЗАНИЯ ДАННЫХ В АДРЕСЕ МЕСТА РАБОТЫ
+
+\vspace{1ex}
+
+\begin{abstract}
+
+\noindent \textbf{Аннотация.} Рекомендуемый объем аннотации 150-250 слов. Аннотация должна достаточно подробно и точно в сжатом виде отражать предмет исследования, методы и полученные результаты. Аннотация может содержать формулы. В аннотации нельзя приводить ссылки на библиографический список.
+
+\noindent \textbf{Ключевые слова:} с маленькой буквы через точку с запятой, в конце точку не ставить
+
+\noindent \textbf{Благодарности:} Работа выполнена при поддержке РФФИ
+(проекты №~00-00-00000\_а, №~00-00-00000р\_а), другие гранты %ОБЯЗАТЕЛЬНО В КАЖДОМ ГРАНТЕ УКАЗЫВАТЬ СООТВЕТСТВУЮЩИЙ КОД (а, р\_а, ННИО, ...)
+
+\noindent \textbf{Для цитирования:} \textit{Иванов И.И., Петров П.П.} Название статьи // Вестник российских университетов. Математика.
+2020. Т. xx. №~xx. С. хх--хх. DOI 10.20310/2686-9667-2020-xx-xx-xx-xx. % xx-xx - ставится в редакции журнала
+
+\noindent \textbf{Abstract.} The recommended annotation volume is 150-250 words. The abstract should sufficiently and accurately and concisely reflect the subject of research, methods and the results obtained. An abstract may contain formulas. References to bibliography should not be provided in the abstract.
+
+\noindent \textbf{Keywords:} starting with lower case, separated by semicolon, dot at the end is NOT needed
+
+\noindent \textbf{Acknowledgements:} The work is partially supported by the Russian Fund for Basic Research
+(projects no.~00-00-00000\_a, №~00-00-00000р\_а),
+other grants %ОБЯЗАТЕЛЬНО В КАЖДОМ ГРАНТЕ УКАЗЫВАТЬ СООТВЕТСТВУЮЩИЙ КОД (а, р\_а, ННИО, ...)
+
+\noindent \textbf{For citation:} Ivanov I.I., Petrov P.P.  Nazvanie stat'i latinicey [The title of the article].
+\textit{Vestnik rossiyskikh universitetov. Matematika – Russian Universities Reports. Mathematics},
+2020, vol. xx, no.~xx, pp. xx--xx. DOI 10.20310/2686-9667-2020-xx-xx-xx-xx. %xx-xx - ставится в редакции журнала
+(In Russian, Abstr. in Engl.)
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\normalsize
+% Основной текст ---------------------------------------------------------
+
+\section*{Введение}
+
+Понятие накрывания отображений, действующих в упорядоченных пространствах,
+определено в работах \cite{1}, \cite{2} в связи с исследованием точек совпадения....
+
+
+% Перед командой \section{.....}
+\setcounter{Theorem}{0}
+\setcounter{Lemma}{0}
+\setcounter{Corollary}{0}
+\setcounter{Assertion}{0}
+\setcounter{Definition}{0}
+\setcounter{Remark}{0}
+\setcounter{Example}{0}
+\setcounter{Proposition}{0}
+\setcounter{Condition}{0}
+\setcounter{Property}{0}
+\setcounter{Question}{0}
+\setcounter{equation}{0}
+
+\section{Основные понятия}
+
+Пусть задано частично упорядоченное пространство $X=(X, {\preceq}_{_{_X}}).$
+Для элементов $x',x \in X,$ удовлетворяющих этому отношению, наряду с
+обозначением $x' {\preceq}_{_{_X}} x$
+используем также обозначение $x {\succeq}_{_{_X}} x'.$ Если
+$x' {\preceq}_{_{_X}} x$ и $x' \neq x,$ пишем $x' {\prec}_{_{_X}} x$
+или  $x{\succ}_{_{_X}} x' .$
+Для элементов  $u,v \in X$ определим множества
+$$\mathcal{O}_X (u) \doteq \{x\in X:\, x{\preceq}_{_{_X}} u \}, \ \
+ {[v,u]}_X \doteq \{  x \in X : \  v \preceq x \preceq u \}.$$
+Заметим, что ${[v,u]}_X \neq \emptyset $ тогда и только тогда,
+когда $v \preceq u .$
+
+
+ Пусть также задано непустое множество $Y,$ на котором определено бинарное
+ отношение ${\preceq}_{_{_Y}},$ являющееся рефлексивным (то есть для любого
+ $ y\in Y $ выполнено $y {\preceq}_{_{_Y}} y $). Отношение ${\preceq}_{_{_Y}}$
+ не предполагается ни антисимметричным, ни транзитивным. В пространстве $Y$ также пользуемся
+ равносильными обозначениями $y' {\preceq}_{_{_Y}} y$ $\Leftrightarrow$ $y {\succeq}_{_{_Y}} y'$
+ и  $y' \neq y,$  $y' {\preceq}_{_{_Y}} y$ $\Leftrightarrow$  $y' {\prec}_{_{_Y}} y$
+  $\Leftrightarrow$  $y {\succ}_{_{_Y}} y'.$
+
+\begin{Definition}\cite[Definition 1]{1} Отображение $f\!:X\!\to\! Y$ называется \textit{антитонным на мно\-жест\-ве}
+ $U\subset X,$ если для любых  $x_1,x_2 \in U$ таких, что $x_1 {\succeq}_{_{_X}} x_2 ,$
+ выполнено $$f(x_1) {\preceq}_{_{_Y}} f(x_2).$$
+\end{Definition}
+\begin{Definition}\cite[с. 475]{2}  Отображение $f:X\to Y$ называется
+ (\textit{упорядоченно})~\textit{на\-кры\-ва\-ю\-щим множество}
+ $W \subset Y,$ если
+\begin{equation}\label{Sarra-Def-1}
+ \forall x_{0}\in X \quad \forall y\in W \quad
+ y {\preceq}_{_{_Y}} f(x_0) \ \Rightarrow \ \exists x\in X \
+ f(x)=y \ \, \mbox{и} \ \, x {\preceq}_{_{_X}} x_0 .
+\end{equation}
+ \end{Definition}
+
+\begin{Theorem}[см.~\cite{2}]
+Формулировка теоремы.
+\end{Theorem}
+
+\proof  В силу соотношения \eqref{Sarra-Def-1} ...
+
+\begin{Lemma}
+Формулировка леммы.
+\end{Lemma}
+
+\proof  Прямой шрифт ...
+
+\begin{Corollary}
+Формулировка следствия.
+\end{Corollary}
+
+\begin{center}
+\includegraphics[width=0.45\textwidth]{backups.eps}
+
+\textbf{Рис. 1.} Подпись под рисунком
+\end{center}
+
+\section{Основные результаты}
+
+\begin{Theorem}
+Формулировка теоремы.
+\end{Theorem}
+
+\begin{Assertion}
+Формулировка утверждения.
+\end{Assertion}
+
+\proof  Прямой шрифт ...
+
+\begin{Remark}
+Формулировка замечания.
+\end{Remark}
+
+\begin{Example}
+Формулировка примера.
+\end{Example}
+
+\begin{Definition}
+Формулировка определения.
+\end{Definition}
+
+\begin{Proposition}
+Формулировка предложения.
+\end{Proposition}
+
+\proof  Прямой шрифт ...
+
+\begin{Condition}
+Формулировка условия.
+\end{Condition}
+
+\begin{Property}
+Формулировка свойства.
+\end{Property}
+
+\begin{Question}
+Формулировка вопроса.
+\end{Question}
+
+
+
+\hfill Таблица 1\vspace{-1ex}
+\begin{center}
+Название таблицы\\
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} &
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} &
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} &
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} \\
+  \hline
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} & \ & \ & \ \\
+  \hline
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} & \ & \ & \ \\
+  \hline
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} & \ & \ & \ \\
+  \hline
+  \begin{tabular}{c} \mbox{Текст}\end{tabular} & \ & \ & \ \\
+  \hline
+\end{tabular}
+\end{center}
+
+%\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%        В Н И М А Н И Е !!!!   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  КОМАНДЫ, С ПОМОЩЬЮ КОТОРЫХ И ОФОРМЛЯЮТСЯ БИБЛИОГРАФИЧЕСКИЕ ССЫЛКИ НЕОБХОДИМО СМОТРЕТЬ ВО ВЛОЖЕННОМ ФАЙЛЕ amsbib.pdf:
+%
+%  Просим для каждой статьи указывать DOI в закомментированном виде, например, %\crossref{https://doi.org/10.1016/j.topol.2014.08.013}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{99}
+
+\Bibitem{1}
+\by A.\,V.~Arutyunov, E.\,S.~Zhukovskiy, S.\,E.~Zhukovskiy
+\paper Coincidence points principle for mappings in partially ordered spaces
+\jour Topology and its Applications
+\yr 2015
+\vol 179
+\issue 1
+\pages 13--33
+%\crossref{https://doi.org/10.1016/j.topol.2014.08.013}
+
+
+\RBibitem{2}
+\by А.\,В.~Арутюнов, Е.\,С.~Жуковский, С.\,Е.~Жуковский
+\paper О точках совпадения отображений в частично упорядоченных пространствах
+\jour Доклады Академии наук
+\yr 2013
+\vol 453
+\issue 5
+\pages 475--478
+\transl англ. пер.:
+\by A.\,V.~Arutyunov, E.\,S.~Zhukovskiy, S.\,E.~Zhukovskiy
+\paper On coincidence points of mappings in partially ordered spaces
+\jour Doklady Mathematics
+\yr 2013
+\vol 88
+\issue 3
+\pages 710--713
+%\crossref{https://doi.org/10.1134/S1064562413060239}
+
+
+\RBibitem{3}
+\by V.\,F.~Molchanov
+\paper Polynomial quantization and overalgebra for hyperboloid of one sheet
+\jour  Вестник Тамбовского университета. Серия Естественные и технические науки
+\yr 2018
+\vol 23
+\issue 123
+\pages 353--360
+\misctransl
+\by V.\,F.~Molchanov
+\paper Polynomial quantization and overalgebra for hyperboloid of one sheet
+\jour  Tambov University Reports. Series: Natural and Technical Sciences
+\yr 2018
+\vol 23
+\issue 123
+\pages 353--360
+\lang In~Russian
+
+
+\RBibitem{4}
+\by Е.\,С.~Жуковский
+\paper Об упорядоченно накрывающих отображениях и интегральных неравенствах типа Чаплыгина
+\jour Алгебра и анализ
+\yr 2018
+\vol 30
+\issue 1
+\pages 96--127
+\transl англ. пер.:
+\by E.\,S.~Zhukovskiy
+\paper On order covering maps in ordered spaces and Chaplygin-type inequalities
+\jour St. Petersburg Mathematical Journal
+\yr 2019
+\vol 30
+\issue 1
+\pages 73--94
+
+
+\RBibitem{5}
+\by С.~Бенараб, Е.\,С.~Жуковский
+\paper Об условиях существования точек совпадения отображений в частично упорядоченных пространствах
+\jour Вестник Тамбовского университета. Серия Естественные и технические науки
+\yr 2018
+\vol 23
+\issue 121
+\pages 10--16
+\misctransl
+\by S.~Benarab, E.\,S.~Zhukovskiy
+\paper On the conditions of existence coincidence points for mapping in partially ordered spaces
+\jour Tambov University Reports. Series: Natural and Technical Sciences
+\yr 2018
+\vol 23
+\issue 121
+\pages 10--16
+\lang In~Russian
+
+
+\RBibitem{6}
+\by М.\,А.~Красносельский , П.\,П.~Забрейко
+\book Геометрические методы нелинейного анализа
+\yr 1975
+\publ Наука
+\publaddr М.
+\misctransl
+\by M.\,A.~Krasnosel'skiy, P.\,P.~Zabreiko
+\book Geometricheskie metody nelineinogo analiza
+\yr 1975
+\publ Nauka
+\publaddr M.
+\lang In~Russian
+
+
+\RBibitem{7}
+\by А.\,Н.~Колмогоров, С.\,В.~Фомин
+\book Элементы теории функций и функционального анализа
+\edition 5-е изд.
+\publaddr М.
+\publ Наука
+\yr 1981
+\misctransl
+\by A.\,N.~Kolmogorov, S.\,V.~Fomin
+\book Elements of the theory of functions and functional analysis
+\vol I, II
+\publaddr Mineola, New York
+\publ Dover Publications
+\yr 1957, 1961
+
+\end{thebibliography}
+
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\footnotesize
+\hspace{-0.7cm}\begin{tabular}{p{7.8cm}p{0.2cm}p{7.8cm}}
+{\begin{center}\textbf{Информация об авторах}\end{center}}& &
+\begin{center}\textbf{Information about the authors}\end{center}\\[1pt]
+\parindent=0.5cm
+\textbf{Иванов Иван Иванович}, кандидат физико-математических наук, доцент кафедры функционального анализа. Тамбовский государственный университет им. Г.Р.~Державина, г. Тамбов, Российская Федерация. E-mail: .....
+
+\noindent\textbf{ORCID:} http://orcid.org/0000-0000-0000-0000
+& &
+\parindent=0.5cm
+\textbf{Ivan I. Ivanov}, Candidate of Physics and Mathematics, Associate Professor of the Functional Analysis Department. Tambov State University named after G.R. Derzhavin, Tambov, the Russian Federation. E-mail:...............
+
+\noindent\textbf{ORCID:} http://orcid.org/0000-0000-0000-0000
+\end{tabular}}
+
+
+\vspace{2ex}
+
+{\footnotesize
+\hspace{-0.7cm}\begin{tabular}{p{7.8cm}p{0.2cm}p{7.8cm}}
+\parindent=0.5cm
+\textbf{Петров Петр Петрович}, ассистент кафедры высшей математики. Липецкий государственный технический университет, г.~Липецк, Российская Федерация. E-mail: ...................
+
+\noindent\textbf{ORCID:} http://orcid.org/0000-0000-0000-0000
+& &
+\parindent=0.5cm
+\textbf{Petr P. Petrov}, Lecturer of the High Mathematics Department. Lipetsk State Technical University, Lipetsk, the Russian Federation. E-mail: .........................
+
+\noindent\textbf{ORCID:} http://orcid.org/0000-0000-0000-0000
+\end{tabular}}
+
+\vspace{2ex}
+
+{\footnotesize
+\hspace{-0.7cm}\begin{tabular}{p{7.8cm}p{0.2cm}p{7.8cm}}
+\parindent=0.5cm
+
+\noindent Конфликт интересов отсутствует.
+
+\null
+
+\noindent \textbf{Для контактов:}
+
+\noindent Иванов Иван Иванович
+
+\noindent E-mail: ...................
+
+\null
+
+\noindent Поступила в редакцию 00.00.2019 г.
+
+\noindent Поступила после рецензирования 00.00.2019 г.
+
+\noindent Принята к публикации 00.00.2019 г.
+& &
+\noindent There is no conflict of interests.
+
+
+\null
+
+\noindent \textbf{Corresponding author:}
+
+\noindent Ivan I. Ivanov
+
+\noindent E-mail: ...................
+
+\null
+
+\noindent Received 00 Month 2019
+
+\noindent Reviewed 00 Month 2019
+
+\noindent Accepted for press 00 Month 2019
+\end{tabular}}
+\end{document}
